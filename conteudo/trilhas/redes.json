@@ -1,0 +1,246 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "redes",
+  "nome": "Redes",
+  "area": {
+   "numero": "06",
+   "nome": "Suporte Técnico e Redes"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Profissionais de redes montam e mantêm as conexões que ligam computadores, servidores e a internet. Nesta trilha você sai do zero, aprende endereçamento IP, DNS, DHCP, firewall e análise de tráfego, e termina com o projeto da rede de uma pequena empresa.",
+  "paraQuemE": "Para quem nunca mexeu com redes e quer trabalhar montando e mantendo a conectividade das empresas.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 30
+ },
+ "etapas": [
+  {
+   "titulo": "Fundamentos de redes",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "O que é uma rede, como os computadores se conectam, tipos de rede, cabos e Wi-Fi.",
+   "projetoPratico": "Desenhar a rede da sua casa com todos os equipamentos e explicar o caminho de cada um até a internet.",
+   "recursos": [
+    {
+     "titulo": "Redes de Computadores (20 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/redes-de-computadores/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Gratuito com cadastro; só o certificado é pago. Cobre Wi-Fi, IP, DHCP, sub-redes e simulação no Cisco Packet Tracer."
+    },
+    {
+     "titulo": "O que é TCP/IP? · Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/ddos/glossary/tcp-ip/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "Formação Redes · Alura",
+     "url": "https://www.alura.com.br/formacao-redes",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Endereçamento IP e sub-redes",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda IPv4 e IPv6, máscaras de rede e como dividir uma rede em sub-redes. É o conteúdo mais cobrado em entrevistas.",
+   "projetoPratico": "Dividir uma rede em 4 sub-redes e preencher a tabela de endereços, máscaras e faixas.",
+   "recursos": [
+    {
+     "titulo": "O que é IP? · Central de Aprendizagem da Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/network-layer/internet-protocol/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "O que é uma sub-rede? · Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/network-layer/what-is-a-subnet/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "Redes de Computadores (20 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/redes-de-computadores/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Gratuito com cadastro; só o certificado é pago. Cobre Wi-Fi, IP, DHCP, sub-redes e simulação no Cisco Packet Tracer."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "DNS, DHCP e firewall",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Os serviços que fazem uma rede funcionar: nomes (DNS), endereços automáticos (DHCP) e regras de segurança (firewall).",
+   "projetoPratico": "Explicar, passo a passo, o que acontece desde ligar um computador novo até ele abrir um site.",
+   "recursos": [
+    {
+     "titulo": "O que é DNS? · Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/dns/what-is-dns/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "O que é um firewall? · Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/network-layer/what-is-a-firewall/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Inclui propaganda de produtos da Cloudflare."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Linux e linha de comando",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "Aprenda o terminal Linux: arquivos, permissões, processos e pacotes.",
+   "projetoPratico": "Instalar o Linux numa máquina virtual e organizar uma estrutura de pastas usando só o terminal.",
+   "recursos": [
+    {
+     "titulo": "Linux Essentials · material de estudo da LPI",
+     "url": "https://learning.lpi.org/pt/learning-materials/010-160/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Material em português. A página não informa o preço; confirmar antes de começar."
+    },
+    {
+     "titulo": "The Linux Command Line · William Shotts",
+     "url": "https://linuxcommand.org/tlcl.php",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "PDF gratuito (licença Creative Commons). Cobre linha de comando e shell script. Em inglês."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Análise de tráfego com Wireshark",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Capture e leia pacotes de rede para descobrir por que uma conexão está lenta ou falhando.",
+   "projetoPratico": "Capturar o tráfego de um acesso a um site e identificar as etapas: DNS, conexão e resposta.",
+   "recursos": [
+    {
+     "titulo": "Wireshark User's Guide",
+     "url": "https://www.wireshark.org/docs/wsug_html_chunked/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia do analisador de pacotes mais usado (licença GPL). Em inglês."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Simulando redes",
+   "nivel": "Avançado",
+   "duracaoSemanas": 5,
+   "descricao": "Monte redes virtuais com roteadores e switches num simulador, sem comprar equipamento.",
+   "projetoPratico": "Montar no simulador uma rede com 2 sub-redes, um roteador e um servidor.",
+   "recursos": [
+    {
+     "titulo": "Redes de Computadores (20 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/redes-de-computadores/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Gratuito com cadastro; só o certificado é pago. Cobre Wi-Fi, IP, DHCP, sub-redes e simulação no Cisco Packet Tracer."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Projeto: rede de uma pequena empresa",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Projete e documente a rede de uma empresa pequena: endereçamento, equipamentos, segurança e plano de contingência.",
+   "projetoPratico": "Publicar no GitHub o diagrama da rede, a tabela de endereços e um texto explicando as escolhas.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 7
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 2000,
+   "maximo": 3000,
+   "valorReferencia": 3000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Redes Júnior)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 07/09/2026). Remuneração variável não inclusa. Cargo: Analista de Redes Júnior."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 3000,
+   "maximo": 5000,
+   "valorReferencia": 4000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Redes Pleno)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 17/09/2026). Remuneração variável não inclusa. Cargo: Analista de Redes Pleno."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 5000,
+   "maximo": 9000,
+   "valorReferencia": 7000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Redes Sênior)",
+   "dataReferencia": "2026-08",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 15/08/2026). Remuneração variável não inclusa. Cargo: Analista de Redes Sênior. Faixa larga."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Roteamento (OSPF, BGP), VLANs e switches não têm recurso verificado; falta um curso gratuito (o CCNA da Cisco é pago e as páginas do NetAcad não abriram na verificação).",
+  "A etapa de simulação depende do Cisco Packet Tracer, que só aparece no Curso em Vídeo; o link do programa não foi verificado.",
+  "Wireshark: o guia está em inglês.",
+  "Quase todo o material está em português, mas falta um curso mais avançado.",
+  "Wi-Fi corporativo e redes sem fio estão cobertos só pelo curso básico.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

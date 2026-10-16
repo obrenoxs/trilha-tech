@@ -1,0 +1,288 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "appsec",
+  "nome": "AppSec",
+  "area": {
+   "numero": "04",
+   "nome": "Segurança da Informação"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "AppSec (segurança de aplicações) é a área de quem ajuda times de software a escrever código seguro e achar falhas antes de o sistema ir ao ar. Nesta trilha você sai do zero, aprende a programar, entende as falhas mais comuns e termina corrigindo e documentando falhas num projeto seu.",
+  "paraQuemE": "Para quem nunca programou e quer unir desenvolvimento de software e segurança.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 35
+ },
+ "etapas": [
+  {
+   "ordem": 1,
+   "titulo": "Lógica de programação e algoritmos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a pensar em passos: variáveis, condições, repetições, funções, vetores e matrizes. Ainda sem Python: o foco é raciocinar como quem programa.",
+   "projetoPratico": "Resolver os exercícios do curso e criar um jogo de adivinhação de número e uma calculadora, em pseudocódigo.",
+   "recursos": [
+    {
+     "titulo": "Algoritmos e Lógica de Programação (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito; só o certificado é pago."
+    },
+    {
+     "titulo": "CS50x: Introdução à Ciência da Computação · Harvard",
+     "url": "https://cs50.harvard.edu/x/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
+    },
+    {
+     "titulo": "Formação Segurança em aplicações .NET · Alura",
+     "url": "https://www.alura.com.br/formacao-seguranca-aplicacoes-net",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ]
+  },
+  {
+   "ordem": 2,
+   "titulo": "Git e GitHub",
+   "nivel": "Básico",
+   "duracaoSemanas": 2,
+   "descricao": "Aprenda a versionar seu código e a publicá-lo no GitHub. Seu perfil no GitHub será o seu portfólio.",
+   "projetoPratico": "Criar sua conta no GitHub e publicar os exercícios da etapa anterior.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ]
+  },
+  {
+   "titulo": "APIs e aplicações web",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "Entenda como um site e uma API funcionam (HTTP, requisições, autenticação), pois não dá para proteger o que você não sabe construir.",
+   "projetoPratico": "Uma API simples com login e 3 rotas protegidas.",
+   "recursos": [
+    {
+     "titulo": "Tutorial · FastAPI (em português)",
+     "url": "https://fastapi.tiangolo.com/pt/tutorial/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Fundamentos de segurança",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Os conceitos que sustentam a área: confidencialidade, integridade e disponibilidade, tipos de ataque, malware, senhas e criptografia básica.",
+   "projetoPratico": "Escrever uma página explicando 5 ataques comuns e como se proteger de cada um.",
+   "recursos": [
+    {
+     "titulo": "Introduction to Cybersecurity · Cisco Networking Academy",
+     "url": "https://www.netacad.com/courses/cybersecurity/introduction-cybersecurity",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Curso introdutório gratuito, em inglês. A página não informa a duração."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "As falhas mais comuns",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 6,
+   "descricao": "Estude as principais falhas de aplicações e como evitá-las no código (injeção, controle de acesso, autenticação). Pratique só em ambientes de treino ou com autorização por escrito: invadir sistemas sem permissão é crime.",
+   "projetoPratico": "Resolver 10 laboratórios da Web Security Academy e escrever como corrigir cada falha no código.",
+   "recursos": [
+    {
+     "titulo": "OWASP Top 10:2025",
+     "url": "https://top10.owasp.org/2025/en/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Lista das falhas mais comuns em aplicações web. Em inglês."
+    },
+    {
+     "titulo": "Web Security Academy · PortSwigger",
+     "url": "https://portswigger.net/web-security",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "100% gratuito, com explicações e laboratórios no navegador. Em inglês."
+    },
+    {
+     "titulo": "OWASP Cheat Sheet Series",
+     "url": "https://cheatsheetseries.owasp.org/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Mais de 150 guias curtos de segurança (licença Creative Commons)."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Praticando com aplicações vulneráveis",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Encontre e corrija falhas em aplicações feitas para isso. Pratique só em ambientes de treino ou com autorização por escrito: invadir sistemas sem permissão é crime.",
+   "projetoPratico": "Resolver 10 desafios do Juice Shop e documentar a correção.",
+   "recursos": [
+    {
+     "titulo": "OWASP Juice Shop",
+     "url": "https://owasp.org/www-project-juice-shop/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Aplicação de treino de código aberto (licença MIT) com falhas de propósito e desafios com placar."
+    },
+    {
+     "titulo": "OWASP WebGoat",
+     "url": "https://owasp.org/www-project-webgoat/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Aplicação Java com lições guiadas. A página não informa a licença, mas o código está no GitHub; confirmar."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Análise de código e ferramentas",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Use ferramentas que leem o código e apontam falhas (SAST) e entenda como encaixá-las no processo de publicação.",
+   "projetoPratico": "Rodar o Semgrep em um projeto seu, corrigir os alertas e registrar o que mudou.",
+   "recursos": [
+    {
+     "titulo": "Quickstart · documentação do Semgrep",
+     "url": "https://docs.semgrep.dev/getting-started/quickstart",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O guia usa uma plataforma com cadastro; a página não informa preços nem a licença da ferramenta. Confirmar antes de começar."
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "titulo": "Modelagem de ameaças",
+   "nivel": "Avançado",
+   "duracaoSemanas": 3,
+   "descricao": "Antes de escrever o código, descubra o que pode dar errado: quem ataca, o que ele quer e por onde entra.",
+   "projetoPratico": "Fazer a modelagem de ameaças de um sistema seu (um diagrama e uma lista de riscos).",
+   "recursos": [
+    {
+     "titulo": "OWASP Cheat Sheet Series",
+     "url": "https://cheatsheetseries.owasp.org/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Mais de 150 guias curtos de segurança (licença Creative Commons)."
+    }
+   ],
+   "ordem": 8
+  },
+  {
+   "titulo": "Projeto: aplicação segura",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Una tudo: pegue uma aplicação sua, ache as falhas, corrija e documente cada correção.",
+   "projetoPratico": "Publicar no GitHub uma aplicação com um relatório de falhas encontradas e corrigidas.",
+   "recursos": [
+    {
+     "titulo": "OWASP Cheat Sheet Series",
+     "url": "https://cheatsheetseries.owasp.org/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Mais de 150 guias curtos de segurança (licença Creative Commons)."
+    },
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 9
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 3000,
+   "maximo": 5000,
+   "valorReferencia": 4000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Segurança da Informação Júnior)",
+   "dataReferencia": "2026-10",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 09/10/2026). Remuneração variável não inclusa. Cargo: Analista de Segurança da Informação Júnior. Não há dados de Application Security Júnior; usamos um cargo próximo e mais amplo."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 8000,
+   "maximo": 14000,
+   "valorReferencia": 10000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Application Security Engineer, todos os níveis)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 19 salários informados (o mais recente é de 17/09/2026). Remuneração variável não inclusa. Cargo: Application Security Engineer. Todos os níveis juntos. Entradas de 1 a 3 anos de experiência ficam entre R$ 10 mil e R$ 13 mil. Faixa larga."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 8000,
+   "maximo": 12000,
+   "valorReferencia": 10000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Segurança da Informação Sênior)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 22/09/2026). Remuneração variável não inclusa. Cargo: Analista de Segurança da Informação Sênior. Não há dados de Application Security Sênior; usamos um cargo próximo e mais amplo. Na página de Application Security Engineer, entradas de 4 a 6 anos chegam a R$ 15–17 mil."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Quase tudo está em inglês; faltam recursos em português.",
+  "Semgrep: a página não informa preço nem licença; confirmar se o uso é gratuito.",
+  "WebGoat: a licença não está na página; confirmar.",
+  "Salários: só Application Security Engineer, em geral, tem dados (19 relatos). Júnior e Sênior usam 'Analista de Segurança da Informação', que é mais amplo.",
+  "Faltam recursos verificados de modelagem de ameaças (só os guias da OWASP), de segurança de APIs e de segurança em CI/CD.",
+  "A trilha usa Python na lógica de programação; considerar usar a mesma linguagem das outras trilhas da área de desenvolvimento.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

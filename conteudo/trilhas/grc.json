@@ -1,0 +1,196 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "grc",
+  "nome": "GRC",
+  "area": {
+   "numero": "04",
+   "nome": "Segurança da Informação"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "GRC (governança, riscos e conformidade) cuida de regras e riscos: define como a empresa protege informações e prova que cumpre leis como a LGPD. Nesta trilha você sai do zero, aprende segurança, riscos, frameworks e LGPD, e termina com um pacote de conformidade para uma empresa fictícia.",
+  "paraQuemE": "Para quem não quer programar e gosta de processos, leis e organização, e quer trabalhar com segurança.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 27
+ },
+ "etapas": [
+  {
+   "titulo": "Tecnologia da informação: o básico",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "Entenda como funcionam computadores, redes e sistemas de uma empresa, pois é isso que você vai avaliar.",
+   "projetoPratico": "Desenhar a estrutura de TI de uma empresa fictícia pequena, com sistemas, dados e quem acessa o quê.",
+   "recursos": [
+    {
+     "titulo": "Camada de rede (OSI) · Central de Aprendizagem da Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/network-layer/what-is-the-network-layer/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Explica pacotes, modelo OSI e TCP/IP. Cobre só a camada de rede; o resto de redes precisa de outro recurso."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Fundamentos de segurança",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Os conceitos que sustentam a área: confidencialidade, integridade e disponibilidade, tipos de ataque, malware, senhas e criptografia básica.",
+   "projetoPratico": "Escrever uma página explicando 5 ataques comuns e como se proteger de cada um.",
+   "recursos": [
+    {
+     "titulo": "Introduction to Cybersecurity · Cisco Networking Academy",
+     "url": "https://www.netacad.com/courses/cybersecurity/introduction-cybersecurity",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Curso introdutório gratuito, em inglês. A página não informa a duração."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Risco e frameworks de segurança",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 6,
+   "descricao": "Aprenda a identificar riscos, medir impacto e probabilidade e escolher controles usando frameworks usados no mercado (NIST CSF e CIS Controls).",
+   "projetoPratico": "Montar uma matriz de riscos de uma empresa fictícia, com 10 riscos e os controles para cada um.",
+   "recursos": [
+    {
+     "titulo": "NIST Cybersecurity Framework (CSF 2.0)",
+     "url": "https://www.nist.gov/cyberframework",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Framework do governo dos EUA, com guias de início rápido. A página não informa o preço; confirmar."
+    },
+    {
+     "titulo": "CIS Critical Security Controls v8.1",
+     "url": "https://www.cisecurity.org/controls",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Conjunto de boas práticas priorizadas. A página não informa se o download é gratuito; confirmar."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "LGPD e proteção de dados",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Entenda a lei brasileira de proteção de dados: princípios, direitos dos titulares, bases legais, incidentes e a função da ANPD.",
+   "projetoPratico": "Mapear os dados pessoais de uma empresa fictícia e listar a base legal de cada tratamento.",
+   "recursos": [
+    {
+     "titulo": "Lei nº 13.709/2018 (LGPD) · Planalto",
+     "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Texto oficial da lei, no site do governo federal. Leitura difícil para iniciantes; use como consulta."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Políticas, auditoria e conformidade",
+   "nivel": "Avançado",
+   "duracaoSemanas": 5,
+   "descricao": "Escreva políticas de segurança, aplique controles e prepare evidências para auditorias.",
+   "projetoPratico": "Escrever uma política de senhas e acessos e um checklist de auditoria para uma empresa fictícia.",
+   "recursos": [
+    {
+     "titulo": "Formação LGPD e cibersegurança · Alura",
+     "url": "https://www.alura.com.br/formacao-LGPD-cibersegurança",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    },
+    {
+     "titulo": "Formação Governança de segurança da informação · Alura",
+     "url": "https://www.alura.com.br/formacao-governanca-seguranca-informacao",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Projeto: programa de conformidade",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Una tudo: avalie uma empresa fictícia, liste riscos, proponha controles e escreva a política.",
+   "projetoPratico": "Publicar no GitHub um pacote com matriz de riscos, política e mapa de dados, com README.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 6
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 3000,
+   "maximo": 5000,
+   "valorReferencia": 4000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Compliance Júnior)",
+   "dataReferencia": "2026-07",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 06/07/2026). Remuneração variável não inclusa. Cargo: Analista de Compliance Júnior. Não há dados de Analista de GRC Júnior; usamos um cargo próximo e mais amplo, que inclui compliance em geral."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 5000,
+   "maximo": 7000,
+   "valorReferencia": 6000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Compliance Pleno)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 04/09/2026). Remuneração variável não inclusa. Cargo: Analista de Compliance Pleno. Cargo próximo e mais amplo. Para comparação, a página de Analista de GRC tem 11 salários, faixa de R$ 3 mil a R$ 8 mil e média de R$ 6 mil (até 28/11/2025)."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 7000,
+   "maximo": 9000,
+   "valorReferencia": 8000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Compliance Sênior)",
+   "dataReferencia": "2026-08",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 12/08/2026). Remuneração variável não inclusa. Cargo: Analista de Compliance Sênior. Cargo próximo e mais amplo."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "A etapa de políticas e auditoria está sem recurso verificado; falta material gratuito (ISO 27001 é paga e não entrou).",
+  "As páginas da ANPD (guias oficiais) não abriram na verificação; incluir depois.",
+  "A página da LGPD no Planalto abriu truncada na verificação; conferir o link.",
+  "NIST CSF e CIS Controls: a página não informa o preço; confirmar. Ambos em inglês.",
+  "Os salários usam 'Analista de Compliance', mais amplo que GRC. Na página de Analista de GRC há só 11 relatos.",
+  "Faltam recursos em português para riscos e auditoria interna.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

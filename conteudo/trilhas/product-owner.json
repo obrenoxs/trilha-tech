@@ -1,0 +1,259 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "product-owner",
+  "nome": "Product Owner",
+  "area": {
+   "numero": "08",
+   "nome": "Gestão e Produtos de TI"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "O Product Owner decide o que o time vai construir primeiro e fala em nome de quem vai usar o produto. Nesta trilha você sai do zero, aprende agilidade, Scrum, histórias de usuário, backlog e roadmap, e termina com um produto fictício completo no portfólio.",
+  "paraQuemE": "Para quem tem visão de produto, gosta de decidir prioridades e quer trabalhar entre quem usa e quem constrói.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 26
+ },
+ "etapas": [
+  {
+   "titulo": "Agilidade: valores e mentalidade",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Entenda por que as equipes trabalham em ciclos curtos, o que o Manifesto Ágil defende e como isso muda a forma de planejar.",
+   "projetoPratico": "Escrever, com suas palavras, uma página explicando os 4 valores do Manifesto Ágil com um exemplo de cada.",
+   "recursos": [
+    {
+     "titulo": "Manifesto para o Desenvolvimento Ágil de Software",
+     "url": "https://agilemanifesto.org/iso/ptbr/manifesto.html",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Texto curto com os 4 valores do desenvolvimento ágil, em português."
+    },
+    {
+     "titulo": "O que significa 'ágil'? · Atlassian",
+     "url": "https://www.atlassian.com/br/agile",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Porta de entrada para guias de Scrum, Kanban, histórias de usuário e métricas."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Scrum",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "Aprenda o framework mais usado: papéis, sprints, cerimônias e artefatos.",
+   "projetoPratico": "Desenhar um ciclo completo de uma sprint de 2 semanas para um projeto fictício, com cada cerimônia.",
+   "recursos": [
+    {
+     "titulo": "Scrum · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/scrum",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre papéis, sprints, cerimônias e artefatos."
+    },
+    {
+     "titulo": "Funções do Scrum Ágil · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/scrum/roles",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre."
+    },
+    {
+     "titulo": "Guia do Scrum 2020 (português do Brasil)",
+     "url": "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-PortugueseBR-3.0.pdf",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A tradução está listada na página oficial de downloads, mas o PDF não foi aberto na verificação, e a página da tradução não traz licença. A versão em inglês é gratuita (licença Creative Commons). Confirmar."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Product Owner e backlog",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Entenda o papel do PO: dono do backlog, quem decide o que construir primeiro e quem fala pelo cliente dentro do time.",
+   "projetoPratico": "Montar um backlog de 15 itens para um app fictício e priorizá-lo, justificando a ordem.",
+   "recursos": [
+    {
+     "titulo": "Funções do Scrum Ágil · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/scrum/roles",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre."
+    },
+    {
+     "titulo": "Guia do Scrum 2020 (português do Brasil)",
+     "url": "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-PortugueseBR-3.0.pdf",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A tradução está listada na página oficial de downloads, mas o PDF não foi aberto na verificação, e a página da tradução não traz licença. A versão em inglês é gratuita (licença Creative Commons). Confirmar."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Histórias de usuário e requisitos",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Escreva histórias claras com critérios de aceitação e documentos curtos de requisitos (PRD).",
+   "projetoPratico": "Escrever 10 histórias de usuário com critérios de aceitação e um PRD de uma página.",
+   "recursos": [
+    {
+     "titulo": "Histórias de usuário · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/project-management/user-stories",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Explica os 3 Cs e o modelo 'Como [pessoa], eu quero...'."
+    },
+    {
+     "titulo": "Documento de requisitos de produto (PRD) · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/product-management/requirements",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Mostra como escrever um PRD em formato ágil."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Roadmap e priorização",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Planeje o que entra em cada fase do produto e comunique o plano sem prometer datas que não controla.",
+   "projetoPratico": "Criar um roadmap de 6 meses para o app fictício, com objetivos em vez de datas fixas.",
+   "recursos": [
+    {
+     "titulo": "Roadmaps ágeis · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/product-management/roadmaps",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Dados para decidir: SQL básico",
+   "nivel": "Avançado",
+   "duracaoSemanas": 3,
+   "descricao": "Consulte os dados do produto sozinho para responder perguntas (quantas pessoas usam, onde desistem).",
+   "projetoPratico": "Responder 10 perguntas de negócio sobre um banco de vendas usando SQL.",
+   "recursos": [
+    {
+     "titulo": "SQLBolt: aprenda SQL com exercícios interativos",
+     "url": "https://sqlbolt.com/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Lições curtas direto no navegador. Ainda falta indicar um curso de SQL em português com link verificado."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Projeto: produto do zero",
+   "nivel": "Avançado",
+   "duracaoSemanas": 5,
+   "descricao": "Una tudo: do problema ao backlog priorizado e ao roadmap de um produto fictício.",
+   "projetoPratico": "Publicar no portfólio o problema, os usuários, o backlog priorizado, as histórias e o roadmap.",
+   "recursos": [
+    {
+     "titulo": "Histórias de usuário · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/project-management/user-stories",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Explica os 3 Cs e o modelo 'Como [pessoa], eu quero...'."
+    },
+    {
+     "titulo": "Documento de requisitos de produto (PRD) · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/product-management/requirements",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Mostra como escrever um PRD em formato ágil."
+    },
+    {
+     "titulo": "Roadmaps ágeis · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/product-management/roadmaps",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre."
+    }
+   ],
+   "ordem": 7
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 4000,
+   "maximo": 5000,
+   "valorReferencia": 5000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Product Owner Júnior)",
+   "dataReferencia": "2023-06",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 3 salários informados (o mais recente é de 28/06/2023). Remuneração variável não inclusa. Cargo: Product Owner Júnior. Só 3 relatos, todos de 2021 a 2023; os valores individuais ficam entre R$ 3 mil e R$ 5 mil."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 7000,
+   "maximo": 9000,
+   "valorReferencia": 8000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Product Owner Pleno)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 16/09/2026). Remuneração variável não inclusa. Cargo: Product Owner Pleno."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 9000,
+   "maximo": 13000,
+   "valorReferencia": 11000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Product Owner Sênior)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 07/09/2026). Remuneração variável não inclusa. Cargo: Product Owner Sênior."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Salário Júnior: só 3 relatos, de 2021 a 2023 (poucos dados e antigos). O cargo de entrada costuma ser Analista de Requisitos ou de Negócios.",
+  "Falta recurso verificado de priorização (RICE, MoSCoW, valor de negócio) e de métricas de produto.",
+  "Quase tudo é da Atlassian (português), que promove seus produtos.",
+  "Guia do Scrum em português: o link está na página oficial, mas o PDF não foi aberto.",
+  "SQL: só o SQLBolt, em inglês.",
+  "Muitas vagas de PO pedem experiência anterior; avisar na plataforma."
+ ]
+}

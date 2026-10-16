@@ -1,0 +1,304 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "sre",
+  "nome": "SRE",
+  "area": {
+   "numero": "03",
+   "nome": "Infraestrutura, Cloud e DevOps"
+  },
+  "nivelEntrada": "Avançado",
+  "textoTrilha": "SRE (Site Reliability Engineering) aplica engenharia de software para manter sistemas no ar, rápidos e confiáveis. Nesta trilha você sai do zero, aprende Linux, redes, Docker, Kubernetes e observabilidade, e termina com um serviço com SLOs e alertas.",
+  "paraQuemE": "Para quem nunca mexeu com infraestrutura e quer cuidar da confiabilidade de sistemas em produção. A maioria das vagas pede experiência anterior, então Linux ou DevOps costumam ser o primeiro passo.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 39
+ },
+ "etapas": [
+  {
+   "ordem": 1,
+   "titulo": "Lógica de programação e algoritmos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a pensar em passos: variáveis, condições, repetições, funções, vetores e matrizes. Ainda sem Python: o foco é raciocinar como quem programa.",
+   "projetoPratico": "Resolver os exercícios do curso e criar um jogo de adivinhação de número e uma calculadora, em pseudocódigo.",
+   "recursos": [
+    {
+     "titulo": "Algoritmos e Lógica de Programação (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito; só o certificado é pago."
+    },
+    {
+     "titulo": "CS50x: Introdução à Ciência da Computação · Harvard",
+     "url": "https://cs50.harvard.edu/x/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
+    },
+    {
+     "titulo": "Formação SRE · Alura",
+     "url": "https://www.alura.com.br/formacao-sre",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ]
+  },
+  {
+   "titulo": "Linux e linha de comando",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "Aprenda o terminal Linux, onde roda boa parte dos sistemas que você vai manter.",
+   "projetoPratico": "Instalar o Linux numa máquina virtual e organizar uma estrutura de pastas usando só o terminal.",
+   "recursos": [
+    {
+     "titulo": "Linux Essentials · material de estudo da LPI",
+     "url": "https://learning.lpi.org/pt/learning-materials/010-160/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Material em português da certificação Linux Essentials. A página não informa o preço; confirmar antes de começar."
+    },
+    {
+     "titulo": "The Linux Command Line · William Shotts",
+     "url": "https://linuxcommand.org/tlcl.php",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "PDF gratuito (licença Creative Commons). Cobre linha de comando e shell script. Em inglês."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Shell script",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Automatize tarefas repetitivas com scripts em Bash: variáveis, condicionais, repetições e funções.",
+   "projetoPratico": "Um script que faz backup de uma pasta, compacta os arquivos e apaga os backups antigos.",
+   "recursos": [
+    {
+     "titulo": "The Linux Command Line · William Shotts",
+     "url": "https://linuxcommand.org/tlcl.php",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Use a parte de shell script do livro (PDF gratuito, em inglês)."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Redes básicas",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "IP, DNS, portas e firewall, para entender onde um problema de conexão pode estar.",
+   "projetoPratico": "Explicar, em um texto curto, o que acontece desde digitar um endereço até a página aparecer.",
+   "recursos": [
+    {
+     "titulo": "Camada de rede (OSI) · Central de Aprendizagem da Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/network-layer/what-is-the-network-layer/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Explica pacotes, modelo OSI e TCP/IP. Cobre só a camada de rede; o resto de redes precisa de outro recurso."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "ordem": 5,
+   "titulo": "Git e GitHub",
+   "nivel": "Básico",
+   "duracaoSemanas": 2,
+   "descricao": "Aprenda a versionar seu código e a publicá-lo no GitHub. Seu perfil no GitHub será o seu portfólio.",
+   "projetoPratico": "Criar sua conta no GitHub e publicar os exercícios da etapa anterior.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ]
+  },
+  {
+   "titulo": "Docker",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Empacote aplicações em contêineres para rodar do mesmo jeito em qualquer lugar.",
+   "projetoPratico": "Colocar uma aplicação simples e seu banco em contêineres.",
+   "recursos": [
+    {
+     "titulo": "Docker: Get started · documentação oficial",
+     "url": "https://docs.docker.com/get-started/introduction/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Kubernetes básico",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Rode e escale contêineres num cluster, onde muitos sistemas em produção rodam hoje.",
+   "projetoPratico": "Implantar uma aplicação num cluster local com o Minikube e escalar para 3 cópias.",
+   "recursos": [
+    {
+     "titulo": "Noções básicas do Kubernetes · documentação oficial",
+     "url": "https://kubernetes.io/pt-br/docs/tutorials/kubernetes-basics/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Em português, mas o módulo de atualização só existe em inglês e os terminais interativos podem não funcionar mais (dependiam do Katacoda). Use o Minikube no seu computador."
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "titulo": "Observabilidade",
+   "nivel": "Avançado",
+   "duracaoSemanas": 5,
+   "descricao": "Métricas, logs e rastreamento: como saber o que acontece dentro de um sistema em produção e criar alertas úteis.",
+   "projetoPratico": "Monitorar uma aplicação sua com o Prometheus e instrumentá-la para gerar rastros.",
+   "recursos": [
+    {
+     "titulo": "Overview · documentação do Prometheus",
+     "url": "https://prometheus.io/docs/introduction/overview/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "Observability primer · OpenTelemetry",
+     "url": "https://opentelemetry.io/docs/concepts/observability-primer/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    }
+   ],
+   "ordem": 8
+  },
+  {
+   "titulo": "Confiabilidade: SLOs e incidentes",
+   "nivel": "Avançado",
+   "duracaoSemanas": 6,
+   "descricao": "Defina metas de confiabilidade (SLO), crie alertas baseados nelas, responda a incidentes e escreva postmortems sem culpa.",
+   "projetoPratico": "Definir 2 SLOs para um serviço seu, simular uma falha e escrever o postmortem.",
+   "recursos": [
+    {
+     "titulo": "Site Reliability Engineering · livro do Google",
+     "url": "https://sre.google/sre-book/table-of-contents/",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leitura online gratuita (licença Creative Commons). Comece pelo capítulo 1 e pelos de SLO e de cultura de postmortem."
+    },
+    {
+     "titulo": "The Site Reliability Workbook · Google",
+     "url": "https://sre.google/workbook/table-of-contents/",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Versão prática do livro, com exemplos de SLO, alertas e resposta a incidentes."
+    }
+   ],
+   "ordem": 9
+  },
+  {
+   "titulo": "Projeto: serviço confiável",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Una tudo: um serviço com monitoramento, alertas e documentação de como agir quando ele cair.",
+   "projetoPratico": "Publicar no GitHub um serviço com painel, alertas, SLOs e um runbook, com README.",
+   "recursos": [
+    {
+     "titulo": "Overview · documentação do Prometheus",
+     "url": "https://prometheus.io/docs/introduction/overview/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 10
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 5000,
+   "maximo": 8000,
+   "valorReferencia": 5000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (SRE Júnior)",
+   "dataReferencia": "2024-09",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 5 salários informados (o mais recente é de 18/09/2024). Remuneração variável não inclusa. Cargo: SRE Júnior. Poucos dados e com mais de um ano."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 8000,
+   "maximo": 10000,
+   "valorReferencia": 9000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (SRE Pleno)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 24 salários informados (o mais recente é de 08/09/2026). Remuneração variável não inclusa. Cargo: SRE Pleno."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 11000,
+   "maximo": 15000,
+   "valorReferencia": 13000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (SRE Sênior)",
+   "dataReferencia": "2026-10",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 07/10/2026). Remuneração variável não inclusa. Cargo: SRE Sênior."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Quase tudo está em inglês.",
+  "Os livros do Google são densos para iniciantes; vale um guia introdutório em português com link verificado.",
+  "As vagas de SRE costumam pedir experiência anterior; considerar avisar na plataforma que é uma trilha para depois de Linux/DevOps.",
+  "Faltam recursos verificados para Grafana e para resposta a incidentes na prática.",
+  "Salário Júnior: só 5 relatos, de 2024.",
+  "Contas de nuvem não são usadas na trilha; considerar uma etapa de nuvem.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

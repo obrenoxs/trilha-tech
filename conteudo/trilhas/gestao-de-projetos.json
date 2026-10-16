@@ -1,0 +1,279 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "gestao-de-projetos",
+  "nome": "Gestão de projetos",
+  "area": {
+   "numero": "08",
+   "nome": "Gestão e Produtos de TI"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Quem gerencia projetos garante que um trabalho de TI saia no prazo, dentro do orçamento e com o que foi combinado. Nesta trilha você sai do zero, aprende fundamentos, métodos ágeis, Scrum, Kanban e planejamento, e termina com um plano completo de projeto no portfólio.",
+  "paraQuemE": "Para quem gosta de organizar pessoas e prazos e quer trabalhar com projetos de tecnologia.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 31
+ },
+ "etapas": [
+  {
+   "titulo": "Fundamentos de gestão de projetos",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "O que é um projeto, as 5 fases (iniciação, planejamento, execução, monitoramento e encerramento), escopo, prazo e custo.",
+   "projetoPratico": "Descrever um projeto pessoal (como organizar uma viagem) nas 5 fases, com escopo e prazo.",
+   "recursos": [
+    {
+     "titulo": "O que é gerenciamento de projetos? · Atlassian",
+     "url": "https://www.atlassian.com/br/work-management/project-management",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre as 5 fases, métodos (ágil, cascata, Scrum, Lean, Kanban), Gantt e EAP."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Agilidade: valores e mentalidade",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Entenda por que as equipes trabalham em ciclos curtos, o que o Manifesto Ágil defende e como isso muda a forma de planejar.",
+   "projetoPratico": "Escrever, com suas palavras, uma página explicando os 4 valores do Manifesto Ágil com um exemplo de cada.",
+   "recursos": [
+    {
+     "titulo": "Manifesto para o Desenvolvimento Ágil de Software",
+     "url": "https://agilemanifesto.org/iso/ptbr/manifesto.html",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Texto curto com os 4 valores do desenvolvimento ágil, em português."
+    },
+    {
+     "titulo": "O que significa 'ágil'? · Atlassian",
+     "url": "https://www.atlassian.com/br/agile",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Porta de entrada para guias de Scrum, Kanban, histórias de usuário e métricas."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Scrum",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "Aprenda o framework mais usado: papéis, sprints, cerimônias e artefatos.",
+   "projetoPratico": "Desenhar um ciclo completo de uma sprint de 2 semanas para um projeto fictício, com cada cerimônia.",
+   "recursos": [
+    {
+     "titulo": "Scrum · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/scrum",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre papéis, sprints, cerimônias e artefatos."
+    },
+    {
+     "titulo": "Funções do Scrum Ágil · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/scrum/roles",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre."
+    },
+    {
+     "titulo": "Guia do Scrum 2020 (português do Brasil)",
+     "url": "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-PortugueseBR-3.0.pdf",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A tradução está listada na página oficial de downloads, mas o PDF não foi aberto na verificação, e a página da tradução não traz licença. A versão em inglês é gratuita (licença Creative Commons). Confirmar."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Kanban e fluxo de trabalho",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Visualize o trabalho num quadro, limite o que está em andamento e meça o fluxo.",
+   "projetoPratico": "Montar um quadro Kanban para um projeto pessoal e rodar por 2 semanas.",
+   "recursos": [
+    {
+     "titulo": "The Kanban Guide",
+     "url": "https://kanbanguides.org/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Edição de 2025, de leitura livre. A página não lista português."
+    },
+    {
+     "titulo": "Gerenciamento ágil de projetos · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/project-management",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre Scrum, Kanban, estimativas e relatórios."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Planejamento: escopo, prazos e riscos",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Quebre o trabalho em partes (EAP), estime prazos, monte cronogramas (Gantt) e liste os riscos.",
+   "projetoPratico": "Planejar um projeto fictício de 3 meses com EAP, cronograma e 5 riscos.",
+   "recursos": [
+    {
+     "titulo": "O que é gerenciamento de projetos? · Atlassian",
+     "url": "https://www.atlassian.com/br/work-management/project-management",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre as 5 fases, métodos (ágil, cascata, Scrum, Lean, Kanban), Gantt e EAP."
+    },
+    {
+     "titulo": "Gerenciamento ágil de projetos · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/project-management",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre Scrum, Kanban, estimativas e relatórios."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Ferramentas de gestão",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Use um quadro e um cronograma numa ferramenta real (como o Jira, que tem plano gratuito).",
+   "projetoPratico": "Montar o projeto fictício numa ferramenta de gestão e registrar o andamento por 2 semanas.",
+   "recursos": [
+    {
+     "titulo": "Gerenciamento ágil de projetos · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/project-management",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre Scrum, Kanban, estimativas e relatórios."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Comunicação e liderança",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Conduza reuniões úteis, alinhe expectativas, negocie prazos e dê notícias ruins cedo.",
+   "projetoPratico": "Escrever um relatório de status de uma página e conduzir uma reunião de 15 minutos com amigos.",
+   "recursos": [
+    {
+     "titulo": "Formação Tech Lead · Alura",
+     "url": "https://www.alura.com.br/formacao-tech-lead",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    },
+    {
+     "titulo": "Formação Gestão Ágil de Projetos · Alura",
+     "url": "https://www.alura.com.br/formacao-gestao-agil-projetos",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "titulo": "Projeto: plano completo",
+   "nivel": "Avançado",
+   "duracaoSemanas": 5,
+   "descricao": "Una tudo: planeje de ponta a ponta um projeto de software fictício, com cronograma, riscos e comunicação.",
+   "projetoPratico": "Publicar no portfólio o plano completo (escopo, EAP, cronograma, riscos e quadro Kanban).",
+   "recursos": [
+    {
+     "titulo": "O que é gerenciamento de projetos? · Atlassian",
+     "url": "https://www.atlassian.com/br/work-management/project-management",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre as 5 fases, métodos (ágil, cascata, Scrum, Lean, Kanban), Gantt e EAP."
+    },
+    {
+     "titulo": "Gerenciamento ágil de projetos · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/project-management",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre Scrum, Kanban, estimativas e relatórios."
+    }
+   ],
+   "ordem": 8
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 4000,
+   "maximo": 8000,
+   "valorReferencia": 5000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Gerente de Projetos Júnior)",
+   "dataReferencia": "2026-07",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 12/07/2026). Remuneração variável não inclusa. Cargo: Gerente de Projetos Júnior. Faixa larga. Para o primeiro emprego, o cargo costuma ser Analista de Projetos Júnior, com média de R$ 3 mil e faixa de R$ 2 mil a R$ 4 mil (50 salários, até 14/08/2026)."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 6000,
+   "maximo": 12000,
+   "valorReferencia": 8000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Gerente de Projetos Pleno)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 15/09/2026). Remuneração variável não inclusa. Cargo: Gerente de Projetos Pleno. Faixa larga."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 10000,
+   "maximo": 17000,
+   "valorReferencia": 13000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Gerente de Projetos Sênior)",
+   "dataReferencia": "2026-08",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 31/08/2026). Remuneração variável não inclusa. Cargo: Gerente de Projetos Sênior. Faixa larga."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "A etapa 'Comunicação e liderança' não tem recurso verificado; falta material gratuito.",
+  "Quase tudo é da Atlassian (português), que promove os produtos da empresa; falta uma fonte neutra.",
+  "PMBOK e certificações (PMP, CAPM) são pagos e não entraram.",
+  "Guia do Scrum em português: o link está na página oficial, mas o PDF não foi aberto.",
+  "Salário Júnior: o cargo de entrada costuma ser Analista de Projetos; os números de Gerente Júnior são de uma posição acima.",
+  "Falta recurso verificado de gestão de custos e de contratos.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

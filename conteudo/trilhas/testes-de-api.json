@@ -1,0 +1,312 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "testes-de-api",
+  "nome": "Testes de API",
+  "area": {
+   "numero": "05",
+   "nome": "Qualidade e Testes"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Testes de API verificam se os serviços por trás de sites e aplicativos respondem certo, sem precisar abrir uma tela. Nesta trilha você sai do zero, aprende Python, HTTP, Postman e automação com requests e pytest, e termina com uma suíte de testes publicada.",
+  "paraQuemE": "Para quem nunca programou e quer testar o que acontece por trás das telas.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 36
+ },
+ "etapas": [
+  {
+   "ordem": 1,
+   "titulo": "Lógica de programação e algoritmos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a pensar em passos: variáveis, condições, repetições, funções, vetores e matrizes. Ainda sem Python: o foco é raciocinar como quem programa.",
+   "projetoPratico": "Resolver os exercícios do curso e criar um jogo de adivinhação de número e uma calculadora, em pseudocódigo.",
+   "recursos": [
+    {
+     "titulo": "Algoritmos e Lógica de Programação (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito; só o certificado é pago."
+    },
+    {
+     "titulo": "CS50x: Introdução à Ciência da Computação · Harvard",
+     "url": "https://cs50.harvard.edu/x/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
+    }
+   ]
+  },
+  {
+   "titulo": "Python: sintaxe e fundamentos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Instale o Python e escreva seus primeiros programas: tipos de dados, condicionais, repetições, funções, listas e dicionários.",
+   "projetoPratico": "Um programa de terminal, como uma calculadora ou um jogo de forca.",
+   "recursos": [
+    {
+     "titulo": "Python 3 – Mundo 1 (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/python-3-mundo-1/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito, mas as aulas pedem um cadastro gratuito. Só o certificado é pago."
+    },
+    {
+     "titulo": "Pense em Python (2ª edição) · Allen B. Downey",
+     "url": "https://penseallen.github.io/PensePython2e/",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A versão online é gratuita; o livro impresso é vendido pela Novatec."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "HTTP e APIs",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Entenda como as APIs conversam: métodos (GET, POST), códigos de resposta (200, 404, 500), cabeçalhos e JSON.",
+   "projetoPratico": "Descrever 5 requisições de um site real e os códigos que cada uma devolve.",
+   "recursos": [
+    {
+     "titulo": "Uma visão geral do HTTP · MDN",
+     "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Em português (tradução da comunidade). Explica requisições, respostas e cabeçalhos."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Fundamentos de teste de software",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "O que é qualidade, por que e como testar, níveis e tipos de teste, e os 7 princípios do teste. É o vocabulário que todo mundo da área usa.",
+   "projetoPratico": "Escrever uma página explicando a diferença entre teste unitário, de integração e de aceitação, com um exemplo de cada.",
+   "recursos": [
+    {
+     "titulo": "Certified Tester Foundation Level (CTFL) v4.0 · ISTQB",
+     "url": "https://www.istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A página oferece o programa (syllabus) para baixar, mas não informa preço nem idiomas. O exame é pago. Confirmar o que é gratuito."
+    },
+    {
+     "titulo": "BSTQB: representante do ISTQB no Brasil",
+     "url": "https://bstqb.online/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Site em português com material de apoio ao estudo. A página não mostra quais materiais são gratuitos; os exames são pagos."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Testando APIs com o Postman",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Crie coleções de requisições no Postman, confira respostas e escreva asserções simples.",
+   "projetoPratico": "Uma coleção de 15 requisições de uma API pública, com testes de status e de conteúdo.",
+   "recursos": [
+    {
+     "titulo": "Postman Docs",
+     "url": "https://learning.postman.com/docs/introduction/overview/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A página indica um cadastro gratuito, mas não detalha os planos. Confirmar os limites."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Testes de API com Python",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Automatize os testes de API com a biblioteca requests e o pytest: cenários de sucesso, erro, autenticação e validação de contrato.",
+   "projetoPratico": "Automatizar 20 testes de uma API pública e gerar um relatório.",
+   "recursos": [
+    {
+     "titulo": "Quickstart · biblioteca requests do Python",
+     "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "Get Started · documentação do pytest",
+     "url": "https://docs.pytest.org/en/stable/getting-started.html",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Instalar, escrever e rodar o primeiro teste. A página não cita a licença; o código é aberto no GitHub."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Testes de API com Java ou JavaScript",
+   "nivel": "Avançado",
+   "duracaoSemanas": 2,
+   "descricao": "Muitas vagas pedem REST Assured (Java) ou Playwright/Cypress (JavaScript). Refaça seus testes de API em outra linguagem e compare.",
+   "projetoPratico": "Reescrever três testes de API do seu projeto com REST Assured ou Playwright.",
+   "recursos": [
+    {
+     "titulo": "REST Assured (Java)",
+     "url": "https://rest-assured.io/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Biblioteca de código aberto para testar APIs REST em Java."
+    },
+    {
+     "titulo": "Playwright para Node.js: Instalação",
+     "url": "https://playwright.dev/docs/intro",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "Formação QA avançado com Cypress · Alura",
+     "url": "https://www.alura.com.br/formacao-qa-avancado-cypress-integracao-continua",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "ordem": 8,
+   "titulo": "Git e GitHub",
+   "nivel": "Básico",
+   "duracaoSemanas": 2,
+   "descricao": "Aprenda a versionar seu código e a publicá-lo no GitHub. Seu perfil no GitHub será o seu portfólio.",
+   "projetoPratico": "Criar sua conta no GitHub e publicar os exercícios da etapa anterior.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ]
+  },
+  {
+   "titulo": "Integração contínua",
+   "nivel": "Avançado",
+   "duracaoSemanas": 3,
+   "descricao": "Rode seus testes de API automaticamente a cada alteração, com pipelines no GitHub Actions.",
+   "projetoPratico": "Um pipeline que roda os testes de API a cada commit.",
+   "recursos": [
+    {
+     "titulo": "Guia de início rápido do GitHub Actions",
+     "url": "https://docs.github.com/pt/actions/get-started/quickstart",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    }
+   ],
+   "ordem": 9
+  },
+  {
+   "titulo": "Projeto: suíte de testes de API",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Una tudo: monte uma suíte de testes de API organizada, com relatório, e publique.",
+   "projetoPratico": "Publicar no GitHub uma suíte de testes de uma API pública, com pipeline e README.",
+   "recursos": [
+    {
+     "titulo": "Quickstart · biblioteca requests do Python",
+     "url": "https://requests.readthedocs.io/en/latest/user/quickstart/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 10
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 3000,
+   "maximo": 4000,
+   "valorReferencia": 3000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Testes Júnior)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 10/09/2026). Remuneração variável não inclusa. Cargo: Analista de Testes Júnior. Não há dados de testes de API; usamos um cargo próximo e mais amplo."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 5000,
+   "maximo": 7000,
+   "valorReferencia": 6000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de QA Pleno)",
+   "dataReferencia": "2026-08",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 10/08/2026). Remuneração variável não inclusa. Cargo: Analista de QA Pleno. Não há dados de testes de API; usamos um cargo próximo e mais amplo."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 8000,
+   "maximo": 11000,
+   "valorReferencia": 9000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de QA Sênior)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 18/09/2026). Remuneração variável não inclusa. Cargo: Analista de QA Sênior. Não há dados de testes de API; usamos um cargo próximo e mais amplo."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Quase tudo está em inglês; falta material em português para Postman, requests e pytest.",
+  "Postman: a página não detalha os limites do plano gratuito; confirmar.",
+  "ISTQB e BSTQB: as páginas não informam o que é gratuito; confirmar.",
+  "Faltam recursos verificados de testes de contrato (Pact), de OpenAPI/Swagger e de segurança de APIs.",
+  "Salários: não há cargo específico de testes de API; os três níveis usam cargos próximos e mais amplos (Analista de Testes e Analista de QA).",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

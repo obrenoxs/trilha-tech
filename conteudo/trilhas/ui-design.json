@@ -1,0 +1,279 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "ui-design",
+  "nome": "UI Design",
+  "area": {
+   "numero": "07",
+   "nome": "UX/UI Design"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Designers de UI desenham a aparência das telas: cores, textos, botões e a forma como tudo se organiza e se move. Nesta trilha você sai do zero, aprende fundamentos visuais, Figma, sistemas de design e acessibilidade, e termina com um redesenho de app no portfólio.",
+  "paraQuemE": "Para quem gosta de desenhar e de detalhes visuais, e quer trabalhar com a aparência de sites e aplicativos.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 33
+ },
+ "etapas": [
+  {
+   "titulo": "Fundamentos de UX e design centrado no usuário",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "O que é experiência do usuário, o processo de design (entender, explorar e criar) e por que começar sempre pelas pessoas, não pela tela.",
+   "projetoPratico": "Escolher um app que você usa e descrever, em uma página, 3 problemas que as pessoas têm nele.",
+   "recursos": [
+    {
+     "titulo": "Design Thinking 101 · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/design-thinking/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    },
+    {
+     "titulo": "Design Kit · IDEO.org",
+     "url": "https://www.designkit.org/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Plataforma de design centrado em pessoas, com guia e métodos. A página não informa se tudo é gratuito; confirmar. O baralho de exercícios é vendido."
+    },
+    {
+     "titulo": "Laws of UX",
+     "url": "https://lawsofux.com/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Cerca de 30 princípios de psicologia aplicados a interfaces. A página cita licença Creative Commons com restrições; só para estudo."
+    },
+    {
+     "titulo": "Formação Figma · Alura",
+     "url": "https://www.alura.com.br/formacao-figma",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Fundamentos visuais",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Hierarquia, alinhamento, espaçamento, tipografia e cor. São as regras que fazem uma tela parecer profissional.",
+   "projetoPratico": "Redesenhar uma tela feia em papel ou Figma, explicando cada decisão de espaçamento, cor e texto.",
+   "recursos": [
+    {
+     "titulo": "Laws of UX",
+     "url": "https://lawsofux.com/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Cerca de 30 princípios de psicologia aplicados a interfaces. A página cita licença Creative Commons com restrições; só para estudo."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Figma e prototipagem",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a ferramenta mais usada do mercado: quadros, componentes, auto layout e protótipos clicáveis.",
+   "projetoPratico": "Reproduzir 3 telas de um app que você gosta no Figma e ligá-las num protótipo clicável.",
+   "recursos": [
+    {
+     "titulo": "Central de ajuda do Figma",
+     "url": "https://help.figma.com/hc/pt-br",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Em português (algumas partes em inglês). Tem guia de início, cursos em vídeo e projetos de prática. A página não informa o preço; o Figma tem plano gratuito, confirmar o que ele inclui."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Componentes e sistemas de design",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Crie botões, campos e cartões reutilizáveis e organize-os num sistema de design para manter tudo consistente.",
+   "projetoPratico": "Criar uma biblioteca com 10 componentes (botão, campo, cartão...) com variantes e estados.",
+   "recursos": [
+    {
+     "titulo": "Atomic Design · Brad Frost",
+     "url": "https://atomicdesign.bradfrost.com/table-of-contents/",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Livro sobre sistemas de design. Os capítulos estão no site, mas a página também vende o livro e não informa se tudo é gratuito; confirmar."
+    },
+    {
+     "titulo": "Material Design 3",
+     "url": "https://m3.material.io/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Sistema de design do Google, de código aberto. O site exige JavaScript, então o conteúdo não foi lido na verificação."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Guias de plataformas",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Estude como o Android e o iOS esperam que as interfaces se comportem. Quem segue os guias parece nativo.",
+   "projetoPratico": "Desenhar a mesma tela em Android (Material) e iOS (Apple) e anotar as diferenças.",
+   "recursos": [
+    {
+     "titulo": "Material Design 3",
+     "url": "https://m3.material.io/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Sistema de design do Google, de código aberto. O site exige JavaScript, então o conteúdo não foi lido na verificação."
+    },
+    {
+     "titulo": "Human Interface Guidelines · Apple",
+     "url": "https://developer.apple.com/design/human-interface-guidelines/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia de design das plataformas da Apple. O conteúdo não carregou na verificação (exige JavaScript); confirmar."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Acessibilidade",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Projete para todo mundo: contraste, tamanho de texto, navegação por teclado e leitor de tela. Também é exigência legal em muitos casos.",
+   "projetoPratico": "Auditar 3 telas de um site com o guia WCAG e propor 5 correções.",
+   "recursos": [
+    {
+     "titulo": "Introdução à acessibilidade web · W3C WAI",
+     "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/pt-BR",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Tradução voluntária; muitos links são em inglês."
+    },
+    {
+     "titulo": "WCAG 2: guia rápido · W3C",
+     "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Lista filtrável de requisitos de acessibilidade. A página não cita a licença."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Protótipos e animações",
+   "nivel": "Avançado",
+   "duracaoSemanas": 3,
+   "descricao": "Faça protótipos com transições para mostrar como a interface se move, e teste com outras pessoas.",
+   "projetoPratico": "Um protótipo de 5 telas com transições e um teste rápido com 3 pessoas.",
+   "recursos": [
+    {
+     "titulo": "Central de ajuda do Figma",
+     "url": "https://help.figma.com/hc/pt-br",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Em português (algumas partes em inglês). Tem guia de início, cursos em vídeo e projetos de prática. A página não informa o preço; o Figma tem plano gratuito, confirmar o que ele inclui."
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "titulo": "Projeto: redesenho de app",
+   "nivel": "Avançado",
+   "duracaoSemanas": 5,
+   "descricao": "Una tudo: redesenhe um app existente com sistema de design, versão acessível e protótipo, e conte o raciocínio.",
+   "projetoPratico": "Publicar um caso de redesenho no portfólio, com antes e depois, componentes e protótipo.",
+   "recursos": [
+    {
+     "titulo": "Central de ajuda do Figma",
+     "url": "https://help.figma.com/hc/pt-br",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Em português (algumas partes em inglês). Tem guia de início, cursos em vídeo e projetos de prática. A página não informa o preço; o Figma tem plano gratuito, confirmar o que ele inclui."
+    },
+    {
+     "titulo": "Material Design 3",
+     "url": "https://m3.material.io/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Sistema de design do Google, de código aberto. O site exige JavaScript, então o conteúdo não foi lido na verificação."
+    }
+   ],
+   "ordem": 8
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 3000,
+   "maximo": 6000,
+   "valorReferencia": 4000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (UI Designer, todos os níveis)",
+   "dataReferencia": "2026-07",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 28/07/2026). Remuneração variável não inclusa. Cargo: UI Designer, todos os níveis juntos. Não há salários suficientes de UI Designer Júnior (1 salário, de 2020). A maioria dos relatos é de 1 a 3 anos de experiência."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 5000,
+   "maximo": 6000,
+   "valorReferencia": 6000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (UI Designer Pleno)",
+   "dataReferencia": "2025-09",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 34 salários informados (o mais recente é de 03/09/2025). Remuneração variável não inclusa. Cargo: UI Designer Pleno. Dados com mais de um ano."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 8000,
+   "maximo": 12000,
+   "valorReferencia": 10000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (UI Designer Sênior)",
+   "dataReferencia": "2025-03",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 33 salários informados (o mais recente é de 10/03/2025). Remuneração variável não inclusa. Cargo: UI Designer Sênior. Dados com mais de um ano. Para comparação, UX Designer Sênior tem faixa de R$ 9 mil a R$ 12 mil e média de R$ 10 mil (50 salários, até 22/09/2026)."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Etapa 'Fundamentos visuais' tem só o Laws of UX (psicologia). Falta recurso verificado de tipografia, cor e layout.",
+  "Material Design 3 e Apple HIG exigem JavaScript e o conteúdo não carregou na verificação; confirmar.",
+  "Atomic Design: a página também vende o livro; confirmar o que é gratuito.",
+  "Quase tudo está em inglês; só Figma e acessibilidade têm português.",
+  "Salários de UI Designer têm poucos dados recentes: Júnior usa a página geral, Pleno e Sênior têm mais de um ano.",
+  "Falta recurso verificado de animação de interfaces e de design para jogos/web em movimento.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

@@ -1,0 +1,278 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "scrum-master",
+  "nome": "Scrum Master",
+  "area": {
+   "numero": "08",
+   "nome": "Gestão e Produtos de TI"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "O Scrum Master ajuda um time a trabalhar bem junto: facilita as reuniões, remove os bloqueios e protege o time de interrupções. Nesta trilha você sai do zero, aprende agilidade, Scrum e Kanban, e termina simulando um time Scrum com 3 sprints documentadas.",
+  "paraQuemE": "Para quem gosta de ajudar pessoas a trabalharem juntas e quer entrar na tecnologia sem programar.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 28
+ },
+ "etapas": [
+  {
+   "titulo": "Agilidade: valores e mentalidade",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Entenda por que as equipes trabalham em ciclos curtos, o que o Manifesto Ágil defende e como isso muda a forma de planejar.",
+   "projetoPratico": "Escrever, com suas palavras, uma página explicando os 4 valores do Manifesto Ágil com um exemplo de cada.",
+   "recursos": [
+    {
+     "titulo": "Manifesto para o Desenvolvimento Ágil de Software",
+     "url": "https://agilemanifesto.org/iso/ptbr/manifesto.html",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Texto curto com os 4 valores do desenvolvimento ágil, em português."
+    },
+    {
+     "titulo": "O que significa 'ágil'? · Atlassian",
+     "url": "https://www.atlassian.com/br/agile",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Porta de entrada para guias de Scrum, Kanban, histórias de usuário e métricas."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Scrum",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda o framework mais usado: papéis, sprints, cerimônias e artefatos.",
+   "projetoPratico": "Desenhar um ciclo completo de uma sprint de 2 semanas para um projeto fictício, com cada cerimônia.",
+   "recursos": [
+    {
+     "titulo": "Scrum · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/scrum",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre papéis, sprints, cerimônias e artefatos."
+    },
+    {
+     "titulo": "Funções do Scrum Ágil · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/scrum/roles",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre."
+    },
+    {
+     "titulo": "Guia do Scrum 2020 (português do Brasil)",
+     "url": "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-PortugueseBR-3.0.pdf",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A tradução está listada na página oficial de downloads, mas o PDF não foi aberto na verificação, e a página da tradução não traz licença. A versão em inglês é gratuita (licença Creative Commons). Confirmar."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Papéis e responsabilidades",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Entenda o que faz (e o que não faz) um Scrum Master, um Product Owner e o time de desenvolvimento.",
+   "projetoPratico": "Descrever como o Scrum Master ajudaria em 3 situações de conflito num time fictício.",
+   "recursos": [
+    {
+     "titulo": "Funções do Scrum Ágil · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/scrum/roles",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre."
+    },
+    {
+     "titulo": "Guia do Scrum 2020 (português do Brasil)",
+     "url": "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-PortugueseBR-3.0.pdf",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A tradução está listada na página oficial de downloads, mas o PDF não foi aberto na verificação, e a página da tradução não traz licença. A versão em inglês é gratuita (licença Creative Commons). Confirmar."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Kanban e fluxo",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Complemente o Scrum com Kanban: quadro, limite de trabalho em andamento e métricas de fluxo.",
+   "projetoPratico": "Montar um quadro e medir quanto tempo as tarefas levam do início ao fim, por 2 semanas.",
+   "recursos": [
+    {
+     "titulo": "The Kanban Guide",
+     "url": "https://kanbanguides.org/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Edição de 2025, de leitura livre. A página não lista português."
+    },
+    {
+     "titulo": "Gerenciamento ágil de projetos · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/project-management",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre Scrum, Kanban, estimativas e relatórios."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Facilitação das cerimônias",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Conduza planejamento, reunião diária, revisão e retrospectiva sem que virem reunião de status. Aprenda a lidar com conflitos.",
+   "projetoPratico": "Facilitar uma retrospectiva simulada com 4 pessoas e registrar as ações combinadas.",
+   "recursos": [
+    {
+     "titulo": "Formação Gestão Ágil de Projetos · Alura",
+     "url": "https://www.alura.com.br/formacao-gestao-agil-projetos",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    },
+    {
+     "titulo": "Formação Kanban · Alura",
+     "url": "https://www.alura.com.br/formacao-kanban",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    },
+    {
+     "titulo": "Professional Scrum Master I (PSM I) · Scrum.org",
+     "url": "https://www.scrum.org/assessments/professional-scrum-master-i-certification",
+     "tipo": "certificação",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: exame de cerca de US$ 200, em inglês."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Métricas e melhoria contínua",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Use dados (velocidade, tempo de ciclo) para ajudar o time a melhorar, sem virar cobrança.",
+   "projetoPratico": "Calcular a velocidade e o tempo de ciclo de um time fictício e propor 3 melhorias.",
+   "recursos": [
+    {
+     "titulo": "O que significa 'ágil'? · Atlassian",
+     "url": "https://www.atlassian.com/br/agile",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Porta de entrada para guias de Scrum, Kanban, histórias de usuário e métricas."
+    },
+    {
+     "titulo": "Gerenciamento ágil de projetos · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/project-management",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre Scrum, Kanban, estimativas e relatórios."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Projeto: um time Scrum simulado",
+   "nivel": "Avançado",
+   "duracaoSemanas": 5,
+   "descricao": "Una tudo: reúna amigos ou colegas, simule 3 sprints e documente o que aprendeu como Scrum Master.",
+   "projetoPratico": "Publicar no portfólio o registro de 3 sprints (backlog, retrospectivas e métricas).",
+   "recursos": [
+    {
+     "titulo": "Scrum · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/scrum",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre papéis, sprints, cerimônias e artefatos."
+    },
+    {
+     "titulo": "Guia do Scrum 2020 (português do Brasil)",
+     "url": "https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-PortugueseBR-3.0.pdf",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A tradução está listada na página oficial de downloads, mas o PDF não foi aberto na verificação, e a página da tradução não traz licença. A versão em inglês é gratuita (licença Creative Commons). Confirmar."
+    }
+   ],
+   "ordem": 7
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 3000,
+   "maximo": 5000,
+   "valorReferencia": 4000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Scrum Master Júnior)",
+   "dataReferencia": "2026-05",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 18/05/2026). Remuneração variável não inclusa. Cargo: Scrum Master Júnior."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 7000,
+   "maximo": 9000,
+   "valorReferencia": 8000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Scrum Master Pleno)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 30/09/2026). Remuneração variável não inclusa. Cargo: Scrum Master Pleno."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 9000,
+   "maximo": 13000,
+   "valorReferencia": 11000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Scrum Master Sênior)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 17/09/2026). Remuneração variável não inclusa. Cargo: Scrum Master Sênior."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "A etapa 'Facilitação das cerimônias' não tem recurso verificado; falta material gratuito (técnicas de retrospectiva, facilitação de reuniões).",
+  "Guia do Scrum em português: o link está na página oficial, mas o PDF não foi aberto e a página não traz licença para a tradução.",
+  "Certificações (PSM, CSM) são pagas e não entraram; muitas vagas pedem.",
+  "O Kanban Guide não tem português na página.",
+  "Faltam recursos de escalonamento (SAFe) e de coaching ágil.",
+  "Muitas vagas de Scrum Master pedem experiência anterior em time ágil; avisar na plataforma.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

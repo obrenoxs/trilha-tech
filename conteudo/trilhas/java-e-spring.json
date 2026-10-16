@@ -1,0 +1,313 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "java-e-spring",
+  "nome": "Java e Spring",
+  "area": {
+   "numero": "01",
+   "nome": "Desenvolvimento de Software"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Java é uma das linguagens mais usadas para construir o lado servidor de sistemas corporativos, e o Spring Boot é o framework que a maioria das empresas usa para criar APIs com ele. Nesta trilha você sai do zero, aprende a pensar como programador, domina Java e orientação a objetos e termina publicando uma API com banco de dados, segurança e testes.",
+  "paraQuemE": "Para quem nunca programou e quer trabalhar com desenvolvimento backend.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 36
+ },
+ "etapas": [
+  {
+   "ordem": 1,
+   "titulo": "Lógica de programação e algoritmos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a pensar em passos: variáveis, condições, repetições, funções, vetores e matrizes. Ainda sem Java: o foco é raciocinar como quem programa.",
+   "projetoPratico": "Resolver os exercícios do curso e criar um jogo de adivinhação de número e uma calculadora, em pseudocódigo.",
+   "recursos": [
+    {
+     "titulo": "Algoritmos e Lógica de Programação (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito; só o certificado é pago."
+    },
+    {
+     "titulo": "CS50x: Introdução à Ciência da Computação · Harvard",
+     "url": "https://cs50.harvard.edu/x/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
+    }
+   ]
+  },
+  {
+   "ordem": 2,
+   "titulo": "Git e GitHub",
+   "nivel": "Básico",
+   "duracaoSemanas": 2,
+   "descricao": "Aprenda a versionar seu código e a publicá-lo no GitHub. Seu perfil no GitHub será o seu portfólio.",
+   "projetoPratico": "Criar sua conta no GitHub e publicar os exercícios da etapa anterior.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ]
+  },
+  {
+   "ordem": 3,
+   "titulo": "Java: sintaxe e fundamentos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Instale o JDK e uma IDE e escreva seus primeiros programas em Java: tipos de dados, operadores, condicionais, laços, métodos e arrays.",
+   "projetoPratico": "Um programa de console em Java, como uma calculadora ou um cadastro simples de contatos.",
+   "recursos": [
+    {
+     "titulo": "Learn Java · dev.java (Oracle)",
+     "url": "https://dev.java/learn/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Comece por 'Your First Steps in Java' e 'Getting to Know the Language'."
+    },
+    {
+     "titulo": "Formação Java · Alura",
+     "url": "https://www.alura.com.br/formacao-java",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ]
+  },
+  {
+   "ordem": 4,
+   "titulo": "Orientação a objetos, coleções e exceções",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Classes, objetos, encapsulamento, herança, polimorfismo, interfaces, listas e mapas, e tratamento de erros. É a base de tudo que vem depois no Spring.",
+   "projetoPratico": "Um sistema de biblioteca ou de cadastro de produtos no console, usando classes, herança, interfaces e listas.",
+   "recursos": [
+    {
+     "titulo": "Curso de POO Java · Curso em Vídeo (playlist)",
+     "url": "https://www.youtube.com/playlist?list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY",
+     "tipo": "vídeo",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "32 vídeos do prof. Gustavo Guanabara. Usa a IDE NetBeans, mas você pode usar outra. Conferido por um índice de playlists, não direto no YouTube."
+    },
+    {
+     "titulo": "Learn Java · dev.java (seções de coleções e exceções)",
+     "url": "https://dev.java/learn/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Use para complementar com 'Collections and Streams' e exceções."
+    }
+   ]
+  },
+  {
+   "ordem": 5,
+   "titulo": "Banco de dados e SQL",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Entenda bancos relacionais e aprenda SQL: consultas, filtros, junções, agregações, inserção, atualização e criação de tabelas.",
+   "projetoPratico": "Modelar e consultar o banco de dados de uma loja ou biblioteca no PostgreSQL.",
+   "recursos": [
+    {
+     "titulo": "SQLBolt: lições interativas de SQL",
+     "url": "https://sqlbolt.com/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "18 lições com exercícios no navegador. A página não cita preço; o acesso estava livre na verificação."
+    },
+    {
+     "titulo": "Tutorial do PostgreSQL · documentação oficial",
+     "url": "https://www.postgresql.org/docs/current/tutorial.html",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Capítulos 1 a 3: instalação, linguagem SQL e recursos avançados."
+    }
+   ]
+  },
+  {
+   "ordem": 6,
+   "titulo": "APIs REST com Spring Boot",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Crie sua primeira aplicação com Spring Boot: estrutura do projeto, controllers, services, validação e tratamento de erros em uma API REST.",
+   "projetoPratico": "Uma API de tarefas ou de cadastro com os quatro endpoints básicos (criar, listar, atualizar e apagar).",
+   "recursos": [
+    {
+     "titulo": "Spring Initializr",
+     "url": "https://start.spring.io/",
+     "tipo": "ferramenta",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Gera o projeto Spring Boot pronto para abrir na IDE."
+    },
+    {
+     "titulo": "Guia: Building a RESTful Web Service · Spring",
+     "url": "https://spring.io/guides/gs/rest-service",
+     "tipo": "guia",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Cerca de 15 minutos. Exige Java 17 ou superior."
+    },
+    {
+     "titulo": "Documentação do Spring Boot",
+     "url": "https://docs.spring.io/spring-boot/index.html",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Comece por 'Developing Your First Spring Boot Application'."
+    },
+    {
+     "titulo": "Formação Java Web com Spring Boot · Alura",
+     "url": "https://www.alura.com.br/formacao-java-web-spring-boot",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    },
+    {
+     "titulo": "Formação Spring Boot 3 · Alura",
+     "url": "https://www.alura.com.br/formacao-spring-boot-3",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ]
+  },
+  {
+   "ordem": 7,
+   "titulo": "Persistência com JPA e segurança",
+   "nivel": "Avançado",
+   "duracaoSemanas": 6,
+   "descricao": "Conecte a API a um banco de verdade com Spring Data JPA, modele as entidades e proteja a aplicação com login e autenticação por token (JWT).",
+   "projetoPratico": "Evoluir a API da etapa anterior: guardar os dados no PostgreSQL e exigir autenticação em parte dos endpoints.",
+   "recursos": [
+    {
+     "titulo": "Guia: Accessing Data with JPA · Spring",
+     "url": "https://spring.io/guides/gs/accessing-data-jpa",
+     "tipo": "guia",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Cerca de 15 minutos. Usa um banco em memória (H2) para o exemplo."
+    },
+    {
+     "titulo": "Spring Security · documentação de referência",
+     "url": "https://docs.spring.io/spring-security/reference/index.html",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Comece por 'Getting Started'. JWT fica em OAuth2 > Resource Server > JWT."
+    }
+   ]
+  },
+  {
+   "ordem": 8,
+   "titulo": "Testes, Docker e publicação",
+   "nivel": "Avançado",
+   "duracaoSemanas": 5,
+   "descricao": "Escreva testes automatizados, empacote a aplicação em um container Docker e publique a API na internet. É o que transforma o projeto em portfólio.",
+   "projetoPratico": "Testes unitários para os services da API, um Dockerfile e a API publicada na nuvem com um link para mostrar a recrutadores.",
+   "recursos": [
+    {
+     "titulo": "Mockito · framework de mocks para testes",
+     "url": "https://site.mockito.org/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Tem exemplos de mock, when e verify na própria página."
+    },
+    {
+     "titulo": "Docker: Get started · documentação oficial",
+     "url": "https://docs.docker.com/get-started/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Containers, imagens e Docker Compose."
+    },
+    {
+     "titulo": "Railway · documentação",
+     "url": "https://docs.railway.com/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia de início rápido para publicar um backend com banco de dados (inclui Spring Boot)."
+    }
+   ]
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 2000,
+   "maximo": 4000,
+   "valorReferencia": 3000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 22/09/2026). Remuneração variável não inclusa. Cargo: Desenvolvedor Java Júnior."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 5000,
+   "maximo": 8000,
+   "valorReferencia": 7000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor",
+   "dataReferencia": "2026-06",
+   "dadosLimitados": false,
+   "observacao": "A faixa é do salário base, sem bônus. O Indeed traz média de cerca de R$ 6.400 por mês para Pleno (73 salários informados, jul/2026)."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 7050,
+   "maximo": 16076,
+   "valorReferencia": 10646,
+   "tipoReferencia": "média",
+   "fonte": "Indeed (salários de anúncios de vagas dos últimos 36 meses)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Baseado em 61 salários informados. A mediana de R$ 10.869 no Glassdoor (via Trybe, sem data) é parecida."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "JUnit 5: o guia oficial (junit.org/junit5/docs/current/user-guide/) não abriu na verificação. Incluir na etapa 8 depois de conferir.",
+  "Português: só 3 dos 16 recursos estão em PT. Falta um curso de Java básico em PT e um de SQL em PT, com link verificado.",
+  "Spring Academy (cursos gratuitos da equipe do Spring): a página não carregou o conteúdo na verificação.",
+  "Curso de MySQL do Curso em Vídeo: a página não abriu.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

@@ -1,0 +1,293 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "python",
+  "nome": "Python (Django/FastAPI)",
+  "area": {
+   "numero": "01",
+   "nome": "Desenvolvimento de Software"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Python é uma linguagem de leitura simples, usada em sites, APIs, automação, análise de dados e inteligência artificial. Nesta trilha você sai do zero, aprende lógica e a linguagem, e termina construindo e publicando uma API com FastAPI, conhecendo também o Django.",
+  "paraQuemE": "Para quem nunca programou e quer trabalhar com desenvolvimento backend usando Python.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 36
+ },
+ "etapas": [
+  {
+   "ordem": 1,
+   "titulo": "Lógica de programação e algoritmos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a pensar em passos: variáveis, condições, repetições, funções, vetores e matrizes. Ainda sem Python: o foco é raciocinar como quem programa.",
+   "projetoPratico": "Resolver os exercícios do curso e criar um jogo de adivinhação de número e uma calculadora, em pseudocódigo.",
+   "recursos": [
+    {
+     "titulo": "Algoritmos e Lógica de Programação (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito; só o certificado é pago."
+    },
+    {
+     "titulo": "CS50x: Introdução à Ciência da Computação · Harvard",
+     "url": "https://cs50.harvard.edu/x/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
+    }
+   ]
+  },
+  {
+   "ordem": 2,
+   "titulo": "Git e GitHub",
+   "nivel": "Básico",
+   "duracaoSemanas": 2,
+   "descricao": "Aprenda a versionar seu código e a publicá-lo no GitHub. Seu perfil no GitHub será o seu portfólio.",
+   "projetoPratico": "Criar sua conta no GitHub e publicar os exercícios da etapa anterior.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ]
+  },
+  {
+   "ordem": 3,
+   "titulo": "Python: sintaxe e fundamentos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Instale o Python e escreva seus primeiros programas: tipos de dados, condicionais, repetições, funções, listas, tuplas e dicionários. É a base de tudo nesta trilha.",
+   "projetoPratico": "Um programa de terminal, como uma calculadora ou um jogo de forca, e um conversor de unidades.",
+   "recursos": [
+    {
+     "titulo": "Python 3 – Mundo 1 (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/python-3-mundo-1/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito, mas as aulas pedem um cadastro gratuito. Só o certificado é pago."
+    },
+    {
+     "titulo": "Pense em Python (2ª edição) · Allen B. Downey",
+     "url": "https://penseallen.github.io/PensePython2e/",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os primeiros capítulos para reforçar o curso. A versão online é gratuita; o livro impresso é vendido pela Novatec."
+    },
+    {
+     "titulo": "O tutorial do Python · documentação oficial",
+     "url": "https://docs.python.org/pt-br/3/tutorial/index.html",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Use como consulta, não precisa ler de ponta a ponta."
+    },
+    {
+     "titulo": "Formação Linguagem Python · Alura",
+     "url": "https://www.alura.com.br/formacao-linguagem-python",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ]
+  },
+  {
+   "ordem": 4,
+   "titulo": "Python intermediário: POO, arquivos e bibliotecas",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Orientação a objetos, módulos e pacotes, leitura e escrita de arquivos, tratamento de erros, ambientes virtuais e uso de bibliotecas externas.",
+   "projetoPratico": "Um programa que lê um arquivo CSV, organiza os dados com classes e grava um relatório.",
+   "recursos": [
+    {
+     "titulo": "O tutorial do Python: classes, módulos e erros · documentação oficial",
+     "url": "https://docs.python.org/pt-br/3/tutorial/index.html",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos de Classes, Módulos e Erros e Exceções."
+    },
+    {
+     "titulo": "Automate the Boring Stuff with Python (3ª edição)",
+     "url": "https://automatetheboringstuff.com/",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Opcional, para praticar com projetos pequenos. Gratuito online, sob licença Creative Commons."
+    }
+   ]
+  },
+  {
+   "ordem": 5,
+   "titulo": "Banco de dados e SQL",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Entenda tabelas, chaves e relacionamentos e aprenda a consultar e alterar dados com SQL (SELECT, JOIN, INSERT, UPDATE, DELETE).",
+   "projetoPratico": "Modelar um sistema simples de biblioteca ou lista de tarefas e escrever as consultas principais.",
+   "recursos": [
+    {
+     "titulo": "SQLBolt: aprenda SQL com exercícios interativos",
+     "url": "https://sqlbolt.com/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Lições curtas direto no navegador. Ainda falta indicar um curso de SQL em português com link verificado."
+    }
+   ]
+  },
+  {
+   "ordem": 6,
+   "titulo": "APIs com FastAPI",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 6,
+   "descricao": "Crie uma API REST: rotas, validação de dados, banco de dados com SQLModel, autenticação e documentação gerada automaticamente.",
+   "projetoPratico": "Uma API de tarefas ou de livros com banco de dados, validação e cadastro/login de usuários.",
+   "recursos": [
+    {
+     "titulo": "Tutorial · FastAPI (em português)",
+     "url": "https://fastapi.tiangolo.com/pt/tutorial/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia passo a passo da instalação a banco de dados, segurança e testes."
+    },
+    {
+     "titulo": "SQLModel · bancos SQL em Python",
+     "url": "https://sqlmodel.tiangolo.com/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Do mesmo autor do FastAPI. Use para ligar sua API ao banco."
+    }
+   ]
+  },
+  {
+   "ordem": 7,
+   "titulo": "Django: sites web completos",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 6,
+   "descricao": "Conheça o Django, o framework que traz páginas, banco de dados, painel administrativo e login prontos. Útil para conhecer o outro caminho de trabalho com Python.",
+   "projetoPratico": "Um blog ou um catálogo de produtos com painel administrativo, publicado em um serviço de nuvem.",
+   "recursos": [
+    {
+     "titulo": "Tutorial Django Girls",
+     "url": "https://tutorial.djangogirls.org/pt/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia passo a passo para construir um blog com Django."
+    },
+    {
+     "titulo": "Django Web Framework (Python) · MDN",
+     "url": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Server-side/Django",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Um tutorial maior para aprofundar depois do Django Girls."
+    }
+   ]
+  },
+  {
+   "ordem": 8,
+   "titulo": "Testes, Docker e publicação",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Escreva testes automatizados, empacote a aplicação em um contêiner e publique a API para que qualquer pessoa possa acessá-la.",
+   "projetoPratico": "Adicionar testes à API da etapa 6, criar o Dockerfile e publicar online, com o link no README do GitHub.",
+   "recursos": [
+    {
+     "titulo": "pytest: Get started · documentação oficial",
+     "url": "https://docs.pytest.org/en/stable/getting-started.html",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "Docker: Get started · documentação oficial",
+     "url": "https://docs.docker.com/get-started/introduction/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "Implantação (deployment) · FastAPI",
+     "url": "https://fastapi.tiangolo.com/pt/deployment/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Explica as estratégias para colocar a API em produção."
+    }
+   ]
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 2000,
+   "maximo": 4000,
+   "valorReferencia": 3000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor",
+   "dataReferencia": "2025-11",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares pelo Glassdoor, com 21 salários informados (o mais recente é de 30/11/2025). Poucos dados."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 5000,
+   "maximo": 8000,
+   "valorReferencia": 6000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor",
+   "dataReferencia": "2026-04",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 01/04/2026). A página traz também remuneração variável, que não entra aqui."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 8000,
+   "maximo": 11000,
+   "valorReferencia": 9000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor",
+   "dataReferencia": "2026-08",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 12/08/2026). Remuneração variável não inclusa."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "SQL: falta um curso em português com link verificado (só há o SQLBolt, em inglês).",
+  "Django: a documentação oficial bloqueou a leitura automática; usamos Django Girls e MDN, que abriram. Conferir manualmente docs.djangoproject.com.",
+  "Python Brasil (python.org.br): a página de estudo dirigido redirecionou; não incluída.",
+  "Salários: os valores do Glassdoor vêm arredondados em milhares e sem data de atualização, só a data do envio mais recente.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

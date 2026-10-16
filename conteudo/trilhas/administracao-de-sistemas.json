@@ -1,0 +1,286 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "administracao-de-sistemas",
+  "nome": "Administração de sistemas",
+  "area": {
+   "numero": "06",
+   "nome": "Suporte Técnico e Redes"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Quem administra sistemas cuida dos servidores, usuários e serviços que mantêm uma empresa funcionando. Nesta trilha você sai do zero, aprende hardware, redes, Linux, Windows Server, Active Directory e scripts, e termina com um ambiente completo documentado.",
+  "paraQuemE": "Para quem nunca mexeu com servidores e quer trabalhar mantendo os sistemas de uma empresa.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 36
+ },
+ "etapas": [
+  {
+   "titulo": "Hardware e sistemas operacionais",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Conheça os componentes de um computador, como montá-lo e instalar Windows e Linux. É a base de qualquer chamado de suporte.",
+   "projetoPratico": "Instalar o Windows e o Linux em máquinas virtuais e descrever, com suas palavras, para que serve cada componente do computador.",
+   "recursos": [
+    {
+     "titulo": "Hardware (20 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/hardware/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "As aulas são gratuitas com cadastro; só o certificado é pago. Cobre componentes, montagem e instalação do Windows 10 e do Linux."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Linux e linha de comando",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "Aprenda o terminal Linux: arquivos, permissões, processos e pacotes.",
+   "projetoPratico": "Instalar o Linux numa máquina virtual e organizar uma estrutura de pastas usando só o terminal.",
+   "recursos": [
+    {
+     "titulo": "Linux Essentials · material de estudo da LPI",
+     "url": "https://learning.lpi.org/pt/learning-materials/010-160/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Material em português. A página não informa o preço; confirmar antes de começar."
+    },
+    {
+     "titulo": "The Linux Command Line · William Shotts",
+     "url": "https://linuxcommand.org/tlcl.php",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "PDF gratuito (licença Creative Commons). Cobre linha de comando e shell script. Em inglês."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Redes básicas",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "IP, DNS, DHCP e firewall: o que você precisa para administrar servidores que conversam entre si.",
+   "projetoPratico": "Explicar, passo a passo, o que acontece desde ligar um computador novo até ele abrir um site.",
+   "recursos": [
+    {
+     "titulo": "Redes de Computadores (20 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/redes-de-computadores/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Gratuito com cadastro; só o certificado é pago. Cobre Wi-Fi, IP, DHCP, sub-redes e simulação no Cisco Packet Tracer."
+    },
+    {
+     "titulo": "O que é IP? · Central de Aprendizagem da Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/network-layer/internet-protocol/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "O que é DNS? · Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/dns/what-is-dns/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Shell script",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Automatize tarefas repetitivas com scripts em Bash: variáveis, condicionais, repetições e funções.",
+   "projetoPratico": "Um script que faz backup de uma pasta, compacta os arquivos e apaga os backups antigos.",
+   "recursos": [
+    {
+     "titulo": "The Linux Command Line · William Shotts",
+     "url": "https://linuxcommand.org/tlcl.php",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "PDF gratuito (licença Creative Commons). Cobre linha de comando e shell script. Em inglês."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Windows Server e Active Directory",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 6,
+   "descricao": "Administre usuários, grupos e computadores de uma empresa inteira com o Active Directory, e conheça as políticas de grupo.",
+   "projetoPratico": "Montar numa máquina virtual um domínio com 10 usuários, 2 grupos e uma política de senhas.",
+   "recursos": [
+    {
+     "titulo": "Introdução ao Windows Server · Microsoft Learn",
+     "url": "https://learn.microsoft.com/pt-br/windows-server/get-started/get-started-with-windows-server",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Documentação oficial em português, com tradução automática (pode ter termos estranhos). Fala de uma avaliação gratuita do Windows Server."
+    },
+    {
+     "titulo": "Visão geral dos Serviços de Domínio do Active Directory · Microsoft Learn",
+     "url": "https://learn.microsoft.com/pt-br/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Documentação oficial; a tradução é automática e há links para páginas antigas."
+    },
+    {
+     "titulo": "Active Directory Domain Services · Microsoft Learn",
+     "url": "https://learn.microsoft.com/pt-br/training/paths/active-directory-domain-services/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Trilha de nível intermediário com 5 módulos. A página não informa o custo (o Microsoft Learn costuma ser gratuito). Tradução automática."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "PowerShell",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Automatize a administração do Windows: usuários, serviços, arquivos e relatórios.",
+   "projetoPratico": "Um script que cria 10 usuários a partir de uma planilha e gera um relatório.",
+   "recursos": [
+    {
+     "titulo": "PowerShell 101 · Microsoft Learn",
+     "url": "https://learn.microsoft.com/pt-br/powershell/scripting/learn/ps101/00-introduction",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia para quem vem de interfaces gráficas, adaptado do livro de Mike F. Robbins. Os capítulos são públicos; a tradução é automática."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Servidor Linux e serviços",
+   "nivel": "Avançado",
+   "duracaoSemanas": 5,
+   "descricao": "Instale e configure serviços (SSH, web, compartilhamento de arquivos), proteja o servidor e leia os logs.",
+   "projetoPratico": "Publicar uma página num servidor Ubuntu com acesso por chave SSH e firewall ativo.",
+   "recursos": [
+    {
+     "titulo": "Ubuntu Server documentation",
+     "url": "https://ubuntu.com/server/docs",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Documentação oficial: instalação, rede, segurança (SSH), serviços web e virtualização. Em inglês."
+    },
+    {
+     "titulo": "Linux Essentials · material de estudo da LPI",
+     "url": "https://learning.lpi.org/pt/learning-materials/010-160/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Material em português. A página não informa o preço; confirmar antes de começar."
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "ordem": 8,
+   "titulo": "Git e GitHub",
+   "nivel": "Básico",
+   "duracaoSemanas": 2,
+   "descricao": "Aprenda a versionar seu código e a publicá-lo no GitHub. Seu perfil no GitHub será o seu portfólio.",
+   "projetoPratico": "Criar sua conta no GitHub e publicar os exercícios da etapa anterior.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ]
+  },
+  {
+   "titulo": "Projeto: ambiente documentado",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Monte um ambiente com um servidor Windows e um Linux em máquinas virtuais, com usuários, serviços e backup, e documente tudo.",
+   "projetoPratico": "Publicar no GitHub o passo a passo do ambiente, os scripts e um plano de backup, com README.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 9
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 3000,
+   "maximo": 4000,
+   "valorReferencia": 4000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Infraestrutura Júnior)",
+   "dataReferencia": "2026-10",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 14/10/2026). Remuneração variável não inclusa. Cargo: Analista de Infraestrutura Júnior. Não há muitos dados de 'Administrador de Sistemas'; usamos um cargo próximo e mais amplo. Para comparação, Administrador de Sistemas Júnior tem média de R$ 3 mil (17 salários, até 13/10/2025)."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 4000,
+   "maximo": 6000,
+   "valorReferencia": 5000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Infraestrutura Pleno)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 30/09/2026). Remuneração variável não inclusa. Cargo: Analista de Infraestrutura Pleno. Cargo próximo e mais amplo. Para comparação, Administrador de Sistemas Pleno tem média de R$ 5 mil (23 salários, até 20/09/2024)."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 6000,
+   "maximo": 10000,
+   "valorReferencia": 8000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Infraestrutura Sênior)",
+   "dataReferencia": "2026-08",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 04/08/2026). Remuneração variável não inclusa. Cargo: Analista de Infraestrutura Sênior. Cargo próximo e mais amplo. Para comparação, Administrador de Sistemas Sênior tem média de R$ 7 mil (5 salários, até 11/06/2026)."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Microsoft Learn: a tradução é automática e as páginas não informam o custo do caminho de aprendizagem (costuma ser gratuito).",
+  "LPI: a página não informa o preço; confirmar.",
+  "Sem recurso verificado para virtualização (VirtualBox/Hyper-V), backup e monitoramento.",
+  "Etapa de Linux e shell script em inglês (livro de Shotts).",
+  "Salário usa 'Analista de Infraestrutura', mais amplo que Administrador de Sistemas.",
+  "Nuvem (AWS, Azure) não entrou; considerar apontar para a trilha de Cloud."
+ ]
+}

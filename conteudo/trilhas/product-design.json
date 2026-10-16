@@ -1,0 +1,288 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "product-design",
+  "nome": "Product Design",
+  "area": {
+   "numero": "07",
+   "nome": "UX/UI Design"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Product designers cuidam da experiência de um produto inteiro, da pesquisa à interface, e trabalham junto com quem programa e com quem decide o negócio. Nesta trilha você sai do zero, aprende UX, pesquisa, Figma e interface, e termina com um caso completo no portfólio.",
+  "paraQuemE": "Para quem quer unir pesquisa, desenho e visão de negócio, e trabalhar num produto digital de ponta a ponta.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 34
+ },
+ "etapas": [
+  {
+   "titulo": "Fundamentos de UX e design centrado no usuário",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "O que é experiência do usuário, o processo de design (entender, explorar e criar) e por que começar sempre pelas pessoas, não pela tela.",
+   "projetoPratico": "Escolher um app que você usa e descrever, em uma página, 3 problemas que as pessoas têm nele.",
+   "recursos": [
+    {
+     "titulo": "Design Thinking 101 · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/design-thinking/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    },
+    {
+     "titulo": "Design Kit · IDEO.org",
+     "url": "https://www.designkit.org/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Plataforma de design centrado em pessoas, com guia e métodos. A página não informa se tudo é gratuito; confirmar. O baralho de exercícios é vendido."
+    },
+    {
+     "titulo": "Laws of UX",
+     "url": "https://lawsofux.com/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Cerca de 30 princípios de psicologia aplicados a interfaces. A página cita licença Creative Commons com restrições; só para estudo."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Usabilidade e heurísticas",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "As 10 regras de ouro de usabilidade. Com elas você encontra problemas em qualquer tela, mesmo sem testar com ninguém.",
+   "projetoPratico": "Avaliar um app ou site com as 10 heurísticas e listar 10 problemas, com prints e nível de gravidade.",
+   "recursos": [
+    {
+     "titulo": "10 Usability Heuristics · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    },
+    {
+     "titulo": "Laws of UX",
+     "url": "https://lawsofux.com/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Cerca de 30 princípios de psicologia aplicados a interfaces. A página cita licença Creative Commons com restrições; só para estudo."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Pesquisa com usuários",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Entenda como descobrir o que as pessoas precisam: entrevistas, observação e testes rápidos.",
+   "projetoPratico": "Entrevistar 3 pessoas sobre um problema do dia a dia e resumir o que aprendeu.",
+   "recursos": [
+    {
+     "titulo": "Which UX Research Methods · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/which-ux-research-methods/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia que compara 20 métodos de pesquisa. O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    },
+    {
+     "titulo": "Usability Testing 101 · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/usability-testing-101/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Figma e prototipagem",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a ferramenta mais usada do mercado: quadros, componentes, auto layout e protótipos clicáveis.",
+   "projetoPratico": "Reproduzir 3 telas de um app que você gosta no Figma e ligá-las num protótipo clicável.",
+   "recursos": [
+    {
+     "titulo": "Central de ajuda do Figma",
+     "url": "https://help.figma.com/hc/pt-br",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Em português (algumas partes em inglês). Tem guia de início, cursos em vídeo e projetos de prática. A página não informa o preço; o Figma tem plano gratuito, confirmar o que ele inclui."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Interface e sistemas de design",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Do esboço à tela: hierarquia visual, componentes reutilizáveis e consistência entre telas.",
+   "projetoPratico": "Criar uma biblioteca com 8 componentes e usá-los em 3 telas.",
+   "recursos": [
+    {
+     "titulo": "Atomic Design · Brad Frost",
+     "url": "https://atomicdesign.bradfrost.com/table-of-contents/",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Livro sobre sistemas de design. Os capítulos estão no site, mas a página também vende o livro e não informa se tudo é gratuito; confirmar."
+    },
+    {
+     "titulo": "Material Design 3",
+     "url": "https://m3.material.io/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Sistema de design do Google, de código aberto. O site exige JavaScript, então o conteúdo não foi lido na verificação."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Acessibilidade",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Projete para todo mundo: contraste, tamanho de texto, navegação por teclado e leitor de tela. Também é exigência legal em muitos casos.",
+   "projetoPratico": "Auditar 3 telas de um site com o guia WCAG e propor 5 correções.",
+   "recursos": [
+    {
+     "titulo": "Introdução à acessibilidade web · W3C WAI",
+     "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/pt-BR",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Tradução voluntária; muitos links são em inglês."
+    },
+    {
+     "titulo": "WCAG 2: guia rápido · W3C",
+     "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Lista filtrável de requisitos de acessibilidade. A página não cita a licença."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Pensamento de produto",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Entenda o negócio por trás do design: quem são os clientes, qual problema vale resolver e como medir se o design funcionou.",
+   "projetoPratico": "Escolher um produto digital e descrever o problema que ele resolve, para quem e como você mediria o sucesso.",
+   "recursos": [
+    {
+     "titulo": "Formação Gestão de Produtos · Alura",
+     "url": "https://www.alura.com.br/formacao-gestao-produtos",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    },
+    {
+     "titulo": "Formação Discovery e definição do problema · Alura",
+     "url": "https://www.alura.com.br/formacao-discovery-definicao-problema",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "titulo": "Projeto: caso de produto",
+   "nivel": "Avançado",
+   "duracaoSemanas": 6,
+   "descricao": "Una tudo: do problema ao protótipo testado, passando por pesquisa, ideias e interface, num caso completo.",
+   "projetoPratico": "Publicar no portfólio um caso completo: problema, pesquisa, protótipo e resultado do teste.",
+   "recursos": [
+    {
+     "titulo": "Design Thinking 101 · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/design-thinking/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    },
+    {
+     "titulo": "Central de ajuda do Figma",
+     "url": "https://help.figma.com/hc/pt-br",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Em português (algumas partes em inglês). Tem guia de início, cursos em vídeo e projetos de prática. A página não informa o preço; o Figma tem plano gratuito, confirmar o que ele inclui."
+    }
+   ],
+   "ordem": 8
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 3000,
+   "maximo": 6000,
+   "valorReferencia": 5000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Product Designer Júnior)",
+   "dataReferencia": "2026-07",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 09/07/2026). Remuneração variável não inclusa. Cargo: Product Designer Júnior."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 7000,
+   "maximo": 9000,
+   "valorReferencia": 8000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Product Designer Pleno)",
+   "dataReferencia": "2026-10",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 03/10/2026). Remuneração variável não inclusa. Cargo: Product Designer Pleno."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 10000,
+   "maximo": 13000,
+   "valorReferencia": 11000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Product Designer Sênior)",
+   "dataReferencia": "2026-10",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 07/10/2026). Remuneração variável não inclusa. Cargo: Product Designer Sênior."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "A etapa 'Pensamento de produto' não tem recurso verificado; falta material gratuito (métricas, estratégia, priorização).",
+  "Quase tudo está em inglês; só Figma e acessibilidade têm português.",
+  "Material Design 3: o conteúdo não carregou na verificação; confirmar.",
+  "Atomic Design: a página também vende o livro; confirmar o que é gratuito.",
+  "Faltam recursos verificados de design de sistemas de design em escala e de testes A/B.",
+  "É a trilha mais ampla da área; considerar incluir um resumo dos outros caminhos no PDF.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

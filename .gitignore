@@ -1,0 +1,17 @@
+# Java / Maven
+target/
+*.class
+# IDEs
+.idea/
+*.iml
+.vscode/
+# Segredos e ambiente
+.env
+*.env.local
+application-local.properties
+# Ferramentas do conteúdo
+conteudo/ferramentas/node_modules/
+conteudo/ferramentas/.build/
+__pycache__/
+# Sistema
+.DS_Store

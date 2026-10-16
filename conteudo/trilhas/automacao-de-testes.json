@@ -1,0 +1,329 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "automacao-de-testes",
+  "nome": "Automação de testes",
+  "area": {
+   "numero": "05",
+   "nome": "Qualidade e Testes"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Quem automatiza testes escreve programas que testam outros programas, rodando o tempo todo e avisando quando algo quebra. Nesta trilha você sai do zero, aprende Python, testes e automação web com Playwright, e termina com um projeto de automação publicado. Você também vê como o mesmo teste fica em Java e JavaScript.",
+  "paraQuemE": "Para quem nunca programou e quer unir programação e qualidade de software.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 35
+ },
+ "etapas": [
+  {
+   "ordem": 1,
+   "titulo": "Lógica de programação e algoritmos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a pensar em passos: variáveis, condições, repetições, funções, vetores e matrizes. Ainda sem Python: o foco é raciocinar como quem programa.",
+   "projetoPratico": "Resolver os exercícios do curso e criar um jogo de adivinhação de número e uma calculadora, em pseudocódigo.",
+   "recursos": [
+    {
+     "titulo": "Algoritmos e Lógica de Programação (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito; só o certificado é pago."
+    },
+    {
+     "titulo": "CS50x: Introdução à Ciência da Computação · Harvard",
+     "url": "https://cs50.harvard.edu/x/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
+    }
+   ]
+  },
+  {
+   "titulo": "Python: sintaxe e fundamentos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Instale o Python e escreva seus primeiros programas: tipos de dados, condicionais, repetições, funções, listas e dicionários.",
+   "projetoPratico": "Um programa de terminal, como uma calculadora ou um jogo de forca.",
+   "recursos": [
+    {
+     "titulo": "Python 3 – Mundo 1 (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/python-3-mundo-1/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito, mas as aulas pedem um cadastro gratuito. Só o certificado é pago."
+    },
+    {
+     "titulo": "Pense em Python (2ª edição) · Allen B. Downey",
+     "url": "https://penseallen.github.io/PensePython2e/",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A versão online é gratuita; o livro impresso é vendido pela Novatec."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "ordem": 3,
+   "titulo": "Git e GitHub",
+   "nivel": "Básico",
+   "duracaoSemanas": 2,
+   "descricao": "Aprenda a versionar seu código e a publicá-lo no GitHub. Seu perfil no GitHub será o seu portfólio.",
+   "projetoPratico": "Criar sua conta no GitHub e publicar os exercícios da etapa anterior.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ]
+  },
+  {
+   "titulo": "Fundamentos de teste de software",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "O que é qualidade, por que e como testar, níveis e tipos de teste, e os 7 princípios do teste. É o vocabulário que todo mundo da área usa.",
+   "projetoPratico": "Escrever uma página explicando a diferença entre teste unitário, de integração e de aceitação, com um exemplo de cada.",
+   "recursos": [
+    {
+     "titulo": "Certified Tester Foundation Level (CTFL) v4.0 · ISTQB",
+     "url": "https://www.istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A página oferece o programa (syllabus) para baixar, mas não informa preço nem idiomas. O exame é pago. Confirmar o que é gratuito."
+    },
+    {
+     "titulo": "BSTQB: representante do ISTQB no Brasil",
+     "url": "https://bstqb.online/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Site em português com material de apoio ao estudo. A página não mostra quais materiais são gratuitos; os exames são pagos."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Testes automatizados com pytest",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Escreva testes de código com pytest: asserções, organização, fixtures e relatórios.",
+   "projetoPratico": "Cobrir um projeto Python seu com 15 testes automatizados.",
+   "recursos": [
+    {
+     "titulo": "Get Started · documentação do pytest",
+     "url": "https://docs.pytest.org/en/stable/getting-started.html",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Instalar, escrever e rodar o primeiro teste. A página não cita a licença; o código é aberto no GitHub."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Automação de testes web",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 6,
+   "descricao": "Automatize o navegador para clicar, preencher formulários e verificar telas, com Playwright (e conheça o Selenium, ainda muito pedido).",
+   "projetoPratico": "Automatizar o fluxo de login e compra de um site de treino com 8 testes.",
+   "recursos": [
+    {
+     "titulo": "Playwright para Python: Instalação",
+     "url": "https://playwright.dev/python/docs/intro",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Recomenda o plugin pytest-playwright. A página não cita a licença; o código é aberto no GitHub."
+    },
+    {
+     "titulo": "Selenium WebDriver: Getting started",
+     "url": "https://www.selenium.dev/documentation/webdriver/getting_started/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Ferramenta mais antiga e ainda muito pedida nas vagas. A página não cita a licença."
+    },
+    {
+     "titulo": "Why Cypress? · documentação do Cypress",
+     "url": "https://docs.cypress.io/app/get-started/why-cypress",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O aplicativo do Cypress é gratuito e de código aberto; o Cypress Cloud é pago. Usa JavaScript/TypeScript."
+    },
+    {
+     "titulo": "Playwright para Node.js (JavaScript/TypeScript): Instalação",
+     "url": "https://playwright.dev/docs/intro",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "Selenium WebDriver com Java: Getting started",
+     "url": "https://www.selenium.dev/documentation/webdriver/getting_started/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A mesma página tem exemplos em Java, Python e JavaScript."
+    },
+    {
+     "titulo": "Formação QA avançado com Cypress · Alura",
+     "url": "https://www.alura.com.br/formacao-qa-avancado-cypress-integracao-continua",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Outras linguagens: Java e JavaScript",
+   "nivel": "Avançado",
+   "duracaoSemanas": 2,
+   "descricao": "Muitas vagas pedem Selenium com Java ou Cypress e Playwright com JavaScript/TypeScript. Refaça o mesmo teste em outra linguagem e veja o que muda. Inclui BDD com Cucumber e testes mobile com Appium.",
+   "projetoPratico": "Reescrever dois testes do seu projeto em Java (Selenium) ou em TypeScript (Playwright ou Cypress).",
+   "recursos": [
+    {
+     "titulo": "Tutorial de 10 minutos · Cucumber",
+     "url": "https://cucumber.io/docs/guides/10-minute-tutorial/",
+     "tipo": "tutorial",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Exemplos em Java; também há Kotlin, JavaScript e Ruby."
+    },
+    {
+     "titulo": "Introdução · Appium",
+     "url": "https://appium.io/docs/en/latest/intro/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Para testes de aplicativos de celular. Página não lida na verificação, apenas o redirecionamento."
+    },
+    {
+     "titulo": "Why Cypress? · documentação do Cypress",
+     "url": "https://docs.cypress.io/app/get-started/why-cypress",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "titulo": "Integração contínua",
+   "nivel": "Avançado",
+   "duracaoSemanas": 3,
+   "descricao": "Rode os testes automaticamente a cada alteração no código, com pipelines no GitHub Actions.",
+   "projetoPratico": "Um pipeline que roda seus testes a cada commit e mostra o relatório.",
+   "recursos": [
+    {
+     "titulo": "Guia de início rápido do GitHub Actions",
+     "url": "https://docs.github.com/pt/actions/get-started/quickstart",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    }
+   ],
+   "ordem": 8
+  },
+  {
+   "titulo": "Projeto: framework de automação",
+   "nivel": "Avançado",
+   "duracaoSemanas": 5,
+   "descricao": "Una tudo: organize um projeto de automação com boas práticas (page objects, dados de teste, relatórios) e publique.",
+   "projetoPratico": "Publicar no GitHub um projeto de automação de um site real de treino, com pipeline e README.",
+   "recursos": [
+    {
+     "titulo": "Playwright para Python: Instalação",
+     "url": "https://playwright.dev/python/docs/intro",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Recomenda o plugin pytest-playwright. A página não cita a licença; o código é aberto no GitHub."
+    },
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 9
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 4000,
+   "maximo": 5000,
+   "valorReferencia": 4000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Automação de Testes Júnior)",
+   "dataReferencia": "2025-12",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 5 salários informados (o mais recente é de 11/12/2025). Remuneração variável não inclusa. Cargo: Analista de Automação de Testes Júnior. Poucos dados."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 4000,
+   "maximo": 6000,
+   "valorReferencia": 5000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Automação de Testes Pleno)",
+   "dataReferencia": "2025-10",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 27 salários informados (o mais recente é de 22/10/2025). Remuneração variável não inclusa. Cargo: Analista de Automação de Testes Pleno."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 7000,
+   "maximo": 10000,
+   "valorReferencia": 8000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Automação de Testes Sênior)",
+   "dataReferencia": "2026-07",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 16 salários informados (o mais recente é de 23/07/2026). Remuneração variável não inclusa. Cargo: Analista de Automação de Testes Sênior. Para comparação, o cargo QA Automation Engineer Sênior tem faixa de R$ 9 mil a R$ 14 mil e média de R$ 11 mil (41 salários, até 22/04/2026)."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Quase tudo está em inglês; faltam recursos em português para pytest, Playwright e Selenium.",
+  "As páginas do Playwright, pytest, Selenium e Postman não citam a licença; conferir.",
+  "ISTQB e BSTQB: as páginas não informam o que é gratuito; confirmar.",
+  "Salário Júnior: 5 relatos.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

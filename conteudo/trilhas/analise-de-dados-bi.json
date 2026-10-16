@@ -1,0 +1,267 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "analise-de-dados-bi",
+  "nome": "Análise de Dados/BI",
+  "area": {
+   "numero": "02",
+   "nome": "Dados e Inteligência Artificial"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Analistas de dados transformam números em respostas para decisões do dia a dia da empresa. Nesta trilha você sai do zero, aprende estatística, SQL, Python e Power BI, e termina com projetos de análise publicados no seu portfólio.",
+  "paraQuemE": "Para quem nunca programou e quer trabalhar analisando dados e criando relatórios.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 32
+ },
+ "etapas": [
+  {
+   "ordem": 1,
+   "titulo": "Lógica de programação e algoritmos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a pensar em passos: variáveis, condições, repetições, funções, vetores e matrizes. Ainda sem Python: o foco é raciocinar como quem programa.",
+   "projetoPratico": "Resolver os exercícios do curso e criar um jogo de adivinhação de número e uma calculadora, em pseudocódigo.",
+   "recursos": [
+    {
+     "titulo": "Algoritmos e Lógica de Programação (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito; só o certificado é pago."
+    },
+    {
+     "titulo": "CS50x: Introdução à Ciência da Computação · Harvard",
+     "url": "https://cs50.harvard.edu/x/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
+    }
+   ]
+  },
+  {
+   "titulo": "Estatística básica",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "Média, mediana, desvio padrão, probabilidade e como ler gráficos sem se enganar. É a base para tirar conclusões dos dados.",
+   "projetoPratico": "Calcular e interpretar estatísticas de um conjunto de dados pequeno, como as notas de uma turma.",
+   "recursos": [
+    {
+     "titulo": "Estatística e probabilidade · Khan Academy",
+     "url": "https://pt.khanacademy.org/math/statistics-probability",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Vídeos e exercícios gratuitos. A página abriu só em parte na verificação."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "SQL",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Consulte e combine tabelas com SQL (SELECT, WHERE, JOIN, GROUP BY). É a ferramenta mais pedida em vagas de análise.",
+   "projetoPratico": "Responder 10 perguntas de negócio sobre um banco de vendas ou de biblioteca usando SQL.",
+   "recursos": [
+    {
+     "titulo": "SQLBolt: aprenda SQL com exercícios interativos",
+     "url": "https://sqlbolt.com/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Lições curtas direto no navegador. Ainda falta indicar um curso de SQL em português com link verificado."
+    },
+    {
+     "titulo": "PostgreSQL: tutorial · documentação oficial",
+     "url": "https://www.postgresql.org/docs/current/tutorial.html",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Use depois do SQLBolt para praticar num banco de verdade."
+    },
+    {
+     "titulo": "Formação Conhecendo SQL · Alura",
+     "url": "https://www.alura.com.br/formacao-conhecendo-sql",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Python: sintaxe e fundamentos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Instale o Python e escreva seus primeiros programas: tipos de dados, condicionais, repetições, funções, listas e dicionários. É a ferramenta principal desta trilha.",
+   "projetoPratico": "Um programa de terminal, como uma calculadora ou um jogo de forca, e um conversor de unidades.",
+   "recursos": [
+    {
+     "titulo": "Python 3 – Mundo 1 (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/python-3-mundo-1/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito, mas as aulas pedem um cadastro gratuito. Só o certificado é pago."
+    },
+    {
+     "titulo": "Pense em Python (2ª edição) · Allen B. Downey",
+     "url": "https://penseallen.github.io/PensePython2e/",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A versão online é gratuita; o livro impresso é vendido pela Novatec."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "pandas e visualização de dados",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Limpe e organize dados com pandas e crie gráficos que contam uma história com Matplotlib.",
+   "projetoPratico": "Analisar um conjunto de dados público (por exemplo, do Kaggle) e apresentar 5 gráficos e conclusões.",
+   "recursos": [
+    {
+     "titulo": "10 minutes to pandas · documentação oficial",
+     "url": "https://pandas.pydata.org/docs/user_guide/10min.html",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia rápido com as duas estruturas principais, Series e DataFrame."
+    },
+    {
+     "titulo": "Matplotlib: Getting started · documentação",
+     "url": "https://matplotlib.org/stable/users/getting_started/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "Kaggle Learn: cursos curtos e gratuitos",
+     "url": "https://www.kaggle.com/learn",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Cursos curtos de Python, pandas, visualização e machine learning, com exercícios no navegador. Confira a lista no site."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Power BI e painéis",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 6,
+   "descricao": "Importe e transforme dados no Power BI, modele as tabelas, crie relatórios e painéis para quem toma decisões.",
+   "projetoPratico": "Um painel de vendas ou de finanças pessoais no Power BI, com filtros e pelo menos 4 visuais.",
+   "recursos": [
+    {
+     "titulo": "Introdução à análise de dados da Microsoft · Microsoft Learn",
+     "url": "https://learn.microsoft.com/pt-br/training/paths/data-analytics-microsoft/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Trilha com 4 módulos: processo de análise, Power BI, Microsoft Fabric e Copilot."
+    },
+    {
+     "titulo": "Treinamento do Power BI · Microsoft Learn",
+     "url": "https://learn.microsoft.com/pt-br/training/powerplatform/power-bi/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Lista as trilhas de modelagem de dados e de criação de relatórios."
+    },
+    {
+     "titulo": "Formação Power BI · Alura",
+     "url": "https://www.alura.com.br/formacao-power-bi",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Git e portfólio de análises",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Publique seus projetos no GitHub, com um README que explique a pergunta, os dados, o método e as conclusões.",
+   "projetoPratico": "Publicar 3 análises completas no GitHub, cada uma com README e gráficos.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 7
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 4000,
+   "maximo": 5000,
+   "valorReferencia": 5000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor",
+   "dataReferencia": "2026-10",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 12/10/2026). Remuneração variável não inclusa."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 5000,
+   "maximo": 7000,
+   "valorReferencia": 6000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor",
+   "dataReferencia": "2026-10",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 14/10/2026). Remuneração variável não inclusa."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 7000,
+   "maximo": 10000,
+   "valorReferencia": 8000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 17/09/2026). Remuneração variável não inclusa."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "SQL: falta um curso em português com link verificado (só o SQLBolt, em inglês).",
+  "Excel: não incluído por falta de um curso gratuito com link verificado. É muito pedido nas vagas; vale buscar um recurso.",
+  "Khan Academy: a página abriu só em parte na verificação. Conferir manualmente.",
+  "Kaggle Learn: o texto da página não carregou; a lista de cursos precisa ser conferida no site.",
+  "Tableau e Looker Studio não foram incluídos; a trilha usa Power BI.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

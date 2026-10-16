@@ -1,0 +1,279 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "ux-writing",
+  "nome": "UX Writing",
+  "area": {
+   "numero": "07",
+   "nome": "UX/UI Design"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "UX writers escrevem os textos de sites e aplicativos: botões, mensagens de erro, instruções. Texto claro faz a pessoa chegar aonde precisa. Nesta trilha você sai do zero, aprende escrita para a web, voz e tom e microcopy, e termina com um guia de conteúdo no portfólio.",
+  "paraQuemE": "Para quem gosta de escrever, de simplificar ideias e de detalhes, e quer trabalhar com design sem ser designer visual.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 30
+ },
+ "etapas": [
+  {
+   "titulo": "Fundamentos de UX e design centrado no usuário",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "O que é experiência do usuário, o processo de design (entender, explorar e criar) e por que começar sempre pelas pessoas, não pela tela.",
+   "projetoPratico": "Escolher um app que você usa e descrever, em uma página, 3 problemas que as pessoas têm nele.",
+   "recursos": [
+    {
+     "titulo": "Design Thinking 101 · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/design-thinking/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    },
+    {
+     "titulo": "Design Kit · IDEO.org",
+     "url": "https://www.designkit.org/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Plataforma de design centrado em pessoas, com guia e métodos. A página não informa se tudo é gratuito; confirmar. O baralho de exercícios é vendido."
+    },
+    {
+     "titulo": "Laws of UX",
+     "url": "https://lawsofux.com/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Cerca de 30 princípios de psicologia aplicados a interfaces. A página cita licença Creative Commons com restrições; só para estudo."
+    },
+    {
+     "titulo": "Formação UX Writing · Alura",
+     "url": "https://www.alura.com.br/formacao-ux-writing",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Escrita para a web",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "Como as pessoas leem na tela (escaneando, não lendo), linguagem simples, títulos que se explicam e textos curtos.",
+   "projetoPratico": "Reescrever 3 textos longos de um site de modo que qualquer pessoa entenda em 10 segundos.",
+   "recursos": [
+    {
+     "titulo": "UX Writing Study Guide · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/ux-writing-study-guide/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Reúne artigos e vídeos sobre escrita para a web, tom de voz, botões e mensagens de erro. Em inglês."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Voz e tom",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Defina como uma marca fala e como o tom muda conforme o momento (comemoração, erro, pedido de dados).",
+   "projetoPratico": "Escrever um guia de voz e tom de uma página para um app fictício, com 5 exemplos.",
+   "recursos": [
+    {
+     "titulo": "Mailchimp Content Style Guide",
+     "url": "https://styleguide.mailchimp.com/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia de estilo de escrita da Mailchimp (licença Creative Commons, uso não comercial)."
+    },
+    {
+     "titulo": "Microsoft Writing Style Guide",
+     "url": "https://learn.microsoft.com/pt-br/style-guide/welcome/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O guia de estilo da Microsoft. A interface está em português, mas o texto é em inglês."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Microcopy: botões, erros e formulários",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Os textos pequenos que decidem se a pessoa conclui a tarefa: nomes de botões, mensagens de erro, textos vazios e confirmações.",
+   "projetoPratico": "Reescrever os botões e mensagens de erro de 3 telas de um app real e explicar cada escolha.",
+   "recursos": [
+    {
+     "titulo": "UX Writing Study Guide · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/ux-writing-study-guide/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Reúne artigos e vídeos sobre escrita para a web, tom de voz, botões e mensagens de erro. Em inglês."
+    },
+    {
+     "titulo": "10 Usability Heuristics · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Acessibilidade",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Projete para todo mundo: contraste, tamanho de texto, navegação por teclado e leitor de tela. Também é exigência legal em muitos casos.",
+   "projetoPratico": "Auditar 3 telas de um site com o guia WCAG e propor 5 correções.",
+   "recursos": [
+    {
+     "titulo": "Introdução à acessibilidade web · W3C WAI",
+     "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/pt-BR",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Tradução voluntária; muitos links são em inglês."
+    },
+    {
+     "titulo": "WCAG 2: guia rápido · W3C",
+     "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Lista filtrável de requisitos de acessibilidade. A página não cita a licença."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Figma e prototipagem",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Aprenda a ferramenta mais usada do mercado: quadros, componentes, auto layout e protótipos clicáveis.",
+   "projetoPratico": "Reproduzir 3 telas de um app que você gosta no Figma e ligá-las num protótipo clicável.",
+   "recursos": [
+    {
+     "titulo": "Central de ajuda do Figma",
+     "url": "https://help.figma.com/hc/pt-br",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Em português (algumas partes em inglês). Tem guia de início, cursos em vídeo e projetos de prática. A página não informa o preço; o Figma tem plano gratuito, confirmar o que ele inclui."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Testando textos",
+   "nivel": "Avançado",
+   "duracaoSemanas": 3,
+   "descricao": "Descubra se as pessoas entendem seus textos: teste de compreensão, de cliques e de usabilidade.",
+   "projetoPratico": "Testar 2 versões de um texto de botão com 5 pessoas e registrar qual funcionou melhor.",
+   "recursos": [
+    {
+     "titulo": "Usability Testing 101 · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/usability-testing-101/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "titulo": "Projeto: guia de conteúdo",
+   "nivel": "Avançado",
+   "duracaoSemanas": 5,
+   "descricao": "Una tudo: crie o guia de conteúdo de um produto e reescreva os textos de um fluxo inteiro, com antes e depois.",
+   "projetoPratico": "Publicar no portfólio um guia de conteúdo e a reescrita de um fluxo de 6 telas, com justificativas.",
+   "recursos": [
+    {
+     "titulo": "Mailchimp Content Style Guide",
+     "url": "https://styleguide.mailchimp.com/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia de estilo de escrita da Mailchimp (licença Creative Commons, uso não comercial)."
+    },
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 8
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 3000,
+   "maximo": 5000,
+   "valorReferencia": 4000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (UX Writer Júnior)",
+   "dataReferencia": "2024-11",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 6 salários informados (o mais recente é de 01/11/2024). Remuneração variável não inclusa. Cargo: UX Writer Júnior. Poucos dados e com mais de um ano."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 5000,
+   "maximo": 8000,
+   "valorReferencia": 7000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (UX Writer Pleno)",
+   "dataReferencia": "2026-08",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 19/08/2026). Remuneração variável não inclusa. Cargo: UX Writer Pleno."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 7000,
+   "maximo": 10000,
+   "valorReferencia": 8000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (UX Writer Sênior)",
+   "dataReferencia": "2026-04",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 26/04/2026). Remuneração variável não inclusa. Cargo: UX Writer Sênior."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Quase tudo está em inglês; faltam guias de escrita em português (como o do Nubank ou o do Gov.br) com link verificado.",
+  "Falta material em português sobre redação, gramática e linguagem simples.",
+  "Mailchimp e Microsoft: guias de empresas, em inglês, com licença que limita uso comercial (Mailchimp).",
+  "Faltam recursos verificados de design de conversas (chatbots e assistentes) e de localização.",
+  "Salário Júnior: só 6 relatos, de 2024.",
+  "Figma: a página não informa o preço; confirmar o plano gratuito.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

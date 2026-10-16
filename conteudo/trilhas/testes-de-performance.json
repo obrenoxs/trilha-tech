@@ -1,0 +1,315 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "testes-de-performance",
+  "nome": "Testes de performance",
+  "area": {
+   "numero": "05",
+   "nome": "Qualidade e Testes"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Quem testa performance descobre quantas pessoas um sistema aguenta e onde ele trava antes de os usuários perceberem. Nesta trilha você sai do zero, aprende programação, redes, Linux e ferramentas como k6 e JMeter, e termina com um relatório de performance publicado.",
+  "paraQuemE": "Para quem nunca programou e gosta de números, gráficos e de descobrir onde um sistema sofre.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 36
+ },
+ "etapas": [
+  {
+   "ordem": 1,
+   "titulo": "Lógica de programação e algoritmos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a pensar em passos: variáveis, condições, repetições, funções, vetores e matrizes. Ainda sem JavaScript: o foco é raciocinar como quem programa.",
+   "projetoPratico": "Resolver os exercícios do curso e criar um jogo de adivinhação de número e uma calculadora, em pseudocódigo.",
+   "recursos": [
+    {
+     "titulo": "Algoritmos e Lógica de Programação (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito; só o certificado é pago."
+    },
+    {
+     "titulo": "CS50x: Introdução à Ciência da Computação · Harvard",
+     "url": "https://cs50.harvard.edu/x/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
+    }
+   ]
+  },
+  {
+   "titulo": "JavaScript: sintaxe e fundamentos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a linguagem do zero: variáveis, tipos, condições, repetições, funções, arrays e objetos. JavaScript roda no navegador e no servidor, então é a base de toda a trilha.",
+   "projetoPratico": "Um jogo de adivinhação e uma lista de tarefas que roda no terminal, usando funções e objetos.",
+   "recursos": [
+    {
+     "titulo": "Javascript (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/javascript/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito, mas pede um cadastro gratuito. Só o certificado é pago."
+    },
+    {
+     "titulo": "Primeiros passos com JavaScript · MDN",
+     "url": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/Scripting",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Módulo prático da MDN com variáveis, texto, números e arrays."
+    },
+    {
+     "titulo": "The Modern JavaScript Tutorial · javascript.info",
+     "url": "https://javascript.info/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Para aprofundar e consultar. Ainda não tem versão em português."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "ordem": 3,
+   "titulo": "Git e GitHub",
+   "nivel": "Básico",
+   "duracaoSemanas": 2,
+   "descricao": "Aprenda a versionar seu código e a publicá-lo no GitHub. Seu perfil no GitHub será o seu portfólio.",
+   "projetoPratico": "Criar sua conta no GitHub e publicar os exercícios da etapa anterior.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ]
+  },
+  {
+   "titulo": "Redes e HTTP",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Entenda como as requisições viajam pela rede, para interpretar tempos de resposta e gargalos.",
+   "projetoPratico": "Explicar o que acontece desde o clique até a página aparecer e onde o tempo pode se perder.",
+   "recursos": [
+    {
+     "titulo": "Camada de rede (OSI) · Central de Aprendizagem da Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/network-layer/what-is-the-network-layer/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Explica pacotes, modelo OSI e TCP/IP. Cobre só a camada de rede."
+    },
+    {
+     "titulo": "Uma visão geral do HTTP · MDN",
+     "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Em português (tradução da comunidade). Explica requisições, respostas e cabeçalhos."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Fundamentos de teste de software",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "O que é qualidade, por que e como testar, níveis e tipos de teste, e os 7 princípios do teste. É o vocabulário que todo mundo da área usa.",
+   "projetoPratico": "Escrever uma página explicando a diferença entre teste unitário, de integração e de aceitação, com um exemplo de cada.",
+   "recursos": [
+    {
+     "titulo": "Certified Tester Foundation Level (CTFL) v4.0 · ISTQB",
+     "url": "https://www.istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A página oferece o programa (syllabus) para baixar, mas não informa preço nem idiomas. O exame é pago. Confirmar o que é gratuito."
+    },
+    {
+     "titulo": "BSTQB: representante do ISTQB no Brasil",
+     "url": "https://bstqb.online/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Site em português com material de apoio ao estudo. A página não mostra quais materiais são gratuitos; os exames são pagos."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Linux básico",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Aprenda o terminal Linux, onde roda a maior parte dos servidores e das ferramentas de teste de carga.",
+   "projetoPratico": "Instalar o Linux numa máquina virtual e organizar uma estrutura de pastas usando só o terminal.",
+   "recursos": [
+    {
+     "titulo": "Linux Essentials · material de estudo da LPI",
+     "url": "https://learning.lpi.org/pt/learning-materials/010-160/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Material em português. A página não informa o preço; confirmar antes de começar."
+    },
+    {
+     "titulo": "The Linux Command Line · William Shotts",
+     "url": "https://linuxcommand.org/tlcl.php",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "PDF gratuito (licença Creative Commons). Em inglês."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Testes de carga com k6",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Simule centenas de usuários acessando um sistema ao mesmo tempo, com scripts em JavaScript, e leia métricas como tempo de resposta e taxa de erros.",
+   "projetoPratico": "Escrever 3 testes de carga (carga, estresse e picos) para uma API de treino e interpretar os resultados.",
+   "recursos": [
+    {
+     "titulo": "Get started · Grafana k6",
+     "url": "https://grafana.com/docs/k6/latest/get-started/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Ferramenta de código aberto; os scripts são em JavaScript."
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "titulo": "JMeter e outras ferramentas",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Conheça o JMeter, muito usado nas empresas, e compare com o k6.",
+   "projetoPratico": "Repetir um dos testes do k6 no JMeter e comparar os resultados.",
+   "recursos": [
+    {
+     "titulo": "Getting Started · manual do Apache JMeter",
+     "url": "https://jmeter.apache.org/usermanual/get-started.html",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Ferramenta do projeto Apache feita em Java. A página não cita a licença."
+    }
+   ],
+   "ordem": 8
+  },
+  {
+   "titulo": "Monitoramento e análise de gargalos",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Durante o teste, observe o que o servidor sente: CPU, memória, banco de dados. É assim que você descobre onde está o gargalo.",
+   "projetoPratico": "Rodar um teste de carga com o Prometheus monitorando o sistema e explicar onde está o gargalo.",
+   "recursos": [
+    {
+     "titulo": "Overview · documentação do Prometheus",
+     "url": "https://prometheus.io/docs/introduction/overview/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    }
+   ],
+   "ordem": 9
+  },
+  {
+   "titulo": "Projeto: relatório de performance",
+   "nivel": "Avançado",
+   "duracaoSemanas": 3,
+   "descricao": "Una tudo: teste um sistema de treino, encontre gargalos e escreva um relatório que quem não é técnico entenda.",
+   "projetoPratico": "Publicar no GitHub os scripts de teste e um relatório com gráficos e recomendações.",
+   "recursos": [
+    {
+     "titulo": "Get started · Grafana k6",
+     "url": "https://grafana.com/docs/k6/latest/get-started/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Ferramenta de código aberto; os scripts são em JavaScript."
+    },
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 10
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 3000,
+   "maximo": 4000,
+   "valorReferencia": 3000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Testes Júnior)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 10/09/2026). Remuneração variável não inclusa. Cargo: Analista de Testes Júnior. Não há salários de Performance Engineer Júnior; usamos um cargo próximo e mais amplo. Um anúncio de Analista de Performance Júnior mostra R$ 4 mil (anúncio, não relato)."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 4000,
+   "maximo": 6000,
+   "valorReferencia": 5000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Performance Engineer Pleno)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 22/09/2026). Remuneração variável não inclusa. Cargo: Performance Engineer Pleno. Os relatos aparecem como 'Analista de Performance Pleno'."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 8000,
+   "maximo": 13000,
+   "valorReferencia": 12000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Performance Engineer, todos os níveis)",
+   "dataReferencia": "2026-04",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 8 salários informados (o mais recente é de 22/04/2026). Remuneração variável não inclusa. Cargo: Performance Engineer, todos os níveis juntos. Poucos dados. A página de Performance Engineer Sênior tem só 4 salários de 2021 (R$ 6 mil a R$ 9 mil, média de R$ 7 mil), que descartamos por serem antigos."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Quase tudo está em inglês.",
+  "A etapa de JavaScript foi copiada da trilha de JavaScript/TypeScript; conferir se o tamanho (5 semanas) serve aqui.",
+  "A página do JMeter não cita a licença; conferir.",
+  "Salários: Júnior sem dados (usa Analista de Testes Júnior); Sênior com poucos dados (8 relatos, todos os níveis juntos).",
+  "Faltam recursos verificados de Gatling, de testes de performance de front-end (Lighthouse) e de análise de banco de dados.",
+  "Trilha longa (10 etapas): avaliar se vale cortar."
+ ]
+}

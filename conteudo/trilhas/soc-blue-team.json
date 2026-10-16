@@ -1,0 +1,260 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "soc-blue-team",
+  "nome": "SOC/Blue Team",
+  "area": {
+   "numero": "04",
+   "nome": "Segurança da Informação"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Analistas de SOC vigiam sistemas o dia todo, investigam alertas e respondem a ataques antes que causem estrago. Nesta trilha você sai do zero, aprende Linux, redes, logs e a forma de agir dos atacantes, e termina com um laboratório de monitoramento documentado.",
+  "paraQuemE": "Para quem nunca mexeu com segurança e quer trabalhar defendendo sistemas e investigando ataques.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 36
+ },
+ "etapas": [
+  {
+   "ordem": 1,
+   "titulo": "Lógica de programação e algoritmos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a pensar em passos: variáveis, condições, repetições, funções, vetores e matrizes. Ainda sem Python: o foco é raciocinar como quem programa.",
+   "projetoPratico": "Resolver os exercícios do curso e criar um jogo de adivinhação de número e uma calculadora, em pseudocódigo.",
+   "recursos": [
+    {
+     "titulo": "Algoritmos e Lógica de Programação (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito; só o certificado é pago."
+    },
+    {
+     "titulo": "CS50x: Introdução à Ciência da Computação · Harvard",
+     "url": "https://cs50.harvard.edu/x/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
+    }
+   ]
+  },
+  {
+   "titulo": "Linux e linha de comando",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "Aprenda o terminal Linux: arquivos, permissões, processos e pacotes. Quase toda ferramenta de segurança roda nele.",
+   "projetoPratico": "Instalar o Linux numa máquina virtual e organizar uma estrutura de pastas usando só o terminal.",
+   "recursos": [
+    {
+     "titulo": "Linux Essentials · material de estudo da LPI",
+     "url": "https://learning.lpi.org/pt/learning-materials/010-160/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Material em português da certificação Linux Essentials. A página não informa o preço; confirmar antes de começar."
+    },
+    {
+     "titulo": "The Linux Command Line · William Shotts",
+     "url": "https://linuxcommand.org/tlcl.php",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "PDF gratuito (licença Creative Commons). Cobre linha de comando e shell script. Em inglês."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Redes básicas",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "IP, DNS, portas, firewall e o modelo OSI. Não dá para proteger (ou atacar) o que você não entende.",
+   "projetoPratico": "Explicar, em um texto curto, o que acontece desde digitar um endereço até a página aparecer.",
+   "recursos": [
+    {
+     "titulo": "Camada de rede (OSI) · Central de Aprendizagem da Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/network-layer/what-is-the-network-layer/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Explica pacotes, modelo OSI e TCP/IP. Cobre só a camada de rede; o resto de redes precisa de outro recurso."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Fundamentos de segurança",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Os conceitos que sustentam a área: confidencialidade, integridade e disponibilidade, tipos de ataque, malware, senhas e criptografia básica.",
+   "projetoPratico": "Escrever uma página explicando 5 ataques comuns e como se proteger de cada um.",
+   "recursos": [
+    {
+     "titulo": "Introduction to Cybersecurity · Cisco Networking Academy",
+     "url": "https://www.netacad.com/courses/cybersecurity/introduction-cybersecurity",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Curso introdutório gratuito, em inglês. A página não informa a duração."
+    },
+    {
+     "titulo": "TryHackMe: Cyber Security 101 e Pre Security",
+     "url": "https://tryhackme.com/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Trilhas para iniciantes. A página mostra um nível gratuito e outro pago; confirmar o que cada trilha inclui."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Logs e monitoramento",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda o que são logs, como coletá-los e como um SIEM junta eventos de várias máquinas para você investigar alertas.",
+   "projetoPratico": "Instalar o Wazuh num laboratório, conectar uma máquina e gerar 3 alertas de propósito.",
+   "recursos": [
+    {
+     "titulo": "Getting started · documentação do Wazuh",
+     "url": "https://documentation.wazuh.com/current/getting-started/index.html",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Plataforma de código aberto de monitoramento (SIEM/XDR), com guia de instalação rápida."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Como os atacantes agem",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Estude as táticas e técnicas dos atacantes (MITRE ATT&CK) para reconhecer sinais de ataque nos alertas.",
+   "projetoPratico": "Escolher 5 técnicas do ATT&CK e descrever que rastros cada uma deixa nos logs.",
+   "recursos": [
+    {
+     "titulo": "MITRE ATT&CK",
+     "url": "https://attack.mitre.org/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Base de conhecimento gratuita das táticas e técnicas de atacantes."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Investigando alertas",
+   "nivel": "Avançado",
+   "duracaoSemanas": 8,
+   "descricao": "Treine o dia a dia do analista: triar alertas, separar falso positivo de ataque real, analisar e-mails de phishing e documentar o caso.",
+   "projetoPratico": "Concluir 10 investigações de treino e escrever um relatório de incidente de cada uma.",
+   "recursos": [
+    {
+     "titulo": "LetsDefend",
+     "url": "https://letsdefend.io/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Treino de analista de SOC. O plano básico é gratuito (cursos como SOC Fundamentals); os planos pagos custam a partir de US$ 24,99 por mês. A página informa a compra pela Hack The Box."
+    },
+    {
+     "titulo": "TryHackMe: SOC Level 1",
+     "url": "https://tryhackme.com/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Trilha iniciante listada na página. Confirmar o que é gratuito."
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "titulo": "Projeto: laboratório de SOC",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Monte um laboratório com monitoramento e alertas e documente como você detectou e investigou um ataque simulado.",
+   "projetoPratico": "Publicar no GitHub o passo a passo do laboratório e um relatório de incidente de exemplo.",
+   "recursos": [
+    {
+     "titulo": "Getting started · documentação do Wazuh",
+     "url": "https://documentation.wazuh.com/current/getting-started/index.html",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Plataforma de código aberto de monitoramento (SIEM/XDR), com guia de instalação rápida."
+    },
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 8
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 3000,
+   "maximo": 5000,
+   "valorReferencia": 4000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de SOC Júnior)",
+   "dataReferencia": "2025-12",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 6 salários informados (o mais recente é de 29/12/2025). Remuneração variável não inclusa. Cargo: Analista de SOC Júnior. Poucos dados."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 5000,
+   "maximo": 8000,
+   "valorReferencia": 6000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Segurança da Informação Pleno)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 01/09/2026). Remuneração variável não inclusa. Cargo: Analista de Segurança da Informação Pleno. Não há dados de Analista de SOC Pleno; usamos um cargo próximo, que é mais amplo."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 8000,
+   "maximo": 12000,
+   "valorReferencia": 10000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Segurança da Informação Sênior)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 22/09/2026). Remuneração variável não inclusa. Cargo: Analista de Segurança da Informação Sênior. Usamos um cargo próximo e mais amplo. A página de Analista de SOC Sênior mostra R$ 3 mil a R$ 4 mil, valor menor que o de Júnior, e foi descartada por parecer inconsistente."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Quase tudo está em inglês; falta material em português.",
+  "LetsDefend: o plano básico é gratuito, mas a plataforma está sendo comprada pela Hack The Box e os planos podem mudar.",
+  "TryHackMe: a página não informa o que é gratuito; confirmar.",
+  "Salários: Júnior tem 6 relatos; Pleno e Sênior usam 'Analista de Segurança da Informação', que é mais amplo. O Glassdoor de SOC Sênior (R$ 3–4 mil) foi descartado por inconsistência.",
+  "Faltam recursos verificados de resposta a incidentes e de análise de malware.",
+  "Considerar incluir ferramentas de SIEM comerciais (Splunk, Sentinel) com link verificado."
+ ]
+}

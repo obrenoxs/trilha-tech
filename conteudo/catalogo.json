@@ -1,0 +1,233 @@
+{
+ "versao": "1.0",
+ "areas": [
+  {
+   "numero": "01",
+   "nome": "Desenvolvimento de Software",
+   "trilhas": [
+    {
+     "slug": "csharp-dotnet",
+     "nome": "C#/.NET",
+     "duracaoTotalSemanas": 35
+    },
+    {
+     "slug": "front-end",
+     "nome": "Front-end",
+     "duracaoTotalSemanas": 36
+    },
+    {
+     "slug": "java-e-spring",
+     "nome": "Java e Spring",
+     "duracaoTotalSemanas": 36
+    },
+    {
+     "slug": "javascript-typescript-node",
+     "nome": "JavaScript/TypeScript + Node",
+     "duracaoTotalSemanas": 34
+    },
+    {
+     "slug": "mobile",
+     "nome": "Mobile",
+     "duracaoTotalSemanas": 34
+    },
+    {
+     "slug": "php-laravel",
+     "nome": "PHP/Laravel",
+     "duracaoTotalSemanas": 36
+    },
+    {
+     "slug": "python",
+     "nome": "Python (Django/FastAPI)",
+     "duracaoTotalSemanas": 36
+    }
+   ]
+  },
+  {
+   "numero": "02",
+   "nome": "Dados e Inteligência Artificial",
+   "trilhas": [
+    {
+     "slug": "analise-de-dados-bi",
+     "nome": "Análise de Dados/BI",
+     "duracaoTotalSemanas": 32
+    },
+    {
+     "slug": "ciencia-de-dados",
+     "nome": "Ciência de Dados",
+     "duracaoTotalSemanas": 34
+    },
+    {
+     "slug": "engenharia-de-dados",
+     "nome": "Engenharia de Dados",
+     "duracaoTotalSemanas": 37
+    },
+    {
+     "slug": "ia-generativa-llms",
+     "nome": "IA Generativa/LLMs",
+     "duracaoTotalSemanas": 33
+    },
+    {
+     "slug": "machine-learning",
+     "nome": "Machine Learning",
+     "duracaoTotalSemanas": 38
+    }
+   ]
+  },
+  {
+   "numero": "03",
+   "nome": "Infraestrutura, Cloud e DevOps",
+   "trilhas": [
+    {
+     "slug": "cloud",
+     "nome": "Cloud",
+     "duracaoTotalSemanas": 34
+    },
+    {
+     "slug": "devops",
+     "nome": "DevOps",
+     "duracaoTotalSemanas": 40
+    },
+    {
+     "slug": "linux",
+     "nome": "Linux",
+     "duracaoTotalSemanas": 30
+    },
+    {
+     "slug": "sre",
+     "nome": "SRE",
+     "duracaoTotalSemanas": 39
+    }
+   ]
+  },
+  {
+   "numero": "04",
+   "nome": "Segurança da Informação",
+   "trilhas": [
+    {
+     "slug": "appsec",
+     "nome": "AppSec",
+     "duracaoTotalSemanas": 35
+    },
+    {
+     "slug": "grc",
+     "nome": "GRC",
+     "duracaoTotalSemanas": 27
+    },
+    {
+     "slug": "pentest",
+     "nome": "Pentest",
+     "duracaoTotalSemanas": 37
+    },
+    {
+     "slug": "soc-blue-team",
+     "nome": "SOC/Blue Team",
+     "duracaoTotalSemanas": 36
+    }
+   ]
+  },
+  {
+   "numero": "05",
+   "nome": "Qualidade e Testes",
+   "trilhas": [
+    {
+     "slug": "automacao-de-testes",
+     "nome": "Automação de testes",
+     "duracaoTotalSemanas": 35
+    },
+    {
+     "slug": "teste-manual",
+     "nome": "Teste manual",
+     "duracaoTotalSemanas": 24
+    },
+    {
+     "slug": "testes-de-api",
+     "nome": "Testes de API",
+     "duracaoTotalSemanas": 36
+    },
+    {
+     "slug": "testes-de-performance",
+     "nome": "Testes de performance",
+     "duracaoTotalSemanas": 36
+    }
+   ]
+  },
+  {
+   "numero": "06",
+   "nome": "Suporte Técnico e Redes",
+   "trilhas": [
+    {
+     "slug": "administracao-de-sistemas",
+     "nome": "Administração de sistemas",
+     "duracaoTotalSemanas": 36
+    },
+    {
+     "slug": "help-desk",
+     "nome": "Help Desk",
+     "duracaoTotalSemanas": 24
+    },
+    {
+     "slug": "redes",
+     "nome": "Redes",
+     "duracaoTotalSemanas": 30
+    }
+   ]
+  },
+  {
+   "numero": "07",
+   "nome": "UX/UI Design",
+   "trilhas": [
+    {
+     "slug": "product-design",
+     "nome": "Product Design",
+     "duracaoTotalSemanas": 34
+    },
+    {
+     "slug": "ui-design",
+     "nome": "UI Design",
+     "duracaoTotalSemanas": 33
+    },
+    {
+     "slug": "ux-research",
+     "nome": "UX Research",
+     "duracaoTotalSemanas": 33
+    },
+    {
+     "slug": "ux-writing",
+     "nome": "UX Writing",
+     "duracaoTotalSemanas": 30
+    }
+   ]
+  },
+  {
+   "numero": "08",
+   "nome": "Gestão e Produtos de TI",
+   "trilhas": [
+    {
+     "slug": "analista-de-requisitos",
+     "nome": "Analista de requisitos",
+     "duracaoTotalSemanas": 28
+    },
+    {
+     "slug": "gestao-de-projetos",
+     "nome": "Gestão de projetos",
+     "duracaoTotalSemanas": 31
+    },
+    {
+     "slug": "product-manager",
+     "nome": "Product Manager",
+     "duracaoTotalSemanas": 28
+    },
+    {
+     "slug": "product-owner",
+     "nome": "Product Owner",
+     "duracaoTotalSemanas": 26
+    },
+    {
+     "slug": "scrum-master",
+     "nome": "Scrum Master",
+     "duracaoTotalSemanas": 28
+    }
+   ]
+  }
+ ]
+}

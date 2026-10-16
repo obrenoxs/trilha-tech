@@ -1,0 +1,297 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "cloud",
+  "nome": "Cloud",
+  "area": {
+   "numero": "03",
+   "nome": "Infraestrutura, Cloud e DevOps"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Profissionais de cloud montam e mantêm as aplicações em servidores alugados na internet, sem precisar de um data center próprio. Nesta trilha você sai do zero, aprende Linux, redes, nuvem, Docker, Terraform e Kubernetes, e termina com uma aplicação publicada.",
+  "paraQuemE": "Para quem nunca mexeu com infraestrutura e quer trabalhar com servidores e serviços na nuvem.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 34
+ },
+ "etapas": [
+  {
+   "ordem": 1,
+   "titulo": "Lógica de programação e algoritmos",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a pensar em passos: variáveis, condições, repetições, funções, vetores e matrizes. Ainda sem Python: o foco é raciocinar como quem programa.",
+   "projetoPratico": "Resolver os exercícios do curso e criar um jogo de adivinhação de número e uma calculadora, em pseudocódigo.",
+   "recursos": [
+    {
+     "titulo": "Algoritmos e Lógica de Programação (40 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/curso-de-algoritmo/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O curso é gratuito; só o certificado é pago."
+    },
+    {
+     "titulo": "CS50x: Introdução à Ciência da Computação · Harvard",
+     "url": "https://cs50.harvard.edu/x/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
+    }
+   ]
+  },
+  {
+   "titulo": "Linux e linha de comando",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "Aprenda o terminal Linux, onde roda quase tudo na nuvem: arquivos, permissões, processos e pacotes.",
+   "projetoPratico": "Instalar o Linux numa máquina virtual e organizar uma estrutura de pastas usando só o terminal.",
+   "recursos": [
+    {
+     "titulo": "Linux Essentials · material de estudo da LPI",
+     "url": "https://learning.lpi.org/pt/learning-materials/010-160/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Material em português da certificação Linux Essentials. A página não informa o preço; confirmar antes de começar."
+    },
+    {
+     "titulo": "The Linux Command Line · William Shotts",
+     "url": "https://linuxcommand.org/tlcl.php",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "PDF gratuito (licença Creative Commons). Cobre linha de comando e shell script. Em inglês."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "ordem": 3,
+   "titulo": "Git e GitHub",
+   "nivel": "Básico",
+   "duracaoSemanas": 2,
+   "descricao": "Aprenda a versionar seu código e a publicá-lo no GitHub. Seu perfil no GitHub será o seu portfólio.",
+   "projetoPratico": "Criar sua conta no GitHub e publicar os exercícios da etapa anterior.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ]
+  },
+  {
+   "titulo": "Redes básicas",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "IP, DNS, portas e firewall. Na nuvem você configura redes virtuais, então precisa entender as de verdade.",
+   "projetoPratico": "Explicar, em um texto curto, o que acontece desde digitar um endereço até a página aparecer.",
+   "recursos": [
+    {
+     "titulo": "Camada de rede (OSI) · Central de Aprendizagem da Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/network-layer/what-is-the-network-layer/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Explica pacotes, modelo OSI e TCP/IP. Cobre só a camada de rede; o resto de redes precisa de outro recurso."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Fundamentos de nuvem",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "O que é computação em nuvem, modelos de serviço, responsabilidade compartilhada e os serviços principais (servidores, armazenamento, redes e bancos de dados). Usamos a AWS, o provedor mais pedido nas vagas.",
+   "projetoPratico": "Publicar um site estático e um servidor simples na nuvem, e desligar tudo ao final para não gerar cobrança.",
+   "recursos": [
+    {
+     "titulo": "AWS Cloud Practitioner Essentials · AWS",
+     "url": "https://aws.amazon.com/pt/training/digital/aws-cloud-practitioner-essentials/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Curso digital da AWS em português; a página não informa o preço, então confirme se há custo."
+    },
+    {
+     "titulo": "Camada gratuita da AWS",
+     "url": "https://aws.amazon.com/pt/free/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Créditos de até US$ 200 por até 6 meses para contas novas. Configure alertas de gasto antes de criar recursos."
+    },
+    {
+     "titulo": "Exame AWS Certified Cloud Practitioner",
+     "url": "https://aws.amazon.com/pt/certification/certified-cloud-practitioner/",
+     "tipo": "certificação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: exame de US$ 100, 90 minutos, disponível em português. Opcional."
+    },
+    {
+     "titulo": "Formação AWS Certified Cloud Practitioner · Alura",
+     "url": "https://www.alura.com.br/formacao-aws-certified-cloud-practitioner",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    },
+    {
+     "titulo": "Formação Amazon Web Services · Alura",
+     "url": "https://www.alura.com.br/formacao-amazon-web-services",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Docker",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Empacote aplicações em contêineres, a unidade básica de quase tudo que roda hoje na nuvem.",
+   "projetoPratico": "Subir um serviço web e um banco em contêineres que conversam entre si.",
+   "recursos": [
+    {
+     "titulo": "Docker: Get started · documentação oficial",
+     "url": "https://docs.docker.com/get-started/introduction/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Infraestrutura como código",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Descreva servidores e redes em arquivos de código (Terraform) em vez de clicar no console, para recriar tudo com um comando.",
+   "projetoPratico": "Criar com Terraform uma rede e um servidor na nuvem e destruir tudo depois.",
+   "recursos": [
+    {
+     "titulo": "Terraform: Get started com AWS · HashiCorp Developer",
+     "url": "https://developer.hashicorp.com/terraform/tutorials/aws-get-started",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "6 tutoriais curtos (cerca de 49 minutos). A página não informa custos; usar a AWS pode gerar cobrança, então configure alertas de gasto."
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "titulo": "Kubernetes básico",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Rode e escale vários contêineres com Kubernetes, começando em um cluster local.",
+   "projetoPratico": "Implantar uma aplicação num cluster local com o Minikube e escalar para 3 cópias.",
+   "recursos": [
+    {
+     "titulo": "Noções básicas do Kubernetes · documentação oficial",
+     "url": "https://kubernetes.io/pt-br/docs/tutorials/kubernetes-basics/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Em português, mas o módulo de atualização só existe em inglês e os terminais interativos podem não funcionar mais (dependiam do Katacoda). Use o Minikube no seu computador."
+    }
+   ],
+   "ordem": 8
+  },
+  {
+   "titulo": "Projeto: aplicação na nuvem",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Una tudo: implante uma aplicação de ponta a ponta na nuvem, com a infraestrutura descrita em código e um README.",
+   "projetoPratico": "Publicar no GitHub o código de infraestrutura e o passo a passo de uma aplicação rodando na nuvem.",
+   "recursos": [
+    {
+     "titulo": "Terraform: Get started com AWS · HashiCorp Developer",
+     "url": "https://developer.hashicorp.com/terraform/tutorials/aws-get-started",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "6 tutoriais curtos (cerca de 49 minutos). A página não informa custos; usar a AWS pode gerar cobrança, então configure alertas de gasto."
+    },
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 9
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 2000,
+   "maximo": 4000,
+   "valorReferencia": 3000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Cloud Engineer Júnior)",
+   "dataReferencia": "2026-03",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 9 salários informados (o mais recente é de 08/03/2026). Remuneração variável não inclusa. Cargo: Cloud Engineer Júnior. Poucos dados."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 6000,
+   "maximo": 14000,
+   "valorReferencia": 9000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Cloud Engineer, todos os níveis)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": true,
+   "observacao": "Há só 1 relato de Pleno. Usamos o cargo Cloud Engineer em geral, com todos os níveis juntos: média de R$ 9 mil, faixa de R$ 6 mil a R$ 14 mil, 50 salários informados (o mais recente é de 01/09/2026). Os relatos de 1 a 3 anos de experiência ficam em torno de R$ 6 mil a R$ 9 mil. Faixa muito larga. Remuneração variável não inclusa."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 11000,
+   "maximo": 19000,
+   "valorReferencia": 13000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Cloud Engineer Sênior)",
+   "dataReferencia": "2026-10",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 12/10/2026). Remuneração variável não inclusa. Cargo: Cloud Engineer Sênior."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Quase tudo está em inglês; faltam recursos em português para Terraform e Docker.",
+  "Faltam recursos verificados de segurança na nuvem (IAM) e de redes além da camada de rede.",
+  "Contas de nuvem podem gerar cobrança. A trilha avisa; vale reforçar com um passo a passo de alertas de gasto.",
+  "Salário Pleno: faltam relatos; usamos o cargo geral, com faixa muito larga.",
+  "Usamos só a AWS. Quem for trabalhar com Azure ou Google Cloud precisará de outra trilha.",
+  "Confirmar se o curso digital Cloud Practitioner Essentials é gratuito; a página não informa.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

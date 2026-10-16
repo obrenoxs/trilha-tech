@@ -1,0 +1,233 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "analista-de-requisitos",
+  "nome": "Analista de requisitos",
+  "area": {
+   "numero": "08",
+   "nome": "Gestão e Produtos de TI"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "O analista de requisitos descobre o que as pessoas precisam de um sistema e transforma isso em pedidos claros para quem constrói. Nesta trilha você sai do zero, aprende levantamento de requisitos, histórias de usuário, BPMN e SQL, e termina com a especificação completa de um sistema no portfólio.",
+  "paraQuemE": "Para quem gosta de conversar, perguntar e organizar ideias, e quer trabalhar com tecnologia sem programar.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 28
+ },
+ "etapas": [
+  {
+   "titulo": "Como a TI trabalha",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Entenda como um sistema é pedido, construído e entregue, e onde o analista de requisitos entra.",
+   "projetoPratico": "Descrever, em uma página, o caminho de uma ideia de recurso até a entrega, com quem faz o quê.",
+   "recursos": [
+    {
+     "titulo": "Gerenciamento ágil de projetos · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/project-management",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre Scrum, Kanban, estimativas e relatórios."
+    },
+    {
+     "titulo": "Formação Modelagem de processos de negócios · Alura",
+     "url": "https://www.alura.com.br/formacao-modelagem-melhorias-processos-negocios",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Agilidade: valores e mentalidade",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Entenda por que as equipes trabalham em ciclos curtos, o que o Manifesto Ágil defende e como isso muda a forma de planejar.",
+   "projetoPratico": "Escrever, com suas palavras, uma página explicando os 4 valores do Manifesto Ágil com um exemplo de cada.",
+   "recursos": [
+    {
+     "titulo": "Manifesto para o Desenvolvimento Ágil de Software",
+     "url": "https://agilemanifesto.org/iso/ptbr/manifesto.html",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Texto curto com os 4 valores do desenvolvimento ágil, em português."
+    },
+    {
+     "titulo": "O que significa 'ágil'? · Atlassian",
+     "url": "https://www.atlassian.com/br/agile",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Porta de entrada para guias de Scrum, Kanban, histórias de usuário e métricas."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Levantamento de requisitos",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Como descobrir o que as pessoas realmente precisam: entrevistas, observação e perguntas certas. Requisitos funcionais e não funcionais.",
+   "projetoPratico": "Entrevistar 3 pessoas sobre um sistema que elas usam e escrever 15 requisitos.",
+   "recursos": [
+    {
+     "titulo": "Documento de requisitos de produto (PRD) · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/product-management/requirements",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Mostra como escrever um PRD em formato ágil."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Histórias de usuário e critérios de aceitação",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Escreva histórias claras e critérios de aceitação que o time consiga testar.",
+   "projetoPratico": "Escrever 12 histórias com critérios de aceitação para um sistema fictício.",
+   "recursos": [
+    {
+     "titulo": "Histórias de usuário · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/project-management/user-stories",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Explica os 3 Cs e o modelo 'Como [pessoa], eu quero...'."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Modelagem de processos (BPMN)",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Desenhe como um processo de negócio funciona hoje e como deveria funcionar, com a notação padrão do mercado.",
+   "projetoPratico": "Desenhar o processo de pedido de uma loja online, antes e depois da melhoria.",
+   "recursos": [
+    {
+     "titulo": "BPMN: introdução · Camunda",
+     "url": "https://camunda.com/bpmn/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Introdução curta ao BPMN, mas com muito marketing da empresa; não é um curso passo a passo. Em inglês."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Dados: SQL básico",
+   "nivel": "Avançado",
+   "duracaoSemanas": 3,
+   "descricao": "Consulte bancos de dados para validar regras de negócio e entender os dados que o sistema usa.",
+   "projetoPratico": "Responder 10 perguntas de negócio sobre um banco de vendas usando SQL.",
+   "recursos": [
+    {
+     "titulo": "SQLBolt: aprenda SQL com exercícios interativos",
+     "url": "https://sqlbolt.com/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Lições curtas direto no navegador. Ainda falta indicar um curso de SQL em português com link verificado."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Projeto: especificação de um sistema",
+   "nivel": "Avançado",
+   "duracaoSemanas": 5,
+   "descricao": "Una tudo: documente um sistema fictício com requisitos, histórias, processos e regras de negócio.",
+   "projetoPratico": "Publicar no portfólio um documento de requisitos completo, com histórias e fluxos de processo.",
+   "recursos": [
+    {
+     "titulo": "Documento de requisitos de produto (PRD) · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/product-management/requirements",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Mostra como escrever um PRD em formato ágil."
+    },
+    {
+     "titulo": "Histórias de usuário · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/project-management/user-stories",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Explica os 3 Cs e o modelo 'Como [pessoa], eu quero...'."
+    },
+    {
+     "titulo": "BPMN: introdução · Camunda",
+     "url": "https://camunda.com/bpmn/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Introdução curta ao BPMN, mas com muito marketing da empresa; não é um curso passo a passo. Em inglês."
+    }
+   ],
+   "ordem": 7
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 2000,
+   "maximo": 4000,
+   "valorReferencia": 3000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Requisitos Júnior)",
+   "dataReferencia": "2026-08",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 31/08/2026). Remuneração variável não inclusa. Cargo: Analista de Requisitos Júnior."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 4000,
+   "maximo": 6000,
+   "valorReferencia": 5000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Requisitos Pleno)",
+   "dataReferencia": "2026-08",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 12/08/2026). Remuneração variável não inclusa. Cargo: Analista de Requisitos Pleno."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 6000,
+   "maximo": 9000,
+   "valorReferencia": 7000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Requisitos Sênior)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 30/09/2026). Remuneração variável não inclusa. Cargo: Analista de Requisitos Sênior."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Falta recurso verificado de UML (diagramas de casos de uso e de classes) e de regras de negócio.",
+  "Camunda (BPMN): é marketing da empresa e não um curso passo a passo; falta um curso gratuito.",
+  "BABOK e certificações (CBAP) são pagos e não entraram.",
+  "Atlassian cobre histórias e PRD, mas falta material sobre especificação tradicional (casos de uso, documento de requisitos).",
+  "SQL: só o SQLBolt, em inglês.",
+  "A etapa 'Como a TI trabalha' reaproveita só o guia de gestão ágil da Atlassian; considerar um recurso mais introdutório.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

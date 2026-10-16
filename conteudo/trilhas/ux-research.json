@@ -1,0 +1,288 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "ux-research",
+  "nome": "UX Research",
+  "area": {
+   "numero": "07",
+   "nome": "UX/UI Design"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Pesquisadores de UX descobrem o que as pessoas precisam e o que as atrapalha, conversando e observando antes de qualquer tela ser desenhada. Nesta trilha você sai do zero, aprende usabilidade, métodos de pesquisa e análise, e termina com um estudo completo no portfólio.",
+  "paraQuemE": "Para quem é curioso sobre pessoas, gosta de conversar e de achar padrões, e quer trabalhar com design sem precisar desenhar.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 33
+ },
+ "etapas": [
+  {
+   "titulo": "Fundamentos de UX e design centrado no usuário",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "O que é experiência do usuário, o processo de design (entender, explorar e criar) e por que começar sempre pelas pessoas, não pela tela.",
+   "projetoPratico": "Escolher um app que você usa e descrever, em uma página, 3 problemas que as pessoas têm nele.",
+   "recursos": [
+    {
+     "titulo": "Design Thinking 101 · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/design-thinking/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    },
+    {
+     "titulo": "Design Kit · IDEO.org",
+     "url": "https://www.designkit.org/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Plataforma de design centrado em pessoas, com guia e métodos. A página não informa se tudo é gratuito; confirmar. O baralho de exercícios é vendido."
+    },
+    {
+     "titulo": "Laws of UX",
+     "url": "https://lawsofux.com/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Cerca de 30 princípios de psicologia aplicados a interfaces. A página cita licença Creative Commons com restrições; só para estudo."
+    },
+    {
+     "titulo": "Formação UX Research · Alura",
+     "url": "https://www.alura.com.br/formacao-ux-research-pesquisa-produtos-digitais",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Usabilidade e heurísticas",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "As 10 regras de ouro de usabilidade. Com elas você encontra problemas em qualquer tela, mesmo sem testar com ninguém.",
+   "projetoPratico": "Avaliar um app ou site com as 10 heurísticas e listar 10 problemas, com prints e nível de gravidade.",
+   "recursos": [
+    {
+     "titulo": "10 Usability Heuristics · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/ten-usability-heuristics/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    },
+    {
+     "titulo": "Laws of UX",
+     "url": "https://lawsofux.com/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Cerca de 30 princípios de psicologia aplicados a interfaces. A página cita licença Creative Commons com restrições; só para estudo."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Métodos de pesquisa",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda quais métodos existem (entrevista, observação, pesquisa, teste de usabilidade), quando usar cada um e como escolher conforme a pergunta.",
+   "projetoPratico": "Escolher uma pergunta de pesquisa e justificar qual método responde melhor, em uma página.",
+   "recursos": [
+    {
+     "titulo": "Which UX Research Methods · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/which-ux-research-methods/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia que compara 20 métodos de pesquisa. O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    },
+    {
+     "titulo": "Usability Testing 101 · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/usability-testing-101/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Testes de usabilidade na prática",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Planeje tarefas, convide participantes, conduza a sessão sem induzir respostas e registre o que viu.",
+   "projetoPratico": "Testar um site ou app com 5 pessoas e escrever um relatório com os 5 principais problemas.",
+   "recursos": [
+    {
+     "titulo": "Usability Testing 101 · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/usability-testing-101/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    },
+    {
+     "titulo": "Why You Only Need to Test with 5 Users · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto aparece inteiro, sem bloqueio, mas a página não diz que é gratuito. Em inglês."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Análise de dados e estatística básica",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Organize anotações, encontre padrões (síntese) e entenda o básico de estatística para ler pesquisas e números de uso.",
+   "projetoPratico": "Transformar as anotações das 5 sessões num mapa de afinidade com 3 achados principais.",
+   "recursos": [
+    {
+     "titulo": "Estatística e probabilidade · Khan Academy",
+     "url": "https://pt.khanacademy.org/math/statistics-probability",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Vídeos e exercícios gratuitos. A página abriu só em parte na verificação."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Acessibilidade",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Projete para todo mundo: contraste, tamanho de texto, navegação por teclado e leitor de tela. Também é exigência legal em muitos casos.",
+   "projetoPratico": "Auditar 3 telas de um site com o guia WCAG e propor 5 correções.",
+   "recursos": [
+    {
+     "titulo": "Introdução à acessibilidade web · W3C WAI",
+     "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/pt-BR",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Tradução voluntária; muitos links são em inglês."
+    },
+    {
+     "titulo": "WCAG 2: guia rápido · W3C",
+     "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Lista filtrável de requisitos de acessibilidade. A página não cita a licença."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Figma e prototipagem",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Aprenda a ferramenta mais usada do mercado: quadros, componentes, auto layout e protótipos clicáveis.",
+   "projetoPratico": "Reproduzir 3 telas de um app que você gosta no Figma e ligá-las num protótipo clicável.",
+   "recursos": [
+    {
+     "titulo": "Central de ajuda do Figma",
+     "url": "https://help.figma.com/hc/pt-br",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Em português (algumas partes em inglês). Tem guia de início, cursos em vídeo e projetos de prática. A página não informa o preço; o Figma tem plano gratuito, confirmar o que ele inclui."
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "titulo": "Projeto: estudo de pesquisa completo",
+   "nivel": "Avançado",
+   "duracaoSemanas": 5,
+   "descricao": "Una tudo: planeje, execute e apresente um estudo de pesquisa sobre um produto real, com recomendações.",
+   "projetoPratico": "Publicar um estudo completo (pergunta, método, resultados e recomendações) em um site de portfólio.",
+   "recursos": [
+    {
+     "titulo": "Which UX Research Methods · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/which-ux-research-methods/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia que compara 20 métodos de pesquisa. O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    },
+    {
+     "titulo": "Usability Testing 101 · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/usability-testing-101/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
+    }
+   ],
+   "ordem": 8
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 3000,
+   "maximo": 5000,
+   "valorReferencia": 4000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (UX Researcher Júnior)",
+   "dataReferencia": "2025-06",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 49 salários informados (o mais recente é de 25/06/2025). Remuneração variável não inclusa. Cargo: UX Researcher Júnior. Dados com mais de um ano."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 6000,
+   "maximo": 8000,
+   "valorReferencia": 7000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (UX Researcher Pleno)",
+   "dataReferencia": "2025-12",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 01/12/2025). Remuneração variável não inclusa. Cargo: UX Researcher Pleno."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 10000,
+   "maximo": 13000,
+   "valorReferencia": 11000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (UX Researcher Sênior)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 10/09/2026). Remuneração variável não inclusa. Cargo: UX Researcher Sênior."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Quase tudo está em inglês (Nielsen Norman Group). Só o Figma, a Khan Academy e a introdução à acessibilidade têm português.",
+  "NN/g: os textos são públicos, mas as páginas não dizem que são gratuitos e vendem cursos; confirmar.",
+  "Faltam recursos verificados para entrevistas com usuários, recrutamento de participantes e pesquisa quantitativa (surveys).",
+  "Khan Academy: a página abriu só em parte na verificação.",
+  "Salário Júnior: dados com mais de um ano (25/06/2025).",
+  "Falta um recurso em português com link verificado para métodos de pesquisa.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

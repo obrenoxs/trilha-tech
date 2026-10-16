@@ -1,0 +1,260 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "product-manager",
+  "nome": "Product Manager",
+  "area": {
+   "numero": "08",
+   "nome": "Gestão e Produtos de TI"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Product managers decidem que produto construir, para quem e por quê, juntando o que as pessoas precisam, o que a empresa quer e o que o time consegue fazer. Nesta trilha você sai do zero, aprende produto, descoberta, requisitos, roadmap e dados, e termina com um caso completo no portfólio.",
+  "paraQuemE": "Para quem gosta de unir pessoas, negócio e tecnologia, e quer decidir o que um produto digital deve ser.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 28
+ },
+ "etapas": [
+  {
+   "titulo": "O que faz quem gerencia produtos",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Entenda a diferença entre produto, projeto e design, e o que se espera de quem gerencia produtos em uma empresa de tecnologia.",
+   "projetoPratico": "Descrever um produto digital que você usa: para quem é, que problema resolve e como ganha dinheiro.",
+   "recursos": [
+    {
+     "titulo": "Gerenciamento de produtos · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/product-management",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Explica o papel de quem gerencia produtos e a diferença para quem gerencia projetos."
+    },
+    {
+     "titulo": "Formação Gestão de Produtos · Alura",
+     "url": "https://www.alura.com.br/formacao-gestao-produtos",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Agilidade: valores e mentalidade",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Entenda por que as equipes trabalham em ciclos curtos, o que o Manifesto Ágil defende e como isso muda a forma de planejar.",
+   "projetoPratico": "Escrever, com suas palavras, uma página explicando os 4 valores do Manifesto Ágil com um exemplo de cada.",
+   "recursos": [
+    {
+     "titulo": "Manifesto para o Desenvolvimento Ágil de Software",
+     "url": "https://agilemanifesto.org/iso/ptbr/manifesto.html",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Texto curto com os 4 valores do desenvolvimento ágil, em português."
+    },
+    {
+     "titulo": "O que significa 'ágil'? · Atlassian",
+     "url": "https://www.atlassian.com/br/agile",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Porta de entrada para guias de Scrum, Kanban, histórias de usuário e métricas."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Descoberta de produto e pesquisa",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Descubra o que vale construir antes de construir: entrevistas, testes de ideias e hipóteses.",
+   "projetoPratico": "Entrevistar 5 pessoas sobre um problema e escrever 3 hipóteses de produto.",
+   "recursos": [
+    {
+     "titulo": "Artigos · Silicon Valley Product Group",
+     "url": "https://www.svpg.com/articles/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigos de Marty Cagan sobre produto. A página não diz se o acesso é livre nem lista preços; confirmar. Em inglês."
+    },
+    {
+     "titulo": "Which UX Research Methods · Nielsen Norman Group",
+     "url": "https://www.nngroup.com/articles/which-ux-research-methods/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia que compara 20 métodos de pesquisa. O texto é gratuito; o site também vende cursos. Em inglês."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Histórias de usuário e requisitos",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Transforme ideias em pedidos claros para o time: histórias, critérios de aceitação e PRD.",
+   "projetoPratico": "Escrever um PRD de uma página e 8 histórias de usuário para uma ideia sua.",
+   "recursos": [
+    {
+     "titulo": "Histórias de usuário · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/project-management/user-stories",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Explica os 3 Cs e o modelo 'Como [pessoa], eu quero...'."
+    },
+    {
+     "titulo": "Documento de requisitos de produto (PRD) · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/product-management/requirements",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Mostra como escrever um PRD em formato ágil."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Roadmap e estratégia",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Una a estratégia da empresa ao que o time constrói: objetivos, roadmap e como dizer não.",
+   "projetoPratico": "Criar um roadmap de 6 meses por objetivos, com o que ficou de fora e por quê.",
+   "recursos": [
+    {
+     "titulo": "Roadmaps ágeis · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/product-management/roadmaps",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre."
+    },
+    {
+     "titulo": "Artigos · Silicon Valley Product Group",
+     "url": "https://www.svpg.com/articles/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigos de Marty Cagan sobre produto. A página não diz se o acesso é livre nem lista preços; confirmar. Em inglês."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Dados e métricas: SQL básico",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Consulte e leia os dados do produto para decidir: usuários ativos, retenção e conversão.",
+   "projetoPratico": "Responder 10 perguntas de negócio sobre um banco de vendas usando SQL.",
+   "recursos": [
+    {
+     "titulo": "SQLBolt: aprenda SQL com exercícios interativos",
+     "url": "https://sqlbolt.com/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Lições curtas direto no navegador. Ainda falta indicar um curso de SQL em português com link verificado."
+    }
+   ],
+   "ordem": 6
+  },
+  {
+   "titulo": "Projeto: caso de produto",
+   "nivel": "Avançado",
+   "duracaoSemanas": 6,
+   "descricao": "Una tudo: da descoberta ao roadmap, mostrando como você pensa, num caso completo de um produto.",
+   "projetoPratico": "Publicar no portfólio um caso completo: problema, pesquisa, hipóteses, PRD, roadmap e métricas.",
+   "recursos": [
+    {
+     "titulo": "Gerenciamento de produtos · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/product-management",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Explica o papel de quem gerencia produtos e a diferença para quem gerencia projetos."
+    },
+    {
+     "titulo": "Documento de requisitos de produto (PRD) · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/product-management/requirements",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Mostra como escrever um PRD em formato ágil."
+    },
+    {
+     "titulo": "Roadmaps ágeis · Atlassian",
+     "url": "https://www.atlassian.com/br/agile/product-management/roadmaps",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre."
+    }
+   ],
+   "ordem": 7
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 5000,
+   "maximo": 7000,
+   "valorReferencia": 6000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Product Manager Júnior)",
+   "dataReferencia": "2025-08",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 34 salários informados (o mais recente é de 14/08/2025). Remuneração variável não inclusa. Cargo: Product Manager Júnior. Dados com mais de um ano."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 8000,
+   "maximo": 11000,
+   "valorReferencia": 9000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Product Manager Pleno)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 21/09/2026). Remuneração variável não inclusa. Cargo: Product Manager Pleno."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 13000,
+   "maximo": 18000,
+   "valorReferencia": 15000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Product Manager Sênior)",
+   "dataReferencia": "2026-10",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 01/10/2026). Remuneração variável não inclusa. Cargo: Product Manager Sênior."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "A maioria das vagas pede experiência anterior (como PO, analista ou designer); a trilha parte do zero, mas o primeiro emprego costuma ser outro cargo.",
+  "SVPG: a página não informa se os artigos são gratuitos; confirmar. Em inglês.",
+  "Falta recurso verificado de métricas de produto, priorização e de OKRs (a página da Atlassian de OKR não abriu).",
+  "Falta material de negócio: modelos de receita, precificação e análise de mercado.",
+  "Salário Júnior: dados com mais de um ano (14/08/2025).",
+  "SQL: só o SQLBolt, em inglês.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

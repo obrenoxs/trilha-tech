@@ -1,0 +1,194 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "help-desk",
+  "nome": "Help Desk",
+  "area": {
+   "numero": "06",
+   "nome": "Suporte Técnico e Redes"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Quem trabalha em help desk é a primeira pessoa que ajuda quando algo não funciona: computador lento, internet fora, senha esquecida. Nesta trilha você sai do zero, aprende hardware, redes, Windows e Linux e atendimento, e termina com uma base de conhecimento publicada.",
+  "paraQuemE": "Para quem nunca trabalhou com TI e quer uma porta de entrada rápida na área.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 24
+ },
+ "etapas": [
+  {
+   "titulo": "Hardware e sistemas operacionais",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "Conheça os componentes de um computador, como montá-lo e instalar Windows e Linux. É a base de qualquer chamado de suporte.",
+   "projetoPratico": "Instalar o Windows e o Linux em máquinas virtuais e descrever, com suas palavras, para que serve cada componente do computador.",
+   "recursos": [
+    {
+     "titulo": "Hardware (20 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/hardware/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "As aulas são gratuitas com cadastro; só o certificado é pago. Cobre componentes, montagem e instalação do Windows 10 e do Linux."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Redes básicas",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "IP, DNS, DHCP, Wi-Fi e cabos. Metade dos chamados 'a internet caiu' se resolve entendendo o básico de redes.",
+   "projetoPratico": "Diagnosticar um problema de rede simulado: sem internet, sem DNS e IP duplicado.",
+   "recursos": [
+    {
+     "titulo": "Redes de Computadores (20 h) · Curso em Vídeo",
+     "url": "https://www.cursoemvideo.com/curso/redes-de-computadores/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Gratuito com cadastro; só o certificado é pago. Cobre Wi-Fi, IP, DHCP, sub-redes e simulação no Cisco Packet Tracer."
+    },
+    {
+     "titulo": "O que é IP? · Central de Aprendizagem da Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/network-layer/internet-protocol/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    },
+    {
+     "titulo": "O que é DNS? · Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/dns/what-is-dns/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Windows e Linux no dia a dia",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Instalar programas, gerenciar usuários e permissões, achar o que está travando o computador e resolver os problemas mais comuns.",
+   "projetoPratico": "Montar um guia de 10 problemas comuns (lento, sem som, sem impressora...) e como resolver cada um.",
+   "recursos": [
+    {
+     "titulo": "Linux Essentials · material de estudo da LPI",
+     "url": "https://learning.lpi.org/pt/learning-materials/010-160/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Material em português. A página não informa o preço; confirmar antes de começar."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Atendimento e chamados",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Como atender com clareza e empatia, registrar chamados com as informações certas e saber quando passar para um nível acima.",
+   "projetoPratico": "Escrever 5 respostas de atendimento e 5 registros de chamado de exemplo.",
+   "recursos": [
+    {
+     "titulo": "Certificado Profissional de Suporte em TI do Google · Coursera",
+     "url": "https://www.coursera.org/professional-certificates/google-it-support",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura do Coursera (há auxílio financeiro). Página em português, mas as aulas são em inglês. Cerca de 122 horas. Inclui atendimento ao cliente."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Automação básica com PowerShell",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Automatize tarefas repetitivas do suporte (criar usuários, listar processos, limpar arquivos) com comandos de PowerShell.",
+   "projetoPratico": "Um script que lista os 10 processos que mais usam memória e gera um relatório.",
+   "recursos": [
+    {
+     "titulo": "PowerShell 101 · Microsoft Learn",
+     "url": "https://learn.microsoft.com/pt-br/powershell/scripting/learn/ps101/00-introduction",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Guia para quem vem de interfaces gráficas, adaptado do livro de Mike F. Robbins. Os capítulos são públicos; a tradução é automática."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "titulo": "Projeto: base de conhecimento",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Monte um pequeno laboratório de suporte e documente cada problema resolvido, como uma base de conhecimento.",
+   "projetoPratico": "Publicar no GitHub uma base de conhecimento com 15 problemas resolvidos, passo a passo.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 6
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 1000,
+   "maximo": 3000,
+   "valorReferencia": 2000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Suporte Júnior)",
+   "dataReferencia": "2026-10",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 14/10/2026). Remuneração variável não inclusa. Cargo: Analista de Suporte Júnior. Para comparação, a página de Analista de Help Desk mostra faixa de R$ 2 mil e média de R$ 2 mil (50 salários, até 20/09/2026)."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 3000,
+   "maximo": 4000,
+   "valorReferencia": 3000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Suporte Pleno)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 17/09/2026). Remuneração variável não inclusa. Cargo: Analista de Suporte Pleno."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 3000,
+   "maximo": 7000,
+   "valorReferencia": 4000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Suporte Sênior)",
+   "dataReferencia": "2026-08",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 12/08/2026). Remuneração variável não inclusa. Cargo: Analista de Suporte Sênior. Faixa larga."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Etapa 'Atendimento e chamados' sem recurso verificado; falta material gratuito (ITIL e similares são pagos).",
+  "Etapa 'Windows e Linux no dia a dia' só tem o material da LPI (Linux); falta um recurso verificado de Windows.",
+  "PowerShell 101: a tradução é automática; os capítulos são públicos, mas a página não informa o custo do livro original.",
+  "LPI: a página não informa o preço; confirmar.",
+  "Faltam recursos verificados de ferramentas de chamados (como GLPI e Zendesk) e de suporte remoto.",
+  "Salário: a página de Analista de Suporte tem 50 salários por nível, mas o cargo é amplo (não só help desk).",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

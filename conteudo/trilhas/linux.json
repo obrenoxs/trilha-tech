@@ -1,0 +1,251 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "linux",
+  "nome": "Linux",
+  "area": {
+   "numero": "03",
+   "nome": "Infraestrutura, Cloud e DevOps"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Quem administra Linux cuida dos servidores onde quase tudo na internet roda. Nesta trilha você sai do zero, aprende o terminal, permissões, scripts, redes e serviços, e termina com um servidor montado e documentado.",
+  "paraQuemE": "Para quem nunca mexeu com servidores e quer trabalhar mantendo sistemas e infraestrutura.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 30
+ },
+ "etapas": [
+  {
+   "titulo": "Linux e linha de comando",
+   "nivel": "Básico",
+   "duracaoSemanas": 5,
+   "descricao": "Instale uma distribuição Linux numa máquina virtual e aprenda a navegar, criar e mover arquivos, entender permissões e usar o gerenciador de pacotes.",
+   "projetoPratico": "Instalar o Linux numa máquina virtual e organizar uma estrutura de pastas usando só o terminal.",
+   "recursos": [
+    {
+     "titulo": "Linux Essentials · material de estudo da LPI",
+     "url": "https://learning.lpi.org/pt/learning-materials/010-160/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Material em português da certificação Linux Essentials. A página não informa o preço; confirmar antes de começar."
+    },
+    {
+     "titulo": "The Linux Command Line · William Shotts",
+     "url": "https://linuxcommand.org/tlcl.php",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "PDF gratuito (licença Creative Commons). Cobre linha de comando e shell script. Em inglês."
+    },
+    {
+     "titulo": "Formação Começando com Linux · Alura",
+     "url": "https://www.alura.com.br/formacao-comecando-linux",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    },
+    {
+     "titulo": "Formação LPI Linux Essentials · Alura",
+     "url": "https://www.alura.com.br/formacao-certificacao-lpi-linux-essentials",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Usuários, permissões e processos",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "Crie usuários e grupos, controle quem acessa o quê e veja o que está rodando na máquina.",
+   "projetoPratico": "Criar 3 usuários com permissões diferentes numa pasta compartilhada e documentar o resultado.",
+   "recursos": [
+    {
+     "titulo": "Linux Essentials · material de estudo da LPI",
+     "url": "https://learning.lpi.org/pt/learning-materials/010-160/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Material em português da certificação Linux Essentials. A página não informa o preço; confirmar antes de começar."
+    },
+    {
+     "titulo": "The Linux Command Line · William Shotts",
+     "url": "https://linuxcommand.org/tlcl.php",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "PDF gratuito (licença Creative Commons). Cobre linha de comando e shell script. Em inglês."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Shell script",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Automatize tarefas repetitivas com scripts em Bash: variáveis, condicionais, repetições e funções.",
+   "projetoPratico": "Um script que faz backup de uma pasta, compacta os arquivos e apaga os backups antigos.",
+   "recursos": [
+    {
+     "titulo": "The Linux Command Line · William Shotts",
+     "url": "https://linuxcommand.org/tlcl.php",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Use a parte de shell script do livro (PDF gratuito, em inglês)."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Redes básicas",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 4,
+   "descricao": "Endereços IP, DNS, portas, firewall e como computadores conversam. Quem cuida de servidores precisa disso todos os dias.",
+   "projetoPratico": "Descrever, passo a passo, o que acontece desde digitar um endereço até a página aparecer.",
+   "recursos": [
+    {
+     "titulo": "Camada de rede (OSI) · Central de Aprendizagem da Cloudflare",
+     "url": "https://www.cloudflare.com/pt-br/learning/network-layer/what-is-the-network-layer/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Explica pacotes, modelo OSI e TCP/IP. Cobre só a camada de rede; o resto de redes precisa de outro recurso."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "Serviços e servidor web",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Instale e configure serviços (como Nginx e SSH), leia logs e acesse a máquina com segurança.",
+   "projetoPratico": "Publicar uma página num servidor Linux com Nginx, acesso por chave SSH e firewall ativo.",
+   "recursos": [
+    {
+     "titulo": "Linux Essentials · material de estudo da LPI",
+     "url": "https://learning.lpi.org/pt/learning-materials/010-160/",
+     "tipo": "curso",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Material em português da certificação Linux Essentials. A página não informa o preço; confirmar antes de começar."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "ordem": 6,
+   "titulo": "Git e GitHub",
+   "nivel": "Básico",
+   "duracaoSemanas": 2,
+   "descricao": "Aprenda a versionar seu código e a publicá-lo no GitHub. Seu perfil no GitHub será o seu portfólio.",
+   "projetoPratico": "Criar sua conta no GitHub e publicar os exercícios da etapa anterior.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ]
+  },
+  {
+   "titulo": "Docker",
+   "nivel": "Avançado",
+   "duracaoSemanas": 3,
+   "descricao": "Empacote aplicações em contêineres para rodar do mesmo jeito em qualquer servidor.",
+   "projetoPratico": "Subir um serviço web e um banco de dados em contêineres.",
+   "recursos": [
+    {
+     "titulo": "Docker: Get started · documentação oficial",
+     "url": "https://docs.docker.com/get-started/introduction/",
+     "tipo": "documentação",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16"
+    }
+   ],
+   "ordem": 7
+  },
+  {
+   "titulo": "Projeto: servidor documentado",
+   "nivel": "Avançado",
+   "duracaoSemanas": 3,
+   "descricao": "Monte um servidor completo e escreva a documentação para outra pessoa conseguir repetir.",
+   "projetoPratico": "Publicar no GitHub os scripts e o passo a passo do servidor, com README.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 8
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 3000,
+   "maximo": 4000,
+   "valorReferencia": 3000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Administrador de Sistemas Júnior)",
+   "dataReferencia": "2025-10",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 17 salários informados (o mais recente é de 13/10/2025). Remuneração variável não inclusa. Cargo: Administrador de Sistemas Júnior. Não há dados específicos de Administrador Linux; usamos o cargo mais próximo."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 3000,
+   "maximo": 6000,
+   "valorReferencia": 5000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Administrador de Sistemas Pleno)",
+   "dataReferencia": "2024-09",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 23 salários informados (o mais recente é de 20/09/2024). Remuneração variável não inclusa. Cargo: Administrador de Sistemas Pleno. Dados com mais de um ano."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 5000,
+   "maximo": 12000,
+   "valorReferencia": 7000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Administrador de Sistemas Sênior)",
+   "dataReferencia": "2026-06",
+   "dadosLimitados": true,
+   "observacao": "Faixa e média arredondadas em milhares, com 5 salários informados (o mais recente é de 11/06/2026). Remuneração variável não inclusa. Cargo: Administrador de Sistemas Sênior. Poucos dados e faixa muito larga."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "Quase tudo está em inglês, exceto o material da LPI.",
+  "Link da LPI: a página não informa o preço; confirmar se é gratuito.",
+  "Falta um curso em português com link verificado para redes (só uma página da Cloudflare sobre a camada de rede).",
+  "Os salários usam 'Administrador de Sistemas', porque 'Administrador Linux' tem só 3 relatos. Pleno tem dados com mais de um ano e Sênior tem poucos.",
+  "Sem recurso verificado para Nginx e SSH; hoje a etapa depende só do material da LPI.",
+  "O site Linux Journey bloqueou a verificação e não foi incluído.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}

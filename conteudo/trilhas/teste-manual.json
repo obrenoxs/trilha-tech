@@ -1,0 +1,215 @@
+{
+ "versao": "1.0",
+ "geradoEm": "2026-10-16",
+ "trilha": {
+  "slug": "teste-manual",
+  "nome": "Teste manual",
+  "area": {
+   "numero": "05",
+   "nome": "Qualidade e Testes"
+  },
+  "nivelEntrada": "Iniciante",
+  "textoTrilha": "Quem faz teste manual usa o sistema como um usuário exigente, procura o que pode dar errado e explica cada defeito para o time corrigir. Nesta trilha você sai do zero, aprende fundamentos, técnicas de teste, relato de bugs e SQL, e termina com um plano de testes publicado.",
+  "paraQuemE": "Para quem nunca trabalhou com TI e quer uma porta de entrada sem programar, com atenção a detalhes.",
+  "horasPorSemana": 8,
+  "duracaoTotalSemanas": 24
+ },
+ "etapas": [
+  {
+   "titulo": "Como a web funciona",
+   "nivel": "Básico",
+   "duracaoSemanas": 3,
+   "descricao": "Entenda o que acontece entre o navegador e o servidor, para saber onde um problema pode estar.",
+   "projetoPratico": "Explicar com suas palavras o caminho de uma requisição, do clique até a página aparecer.",
+   "recursos": [
+    {
+     "titulo": "Uma visão geral do HTTP · MDN",
+     "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Em português (tradução da comunidade). Explica requisições, respostas e cabeçalhos."
+    }
+   ],
+   "ordem": 1
+  },
+  {
+   "titulo": "Fundamentos de teste de software",
+   "nivel": "Básico",
+   "duracaoSemanas": 4,
+   "descricao": "O que é qualidade, por que e como testar, níveis e tipos de teste, e os 7 princípios do teste. É o vocabulário que todo mundo da área usa.",
+   "projetoPratico": "Escrever uma página explicando a diferença entre teste unitário, de integração e de aceitação, com um exemplo de cada.",
+   "recursos": [
+    {
+     "titulo": "Certified Tester Foundation Level (CTFL) v4.0 · ISTQB",
+     "url": "https://www.istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A página oferece o programa (syllabus) para baixar, mas não informa preço nem idiomas. O exame é pago. Confirmar o que é gratuito."
+    },
+    {
+     "titulo": "BSTQB: representante do ISTQB no Brasil",
+     "url": "https://bstqb.online/",
+     "tipo": "documentação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Site em português com material de apoio ao estudo. A página não mostra quais materiais são gratuitos; os exames são pagos."
+    }
+   ],
+   "ordem": 2
+  },
+  {
+   "titulo": "Técnicas de teste e casos de teste",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 5,
+   "descricao": "Aprenda a derivar casos de teste de forma organizada (classes de equivalência, valores limite, tabelas de decisão) em vez de testar no achismo.",
+   "projetoPratico": "Escrever 20 casos de teste para um formulário de cadastro, usando as técnicas.",
+   "recursos": [
+    {
+     "titulo": "Certified Tester Foundation Level (CTFL) v4.0 · ISTQB",
+     "url": "https://www.istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0",
+     "tipo": "livro",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "A página oferece o programa (syllabus) para baixar, mas não informa preço nem idiomas. O exame é pago. Confirmar o que é gratuito."
+    },
+    {
+     "titulo": "Ministry of Testing: MoTaverse",
+     "url": "https://www.ministryoftesting.com/dojo",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Comunidade de pessoas que testam software, com cursos e palestras. A página não informa quais conteúdos são gratuitos. Confirmar."
+    }
+   ],
+   "ordem": 3
+  },
+  {
+   "titulo": "Relatando defeitos",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Um bom relato de bug tem passos para reproduzir, resultado esperado e obtido, evidências e gravidade. Pratique até que qualquer pessoa consiga reproduzir.",
+   "projetoPratico": "Testar um aplicativo real e relatar 5 defeitos com passos, evidências e gravidade.",
+   "recursos": [
+    {
+     "titulo": "Formação Carreira Tester QA · Alura",
+     "url": "https://www.alura.com.br/formacao-carreira-tester-qa",
+     "tipo": "formação",
+     "idioma": "PT",
+     "gratuito": false,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
+    }
+   ],
+   "ordem": 4
+  },
+  {
+   "titulo": "SQL básico para testes",
+   "nivel": "Intermediário",
+   "duracaoSemanas": 3,
+   "descricao": "Consulte o banco para conferir se os dados foram gravados do jeito certo depois de uma ação na tela.",
+   "projetoPratico": "Responder 10 perguntas sobre um banco de exemplo usando SQL.",
+   "recursos": [
+    {
+     "titulo": "SQLBolt: aprenda SQL com exercícios interativos",
+     "url": "https://sqlbolt.com/",
+     "tipo": "curso",
+     "idioma": "EN",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Lições curtas direto no navegador. Ainda falta indicar um curso de SQL em português com link verificado."
+    }
+   ],
+   "ordem": 5
+  },
+  {
+   "ordem": 6,
+   "titulo": "Git e GitHub",
+   "nivel": "Básico",
+   "duracaoSemanas": 2,
+   "descricao": "Aprenda a versionar seu código e a publicá-lo no GitHub. Seu perfil no GitHub será o seu portfólio.",
+   "projetoPratico": "Criar sua conta no GitHub e publicar os exercícios da etapa anterior.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ]
+  },
+  {
+   "titulo": "Projeto: plano de testes",
+   "nivel": "Avançado",
+   "duracaoSemanas": 4,
+   "descricao": "Una tudo: monte um plano de testes para um aplicativo real, execute-o e publique o resultado.",
+   "projetoPratico": "Publicar no GitHub um plano de testes, casos executados e relatos de defeitos de um aplicativo real, com README.",
+   "recursos": [
+    {
+     "titulo": "Pro Git (tradução em português)",
+     "url": "https://git-scm.com/book/pt-br/v2",
+     "tipo": "livro",
+     "idioma": "PT",
+     "gratuito": true,
+     "verificadoEm": "2026-10-16",
+     "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
+    }
+   ],
+   "ordem": 7
+  }
+ ],
+ "faixaSalarial": [
+  {
+   "nivel": "Júnior",
+   "minimo": 3000,
+   "maximo": 4000,
+   "valorReferencia": 3000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Testes Júnior)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 10/09/2026). Remuneração variável não inclusa. Cargo: Analista de Testes Júnior."
+  },
+  {
+   "nivel": "Pleno",
+   "minimo": 4000,
+   "maximo": 6000,
+   "valorReferencia": 5000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Testes Pleno)",
+   "dataReferencia": "2026-10",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 09/10/2026). Remuneração variável não inclusa. Cargo: Analista de Testes Pleno."
+  },
+  {
+   "nivel": "Sênior",
+   "minimo": 5000,
+   "maximo": 8000,
+   "valorReferencia": 6000,
+   "tipoReferencia": "média do salário base",
+   "fonte": "Glassdoor (Analista de Testes Sênior)",
+   "dataReferencia": "2026-09",
+   "dadosLimitados": false,
+   "observacao": "Faixa e média arredondadas em milhares, com 50 salários informados (o mais recente é de 20/09/2026). Remuneração variável não inclusa. Cargo: Analista de Testes Sênior."
+  }
+ ],
+ "avisosSalario": "Valores mensais brutos, em reais, copiados das fontes citadas. As fontes não informam o tipo de contratação (CLT ou PJ). São estimativas de mercado, que variam muito com cidade, empresa e tamanho da vaga.",
+ "pendencias": [
+  "ISTQB e BSTQB: as páginas não informam quais materiais são gratuitos nem os idiomas. Confirmar o programa (syllabus) em português.",
+  "Etapa 'Relatando defeitos' sem recurso verificado; falta um guia gratuito.",
+  "Ministry of Testing: a página não informa o que é gratuito; confirmar.",
+  "Falta recurso em português para SQL (só o SQLBolt, em inglês).",
+  "Falta recurso verificado para ferramentas de gestão de testes e de defeitos (como Jira).",
+  "Faltam recursos sobre testes de acessibilidade e de aplicativos móveis.",
+  "Itens pagos (Alura, Coursera, exames de certificação): as páginas não mostram o preço ou ele muda; confirmar o valor antes de comprar. Sempre há opções gratuitas na mesma etapa quando existem."
+ ]
+}
