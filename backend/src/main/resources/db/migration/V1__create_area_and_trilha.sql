@@ -13,7 +13,7 @@ CREATE TABLE trilha (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     area_id  UUID NOT NULL REFERENCES area(id),
     slug TEXT NOT NULL UNIQUE,
-    ordem_na_area INT NOT NULL UNIQUE,
+    ordem_na_area INT NOT NULL,
     nome TEXT NOT NULL,
     resumo TEXT NOT NULL,
     nivel_entrada TEXT NOT NULL,
@@ -23,4 +23,4 @@ CREATE TABLE trilha (
     avisos_salario TEXT NOT NULL,
     conteudo_conferido_em DATE NOT NULL,
     UNIQUE (area_id, ordem_na_area)
-)
+);
