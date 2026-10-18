@@ -6,6 +6,7 @@
   "nome": "Testes de performance",
   "area": {
    "numero": "05",
+   "slug": "qualidade-e-testes",
    "nome": "Qualidade e Testes"
   },
   "nivelEntrada": "Iniciante",
@@ -29,6 +30,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O curso é gratuito; só o certificado é pago."
     },
@@ -38,6 +40,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
     }
@@ -56,6 +59,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O curso é gratuito, mas pede um cadastro gratuito. Só o certificado é pago."
     },
@@ -65,6 +69,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Módulo prático da MDN com variáveis, texto, números e arrays."
     },
@@ -74,6 +79,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Para aprofundar e consultar. Ainda não tem versão em português."
     }
@@ -94,6 +100,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
     }
@@ -112,6 +119,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Explica pacotes, modelo OSI e TCP/IP. Cobre só a camada de rede."
     },
@@ -121,6 +129,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Em português (tradução da comunidade). Explica requisições, respostas e cabeçalhos."
     }
@@ -140,6 +149,7 @@
      "tipo": "livro",
      "idioma": "EN",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "A página oferece o programa (syllabus) para baixar, mas não informa preço nem idiomas. O exame é pago. Confirmar o que é gratuito."
     },
@@ -149,6 +159,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Site em português com material de apoio ao estudo. A página não mostra quais materiais são gratuitos; os exames são pagos."
     }
@@ -168,6 +179,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Material em português. A página não informa o preço; confirmar antes de começar."
     },
@@ -177,6 +189,7 @@
      "tipo": "livro",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "PDF gratuito (licença Creative Commons). Em inglês."
     }
@@ -196,6 +209,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Ferramenta de código aberto; os scripts são em JavaScript."
     }
@@ -215,6 +229,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Ferramenta do projeto Apache feita em Java. A página não cita a licença."
     }
@@ -234,6 +249,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16"
     }
    ],
@@ -252,6 +268,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Ferramenta de código aberto; os scripts são em JavaScript."
     },
@@ -261,6 +278,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
     }

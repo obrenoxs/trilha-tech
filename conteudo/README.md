@@ -7,9 +7,11 @@ Esta pasta **não tem código de servidor**. Ela guarda o conteúdo que o backen
 ## Conteúdo
 
 ```
-catalogo.json        índice: áreas e trilhas (slug, nome, duração)
+catalogo.json        áreas (com textos) e trilhas em ordem de exibição
+quiz.json            as 12 perguntas do quiz
 trilhas/<slug>.json  uma trilha completa (etapas, recursos, salários)
 pdfs/roadmap-<slug>.pdf   PDF pronto de cada trilha
+pdfs/manifest.json   hash do conteúdo de cada PDF (detecta PDF desatualizado)
 docs/contrato-roadmap.md  descrição de cada campo do JSON
 ferramentas/         validação e geração dos PDFs
 ```
@@ -47,7 +49,7 @@ cd ferramentas && npm ci                             # só na primeira vez (font
 python3 gerar_pdf.py <slug>                          # refaz o PDF de uma trilha
 ```
 
-Depois de mudar um JSON: refazer o PDF da trilha, atualizar `catalogo.json` se o nome ou a duração mudou e rodar a validação.
+Depois de mudar um JSON de trilha: refazer o PDF (`gerar_pdf.py <slug>`), rodar `python3 ferramentas/manifesto.py` e `python3 ferramentas/validar.py`. Se o nome, o nível de entrada ou a duração mudou, atualize também o `catalogo.json`.
 
 ## Regras
 

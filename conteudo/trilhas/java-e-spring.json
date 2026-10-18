@@ -6,6 +6,7 @@
   "nome": "Java e Spring",
   "area": {
    "numero": "01",
+   "slug": "desenvolvimento-de-software",
    "nome": "Desenvolvimento de Software"
   },
   "nivelEntrada": "Iniciante",
@@ -29,6 +30,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O curso é gratuito; só o certificado é pago."
     },
@@ -38,6 +40,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
     }
@@ -57,6 +60,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
     }
@@ -76,6 +80,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Comece por 'Your First Steps in Java' e 'Getting to Know the Language'."
     },
@@ -85,6 +90,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     }
@@ -104,6 +110,7 @@
      "tipo": "vídeo",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "32 vídeos do prof. Gustavo Guanabara. Usa a IDE NetBeans, mas você pode usar outra. Conferido por um índice de playlists, não direto no YouTube."
     },
@@ -113,6 +120,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Use para complementar com 'Collections and Streams' e exceções."
     }
@@ -132,6 +140,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "18 lições com exercícios no navegador. A página não cita preço; o acesso estava livre na verificação."
     },
@@ -141,6 +150,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Capítulos 1 a 3: instalação, linguagem SQL e recursos avançados."
     }
@@ -160,6 +170,7 @@
      "tipo": "ferramenta",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Gera o projeto Spring Boot pronto para abrir na IDE."
     },
@@ -169,6 +180,7 @@
      "tipo": "guia",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Cerca de 15 minutos. Exige Java 17 ou superior."
     },
@@ -178,6 +190,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Comece por 'Developing Your First Spring Boot Application'."
     },
@@ -187,6 +200,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     },
@@ -196,6 +210,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     }
@@ -215,6 +230,7 @@
      "tipo": "guia",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Cerca de 15 minutos. Usa um banco em memória (H2) para o exemplo."
     },
@@ -224,6 +240,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Comece por 'Getting Started'. JWT fica em OAuth2 > Resource Server > JWT."
     }
@@ -243,6 +260,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Tem exemplos de mock, when e verify na própria página."
     },
@@ -252,6 +270,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Containers, imagens e Docker Compose."
     },
@@ -261,6 +280,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Guia de início rápido para publicar um backend com banco de dados (inclui Spring Boot)."
     }

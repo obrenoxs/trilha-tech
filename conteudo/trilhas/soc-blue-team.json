@@ -6,6 +6,7 @@
   "nome": "SOC/Blue Team",
   "area": {
    "numero": "04",
+   "slug": "seguranca-da-informacao",
    "nome": "Segurança da Informação"
   },
   "nivelEntrada": "Iniciante",
@@ -29,6 +30,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O curso é gratuito; só o certificado é pago."
     },
@@ -38,6 +40,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
     }
@@ -56,6 +59,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Material em português da certificação Linux Essentials. A página não informa o preço; confirmar antes de começar."
     },
@@ -65,6 +69,7 @@
      "tipo": "livro",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "PDF gratuito (licença Creative Commons). Cobre linha de comando e shell script. Em inglês."
     }
@@ -84,6 +89,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Explica pacotes, modelo OSI e TCP/IP. Cobre só a camada de rede; o resto de redes precisa de outro recurso."
     }
@@ -103,6 +109,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Curso introdutório gratuito, em inglês. A página não informa a duração."
     },
@@ -112,6 +119,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Trilhas para iniciantes. A página mostra um nível gratuito e outro pago; confirmar o que cada trilha inclui."
     }
@@ -131,6 +139,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Plataforma de código aberto de monitoramento (SIEM/XDR), com guia de instalação rápida."
     }
@@ -150,6 +159,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Base de conhecimento gratuita das táticas e técnicas de atacantes."
     }
@@ -169,6 +179,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Treino de analista de SOC. O plano básico é gratuito (cursos como SOC Fundamentals); os planos pagos custam a partir de US$ 24,99 por mês. A página informa a compra pela Hack The Box."
     },
@@ -178,6 +189,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Trilha iniciante listada na página. Confirmar o que é gratuito."
     }
@@ -197,6 +209,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Plataforma de código aberto de monitoramento (SIEM/XDR), com guia de instalação rápida."
     },
@@ -206,6 +219,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
     }

@@ -6,6 +6,7 @@
   "nome": "Administração de sistemas",
   "area": {
    "numero": "06",
+   "slug": "suporte-tecnico-e-redes",
    "nome": "Suporte Técnico e Redes"
   },
   "nivelEntrada": "Iniciante",
@@ -28,6 +29,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "As aulas são gratuitas com cadastro; só o certificado é pago. Cobre componentes, montagem e instalação do Windows 10 e do Linux."
     }
@@ -47,6 +49,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Material em português. A página não informa o preço; confirmar antes de começar."
     },
@@ -56,6 +59,7 @@
      "tipo": "livro",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "PDF gratuito (licença Creative Commons). Cobre linha de comando e shell script. Em inglês."
     }
@@ -75,6 +79,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Gratuito com cadastro; só o certificado é pago. Cobre Wi-Fi, IP, DHCP, sub-redes e simulação no Cisco Packet Tracer."
     },
@@ -84,6 +89,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16"
     },
     {
@@ -92,6 +98,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16"
     }
    ],
@@ -110,6 +117,7 @@
      "tipo": "livro",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "PDF gratuito (licença Creative Commons). Cobre linha de comando e shell script. Em inglês."
     }
@@ -129,6 +137,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Documentação oficial em português, com tradução automática (pode ter termos estranhos). Fala de uma avaliação gratuita do Windows Server."
     },
@@ -138,6 +147,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Documentação oficial; a tradução é automática e há links para páginas antigas."
     },
@@ -147,6 +157,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Trilha de nível intermediário com 5 módulos. A página não informa o custo (o Microsoft Learn costuma ser gratuito). Tradução automática."
     }
@@ -166,6 +177,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Guia para quem vem de interfaces gráficas, adaptado do livro de Mike F. Robbins. Os capítulos são públicos; a tradução é automática."
     }
@@ -185,6 +197,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Documentação oficial: instalação, rede, segurança (SSH), serviços web e virtualização. Em inglês."
     },
@@ -194,6 +207,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Material em português. A página não informa o preço; confirmar antes de começar."
     }
@@ -214,6 +228,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
     }
@@ -232,6 +247,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
     }

@@ -6,6 +6,7 @@
   "nome": "AppSec",
   "area": {
    "numero": "04",
+   "slug": "seguranca-da-informacao",
    "nome": "Segurança da Informação"
   },
   "nivelEntrada": "Iniciante",
@@ -29,6 +30,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O curso é gratuito; só o certificado é pago."
     },
@@ -38,6 +40,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
     },
@@ -47,6 +50,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     }
@@ -66,6 +70,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
     }
@@ -84,6 +89,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16"
     }
    ],
@@ -102,6 +108,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Curso introdutório gratuito, em inglês. A página não informa a duração."
     }
@@ -121,6 +128,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Lista das falhas mais comuns em aplicações web. Em inglês."
     },
@@ -130,6 +138,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "100% gratuito, com explicações e laboratórios no navegador. Em inglês."
     },
@@ -139,6 +148,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Mais de 150 guias curtos de segurança (licença Creative Commons)."
     }
@@ -158,6 +168,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Aplicação de treino de código aberto (licença MIT) com falhas de propósito e desafios com placar."
     },
@@ -167,6 +178,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Aplicação Java com lições guiadas. A página não informa a licença, mas o código está no GitHub; confirmar."
     }
@@ -186,6 +198,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "O guia usa uma plataforma com cadastro; a página não informa preços nem a licença da ferramenta. Confirmar antes de começar."
     }
@@ -205,6 +218,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Mais de 150 guias curtos de segurança (licença Creative Commons)."
     }
@@ -224,6 +238,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Mais de 150 guias curtos de segurança (licença Creative Commons)."
     },
@@ -233,6 +248,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
     }

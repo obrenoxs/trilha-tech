@@ -6,6 +6,7 @@
   "nome": "Front-end",
   "area": {
    "numero": "01",
+   "slug": "desenvolvimento-de-software",
    "nome": "Desenvolvimento de Software"
   },
   "nivelEntrada": "Iniciante",
@@ -29,6 +30,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O curso é gratuito; só o certificado é pago."
     },
@@ -38,6 +40,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
     }
@@ -57,6 +60,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
     }
@@ -75,6 +79,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Módulo prático da MDN, em português."
     },
@@ -84,6 +89,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     }
@@ -103,6 +109,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16"
     },
     {
@@ -111,6 +118,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Cobre Flexbox, Grid e posicionamento."
     }
@@ -130,6 +138,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O curso é gratuito, mas pede um cadastro gratuito. Só o certificado é pago."
     },
@@ -139,6 +148,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16"
     },
     {
@@ -147,6 +157,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Para aprofundar e consultar. Ainda não tem versão em português."
     }
@@ -166,6 +177,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Documentação oficial em português, com exemplos para praticar."
     },
@@ -175,6 +187,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     }
@@ -194,6 +207,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16"
     },
     {
@@ -202,6 +216,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     },
@@ -211,6 +226,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     }
@@ -230,6 +246,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Há mais de 120 projetos com designs profissionais. Os desafios gratuitos já bastam para começar."
     }
@@ -249,6 +266,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16"
     },
     {
@@ -257,6 +275,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Serviço para publicar sites a partir do GitHub. Há plano gratuito."
     }

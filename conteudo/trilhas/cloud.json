@@ -6,6 +6,7 @@
   "nome": "Cloud",
   "area": {
    "numero": "03",
+   "slug": "infraestrutura-cloud-devops",
    "nome": "Infraestrutura, Cloud e DevOps"
   },
   "nivelEntrada": "Iniciante",
@@ -29,6 +30,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O curso é gratuito; só o certificado é pago."
     },
@@ -38,6 +40,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Opcional, para aprofundar. Aulas dubladas em português. São 11 semanas, bem mais pesado que o restante da etapa."
     }
@@ -56,6 +59,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Material em português da certificação Linux Essentials. A página não informa o preço; confirmar antes de começar."
     },
@@ -65,6 +69,7 @@
      "tipo": "livro",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "PDF gratuito (licença Creative Commons). Cobre linha de comando e shell script. Em inglês."
     }
@@ -85,6 +90,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
     }
@@ -103,6 +109,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Explica pacotes, modelo OSI e TCP/IP. Cobre só a camada de rede; o resto de redes precisa de outro recurso."
     }
@@ -122,6 +129,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Curso digital da AWS em português; a página não informa o preço, então confirme se há custo."
     },
@@ -131,6 +139,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Créditos de até US$ 200 por até 6 meses para contas novas. Configure alertas de gasto antes de criar recursos."
     },
@@ -140,6 +149,7 @@
      "tipo": "certificação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: exame de US$ 100, 90 minutos, disponível em português. Opcional."
     },
@@ -149,6 +159,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     },
@@ -158,6 +169,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     }
@@ -177,6 +189,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16"
     }
    ],
@@ -195,6 +208,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "6 tutoriais curtos (cerca de 49 minutos). A página não informa custos; usar a AWS pode gerar cobrança, então configure alertas de gasto."
     }
@@ -214,6 +228,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Em português, mas o módulo de atualização só existe em inglês e os terminais interativos podem não funcionar mais (dependiam do Katacoda). Use o Minikube no seu computador."
     }
@@ -233,6 +248,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "6 tutoriais curtos (cerca de 49 minutos). A página não informa custos; usar a AWS pode gerar cobrança, então configure alertas de gasto."
     },
@@ -242,6 +258,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
     }

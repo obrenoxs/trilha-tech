@@ -6,6 +6,7 @@
   "nome": "Gestão de projetos",
   "area": {
    "numero": "08",
+   "slug": "gestao-e-produtos-de-ti",
    "nome": "Gestão e Produtos de TI"
   },
   "nivelEntrada": "Iniciante",
@@ -28,6 +29,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre as 5 fases, métodos (ágil, cascata, Scrum, Lean, Kanban), Gantt e EAP."
     }
@@ -47,6 +49,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Texto curto com os 4 valores do desenvolvimento ágil, em português."
     },
@@ -56,6 +59,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Porta de entrada para guias de Scrum, Kanban, histórias de usuário e métricas."
     }
@@ -75,6 +79,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre papéis, sprints, cerimônias e artefatos."
     },
@@ -84,6 +89,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre."
     },
@@ -93,6 +99,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "A tradução está listada na página oficial de downloads, mas o PDF não foi aberto na verificação, e a página da tradução não traz licença. A versão em inglês é gratuita (licença Creative Commons). Confirmar."
     }
@@ -112,6 +119,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Edição de 2025, de leitura livre. A página não lista português."
     },
@@ -121,6 +129,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre Scrum, Kanban, estimativas e relatórios."
     }
@@ -140,6 +149,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre as 5 fases, métodos (ágil, cascata, Scrum, Lean, Kanban), Gantt e EAP."
     },
@@ -149,6 +159,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre Scrum, Kanban, estimativas e relatórios."
     }
@@ -168,6 +179,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre Scrum, Kanban, estimativas e relatórios."
     }
@@ -187,6 +199,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     },
@@ -196,6 +209,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     }
@@ -215,6 +229,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre as 5 fases, métodos (ágil, cascata, Scrum, Lean, Kanban), Gantt e EAP."
     },
@@ -224,6 +239,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Cobre Scrum, Kanban, estimativas e relatórios."
     }

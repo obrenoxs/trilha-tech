@@ -6,6 +6,7 @@
   "nome": "GRC",
   "area": {
    "numero": "04",
+   "slug": "seguranca-da-informacao",
    "nome": "Segurança da Informação"
   },
   "nivelEntrada": "Iniciante",
@@ -28,6 +29,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Explica pacotes, modelo OSI e TCP/IP. Cobre só a camada de rede; o resto de redes precisa de outro recurso."
     }
@@ -47,6 +49,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Curso introdutório gratuito, em inglês. A página não informa a duração."
     }
@@ -66,6 +69,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Framework do governo dos EUA, com guias de início rápido. A página não informa o preço; confirmar."
     },
@@ -75,6 +79,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Conjunto de boas práticas priorizadas. A página não informa se o download é gratuito; confirmar."
     }
@@ -94,6 +99,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Texto oficial da lei, no site do governo federal. Leitura difícil para iniciantes; use como consulta."
     }
@@ -113,6 +119,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     },
@@ -122,6 +129,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     }
@@ -141,6 +149,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
     }

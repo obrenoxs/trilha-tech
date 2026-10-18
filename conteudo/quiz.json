@@ -1,0 +1,365 @@
+{
+ "versao": "1.0",
+ "perguntas": [
+  {
+   "ordem": 1,
+   "texto": "Você ganhou uma tarde livre para um projeto pessoal. O que mais te anima?",
+   "alternativas": [
+    {
+     "ordem": 1,
+     "texto": "Construir um app ou site funcionando do zero",
+     "areaPrincipal": "desenvolvimento-de-software",
+     "areaSecundaria": "ux-ui-design"
+    },
+    {
+     "ordem": 2,
+     "texto": "Descobrir padrões escondidos numa planilha enorme de dados",
+     "areaPrincipal": "dados-e-ia",
+     "areaSecundaria": "desenvolvimento-de-software"
+    },
+    {
+     "ordem": 3,
+     "texto": "Redesenhar uma tela para ficar bonita e fácil de usar",
+     "areaPrincipal": "ux-ui-design",
+     "areaSecundaria": "dados-e-ia"
+    },
+    {
+     "ordem": 4,
+     "texto": "Organizar um evento ou projeto com tarefas, prazos e pessoas",
+     "areaPrincipal": "gestao-e-produtos-de-ti",
+     "areaSecundaria": "ux-ui-design"
+    }
+   ]
+  },
+  {
+   "ordem": 2,
+   "texto": "Algo dá errado em um sistema. Qual é o seu primeiro impulso?",
+   "alternativas": [
+    {
+     "ordem": 1,
+     "texto": "Investigar onde na infraestrutura (servidores, nuvem, rede) está o gargalo",
+     "areaPrincipal": "infraestrutura-cloud-devops",
+     "areaSecundaria": "suporte-tecnico-e-redes"
+    },
+    {
+     "ordem": 2,
+     "texto": "Descobrir se alguém explorou uma brecha de segurança",
+     "areaPrincipal": "seguranca-da-informacao",
+     "areaSecundaria": "infraestrutura-cloud-devops"
+    },
+    {
+     "ordem": 3,
+     "texto": "Repetir o erro passo a passo e anotar exatamente quando acontece",
+     "areaPrincipal": "qualidade-e-testes",
+     "areaSecundaria": "seguranca-da-informacao"
+    },
+    {
+     "ordem": 4,
+     "texto": "Ajudar a pessoa afetada a voltar a trabalhar o mais rápido possível",
+     "areaPrincipal": "suporte-tecnico-e-redes",
+     "areaSecundaria": "infraestrutura-cloud-devops"
+    }
+   ]
+  },
+  {
+   "ordem": 3,
+   "texto": "Qual desafio você toparia resolver por horas sem ver o tempo passar?",
+   "alternativas": [
+    {
+     "ordem": 1,
+     "texto": "Fazer a lógica complicada de um programa funcionar",
+     "areaPrincipal": "desenvolvimento-de-software",
+     "areaSecundaria": "dados-e-ia"
+    },
+    {
+     "ordem": 2,
+     "texto": "Configurar um ambiente em que várias coisas rodem juntas sem cair",
+     "areaPrincipal": "infraestrutura-cloud-devops",
+     "areaSecundaria": "desenvolvimento-de-software"
+    },
+    {
+     "ordem": 3,
+     "texto": "Caçar todos os jeitos possíveis de quebrar um programa",
+     "areaPrincipal": "qualidade-e-testes",
+     "areaSecundaria": "seguranca-da-informacao"
+    },
+    {
+     "ordem": 4,
+     "texto": "Descobrir por que as pessoas se confundem ao usar um aplicativo",
+     "areaPrincipal": "ux-ui-design",
+     "areaSecundaria": "suporte-tecnico-e-redes"
+    }
+   ]
+  },
+  {
+   "ordem": 4,
+   "texto": "Num trabalho em grupo, você costuma acabar…",
+   "alternativas": [
+    {
+     "ordem": 1,
+     "texto": "Analisando números para embasar a decisão do grupo",
+     "areaPrincipal": "dados-e-ia",
+     "areaSecundaria": "gestao-e-produtos-de-ti"
+    },
+    {
+     "ordem": 2,
+     "texto": "Pensando no que pode dar errado e nos riscos",
+     "areaPrincipal": "seguranca-da-informacao",
+     "areaSecundaria": "qualidade-e-testes"
+    },
+    {
+     "ordem": 3,
+     "texto": "Ajudando os colegas que travaram em algum problema técnico",
+     "areaPrincipal": "suporte-tecnico-e-redes",
+     "areaSecundaria": "gestao-e-produtos-de-ti"
+    },
+    {
+     "ordem": 4,
+     "texto": "Distribuindo as tarefas e acompanhando os prazos",
+     "areaPrincipal": "gestao-e-produtos-de-ti",
+     "areaSecundaria": "suporte-tecnico-e-redes"
+    }
+   ]
+  },
+  {
+   "ordem": 5,
+   "texto": "Qual destes elogios você mais gostaria de receber?",
+   "alternativas": [
+    {
+     "ordem": 1,
+     "texto": "\"Você criou algo que funciona de verdade\"",
+     "areaPrincipal": "desenvolvimento-de-software",
+     "areaSecundaria": "qualidade-e-testes"
+    },
+    {
+     "ordem": 2,
+     "texto": "\"Você nos protegeu de um ataque\"",
+     "areaPrincipal": "seguranca-da-informacao",
+     "areaSecundaria": "infraestrutura-cloud-devops"
+    },
+    {
+     "ordem": 3,
+     "texto": "\"Você explicou de um jeito que até eu entendi\"",
+     "areaPrincipal": "suporte-tecnico-e-redes",
+     "areaSecundaria": "ux-ui-design"
+    },
+    {
+     "ordem": 4,
+     "texto": "\"Ficou lindo e super fácil de usar\"",
+     "areaPrincipal": "ux-ui-design",
+     "areaSecundaria": "desenvolvimento-de-software"
+    }
+   ]
+  },
+  {
+   "ordem": 6,
+   "texto": "Que tipo de tarefa te dá mais satisfação ao terminar?",
+   "alternativas": [
+    {
+     "ordem": 1,
+     "texto": "Chegar a uma conclusão clara a partir de muitos dados",
+     "areaPrincipal": "dados-e-ia",
+     "areaSecundaria": "qualidade-e-testes"
+    },
+    {
+     "ordem": 2,
+     "texto": "Deixar um sistema estável, rápido e funcionando sozinho",
+     "areaPrincipal": "infraestrutura-cloud-devops",
+     "areaSecundaria": "seguranca-da-informacao"
+    },
+    {
+     "ordem": 3,
+     "texto": "Garantir que nada vai quebrar antes de algo ir ao ar",
+     "areaPrincipal": "qualidade-e-testes",
+     "areaSecundaria": "infraestrutura-cloud-devops"
+    },
+    {
+     "ordem": 4,
+     "texto": "Entregar um projeto no prazo, com todo mundo alinhado",
+     "areaPrincipal": "gestao-e-produtos-de-ti",
+     "areaSecundaria": "ux-ui-design"
+    }
+   ]
+  },
+  {
+   "ordem": 7,
+   "texto": "Sobre qual destes assuntos você teria mais curiosidade nos próximos anos?",
+   "alternativas": [
+    {
+     "ordem": 1,
+     "texto": "Como são feitos os apps e sites que eu uso",
+     "areaPrincipal": "desenvolvimento-de-software",
+     "areaSecundaria": "infraestrutura-cloud-devops"
+    },
+    {
+     "ordem": 2,
+     "texto": "Como máquinas aprendem e preveem coisas",
+     "areaPrincipal": "dados-e-ia",
+     "areaSecundaria": "desenvolvimento-de-software"
+    },
+    {
+     "ordem": 3,
+     "texto": "Como a internet e a nuvem funcionam por trás dos panos",
+     "areaPrincipal": "infraestrutura-cloud-devops",
+     "areaSecundaria": "suporte-tecnico-e-redes"
+    },
+    {
+     "ordem": 4,
+     "texto": "Como hackers atacam e como alguém se defende",
+     "areaPrincipal": "seguranca-da-informacao",
+     "areaSecundaria": "desenvolvimento-de-software"
+    }
+   ]
+  },
+  {
+   "ordem": 8,
+   "texto": "Num dia de trabalho ideal, você…",
+   "alternativas": [
+    {
+     "ordem": 1,
+     "texto": "Testa um recurso novo e anota cada detalhe que não ficou certo",
+     "areaPrincipal": "qualidade-e-testes",
+     "areaSecundaria": "ux-ui-design"
+    },
+    {
+     "ordem": 2,
+     "texto": "Atende pessoas e resolve os problemas delas na hora",
+     "areaPrincipal": "suporte-tecnico-e-redes",
+     "areaSecundaria": "gestao-e-produtos-de-ti"
+    },
+    {
+     "ordem": 3,
+     "texto": "Conversa com usuários e desenha soluções no papel ou na tela",
+     "areaPrincipal": "ux-ui-design",
+     "areaSecundaria": "dados-e-ia"
+    },
+    {
+     "ordem": 4,
+     "texto": "Alinha prioridades entre times e decide o que vem primeiro",
+     "areaPrincipal": "gestao-e-produtos-de-ti",
+     "areaSecundaria": "ux-ui-design"
+    }
+   ]
+  },
+  {
+   "ordem": 9,
+   "texto": "Se pudesse ter um superpoder profissional, qual escolheria?",
+   "alternativas": [
+    {
+     "ordem": 1,
+     "texto": "Transformar uma ideia em um programa em poucas horas",
+     "areaPrincipal": "desenvolvimento-de-software",
+     "areaSecundaria": "dados-e-ia"
+    },
+    {
+     "ordem": 2,
+     "texto": "Prever o futuro a partir de dados",
+     "areaPrincipal": "dados-e-ia",
+     "areaSecundaria": "qualidade-e-testes"
+    },
+    {
+     "ordem": 3,
+     "texto": "Enxergar qualquer falha escondida antes dos outros",
+     "areaPrincipal": "qualidade-e-testes",
+     "areaSecundaria": "seguranca-da-informacao"
+    },
+    {
+     "ordem": 4,
+     "texto": "Resolver qualquer problema técnico de qualquer pessoa na hora",
+     "areaPrincipal": "suporte-tecnico-e-redes",
+     "areaSecundaria": "infraestrutura-cloud-devops"
+    }
+   ]
+  },
+  {
+   "ordem": 10,
+   "texto": "Qual projeto de equipe parece mais legal para você?",
+   "alternativas": [
+    {
+     "ordem": 1,
+     "texto": "Colocar um serviço no ar que aguente milhares de pessoas ao mesmo tempo",
+     "areaPrincipal": "infraestrutura-cloud-devops",
+     "areaSecundaria": "seguranca-da-informacao"
+    },
+    {
+     "ordem": 2,
+     "texto": "Simular um ataque para testar as defesas de uma empresa",
+     "areaPrincipal": "seguranca-da-informacao",
+     "areaSecundaria": "qualidade-e-testes"
+    },
+    {
+     "ordem": 3,
+     "texto": "Criar a identidade visual e a experiência de um produto novo",
+     "areaPrincipal": "ux-ui-design",
+     "areaSecundaria": "gestao-e-produtos-de-ti"
+    },
+    {
+     "ordem": 4,
+     "texto": "Coordenar um time para lançar um produto novo",
+     "areaPrincipal": "gestao-e-produtos-de-ti",
+     "areaSecundaria": "desenvolvimento-de-software"
+    }
+   ]
+  },
+  {
+   "ordem": 11,
+   "texto": "Qual destas habilidades você sente que teria mais facilidade em desenvolver?",
+   "alternativas": [
+    {
+     "ordem": 1,
+     "texto": "Pensar em passos lógicos para resolver problemas",
+     "areaPrincipal": "desenvolvimento-de-software",
+     "areaSecundaria": "dados-e-ia"
+    },
+    {
+     "ordem": 2,
+     "texto": "Entender como as coisas se conectam (computadores, redes, servidores)",
+     "areaPrincipal": "infraestrutura-cloud-devops",
+     "areaSecundaria": "suporte-tecnico-e-redes"
+    },
+    {
+     "ordem": 3,
+     "texto": "Ter paciência para explicar e orientar as pessoas",
+     "areaPrincipal": "suporte-tecnico-e-redes",
+     "areaSecundaria": "gestao-e-produtos-de-ti"
+    },
+    {
+     "ordem": 4,
+     "texto": "Liderar, negociar e manter o grupo no mesmo ritmo",
+     "areaPrincipal": "gestao-e-produtos-de-ti",
+     "areaSecundaria": "suporte-tecnico-e-redes"
+    }
+   ]
+  },
+  {
+   "ordem": 12,
+   "texto": "Diante de um problema grande e desconhecido, você prefere…",
+   "alternativas": [
+    {
+     "ordem": 1,
+     "texto": "Coletar dados e testar hipóteses",
+     "areaPrincipal": "dados-e-ia",
+     "areaSecundaria": "qualidade-e-testes"
+    },
+    {
+     "ordem": 2,
+     "texto": "Investigar pistas como um detetive",
+     "areaPrincipal": "seguranca-da-informacao",
+     "areaSecundaria": "dados-e-ia"
+    },
+    {
+     "ordem": 3,
+     "texto": "Seguir um roteiro e conferir cada passo com cuidado",
+     "areaPrincipal": "qualidade-e-testes",
+     "areaSecundaria": "seguranca-da-informacao"
+    },
+    {
+     "ordem": 4,
+     "texto": "Entrevistar as pessoas para entender o que elas precisam de verdade",
+     "areaPrincipal": "ux-ui-design",
+     "areaSecundaria": "gestao-e-produtos-de-ti"
+    }
+   ]
+  }
+ ]
+}

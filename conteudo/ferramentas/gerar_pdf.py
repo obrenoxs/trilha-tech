@@ -31,7 +31,7 @@ CARD_COR = ["var(--coral)", "var(--mint)", "var(--lemon)", "var(--peri)"]
 def recurso(r):
     dom = urlparse(r["url"]).netloc.replace("www.", "")
     obs = f'<div class="obs">{esc(r["observacao"])}</div>' if r.get("observacao") else ""
-    grat = '<span class="tag free">Grátis</span>' if r.get("gratuito") else ('<span class="tag paid">Pago</span>' if str(r.get("observacao","")).startswith("Pago") else '<span class="tag paid">Confirmar preço</span>')
+    grat = {"gratuito": '<span class="tag free">Grátis</span>', "pago": '<span class="tag paid">Pago</span>'}.get(r.get("acesso"), '<span class="tag paid">Confirmar preço</span>')
     return f'''<li class="rec"><a class="rtit" href="{esc(r["url"])}">{esc(r["titulo"])}</a>
       <div class="tags"><span class="tag">{esc(r["tipo"])}</span><span class="tag">{esc(r["idioma"])}</span>{grat}<span class="dom">{esc(dom)} · conferido em {dbr(r["verificadoEm"])}</span></div>{obs}</li>'''
 

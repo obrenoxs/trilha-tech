@@ -6,6 +6,7 @@
   "nome": "Product Manager",
   "area": {
    "numero": "08",
+   "slug": "gestao-e-produtos-de-ti",
    "nome": "Gestão e Produtos de TI"
   },
   "nivelEntrada": "Iniciante",
@@ -28,6 +29,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Explica o papel de quem gerencia produtos e a diferença para quem gerencia projetos."
     },
@@ -37,6 +39,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     }
@@ -56,6 +59,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Texto curto com os 4 valores do desenvolvimento ágil, em português."
     },
@@ -65,6 +69,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Porta de entrada para guias de Scrum, Kanban, histórias de usuário e métricas."
     }
@@ -84,6 +89,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigos de Marty Cagan sobre produto. A página não diz se o acesso é livre nem lista preços; confirmar. Em inglês."
     },
@@ -93,6 +99,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Guia que compara 20 métodos de pesquisa. O texto é gratuito; o site também vende cursos. Em inglês."
     }
@@ -112,6 +119,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Explica os 3 Cs e o modelo 'Como [pessoa], eu quero...'."
     },
@@ -121,6 +129,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Mostra como escrever um PRD em formato ágil."
     }
@@ -140,6 +149,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre."
     },
@@ -149,6 +159,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigos de Marty Cagan sobre produto. A página não diz se o acesso é livre nem lista preços; confirmar. Em inglês."
     }
@@ -168,6 +179,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Lições curtas direto no navegador. Ainda falta indicar um curso de SQL em português com link verificado."
     }
@@ -187,6 +199,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Explica o papel de quem gerencia produtos e a diferença para quem gerencia projetos."
     },
@@ -196,6 +209,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre. Mostra como escrever um PRD em formato ágil."
     },
@@ -205,6 +219,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Artigo da Atlassian em português. Promove os produtos da empresa (Jira, Confluence), mas o texto é de leitura livre."
     }

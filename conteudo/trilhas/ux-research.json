@@ -6,6 +6,7 @@
   "nome": "UX Research",
   "area": {
    "numero": "07",
+   "slug": "ux-ui-design",
    "nome": "UX/UI Design"
   },
   "nivelEntrada": "Iniciante",
@@ -28,6 +29,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
     },
@@ -37,6 +39,7 @@
      "tipo": "curso",
      "idioma": "EN",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Plataforma de design centrado em pessoas, com guia e métodos. A página não informa se tudo é gratuito; confirmar. O baralho de exercícios é vendido."
     },
@@ -46,6 +49,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Cerca de 30 princípios de psicologia aplicados a interfaces. A página cita licença Creative Commons com restrições; só para estudo."
     },
@@ -55,6 +59,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     }
@@ -74,6 +79,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
     },
@@ -83,6 +89,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Cerca de 30 princípios de psicologia aplicados a interfaces. A página cita licença Creative Commons com restrições; só para estudo."
     }
@@ -102,6 +109,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Guia que compara 20 métodos de pesquisa. O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
     },
@@ -111,6 +119,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
     }
@@ -130,6 +139,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
     },
@@ -139,6 +149,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O texto aparece inteiro, sem bloqueio, mas a página não diz que é gratuito. Em inglês."
     }
@@ -158,6 +169,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Vídeos e exercícios gratuitos. A página abriu só em parte na verificação."
     }
@@ -177,6 +189,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Tradução voluntária; muitos links são em inglês."
     },
@@ -186,6 +199,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Lista filtrável de requisitos de acessibilidade. A página não cita a licença."
     }
@@ -205,6 +219,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Em português (algumas partes em inglês). Tem guia de início, cursos em vídeo e projetos de prática. A página não informa o preço; o Figma tem plano gratuito, confirmar o que ele inclui."
     }
@@ -224,6 +239,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Guia que compara 20 métodos de pesquisa. O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
     },
@@ -233,6 +249,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "O texto é gratuito para ler; o site também vende cursos pagos. Em inglês."
     }

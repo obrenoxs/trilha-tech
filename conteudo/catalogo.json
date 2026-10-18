@@ -3,228 +3,332 @@
  "areas": [
   {
    "numero": "01",
+   "slug": "desenvolvimento-de-software",
    "nome": "Desenvolvimento de Software",
+   "ordemDesempate": 1,
+   "descricao": "Desenvolvimento de software é a área de quem cria programas, sites, aplicativos e sistemas, escrevendo código para transformar uma ideia em algo que as pessoas usam.",
+   "comoETrabalhar": "No dia a dia, você conversa com o time sobre o que precisa ser feito, escreve e testa código, corrige erros e melhora o que já existe. É um trabalho de resolver problemas, em geral em equipe, com muito estudo contínuo.",
    "trilhas": [
     {
+     "ordem": 1,
+     "slug": "java-e-spring",
+     "nome": "Java e Spring",
+     "nivelEntrada": "Iniciante",
+     "duracaoTotalSemanas": 36
+    },
+    {
+     "ordem": 2,
+     "slug": "python",
+     "nome": "Python (Django/FastAPI)",
+     "nivelEntrada": "Iniciante",
+     "duracaoTotalSemanas": 36
+    },
+    {
+     "ordem": 3,
+     "slug": "javascript-typescript-node",
+     "nome": "JavaScript/TypeScript + Node",
+     "nivelEntrada": "Iniciante",
+     "duracaoTotalSemanas": 34
+    },
+    {
+     "ordem": 4,
      "slug": "csharp-dotnet",
      "nome": "C#/.NET",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 35
     },
     {
+     "ordem": 5,
      "slug": "front-end",
      "nome": "Front-end",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 36
     },
     {
-     "slug": "java-e-spring",
-     "nome": "Java e Spring",
-     "duracaoTotalSemanas": 36
-    },
-    {
-     "slug": "javascript-typescript-node",
-     "nome": "JavaScript/TypeScript + Node",
-     "duracaoTotalSemanas": 34
-    },
-    {
+     "ordem": 6,
      "slug": "mobile",
      "nome": "Mobile",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 34
     },
     {
+     "ordem": 7,
      "slug": "php-laravel",
      "nome": "PHP/Laravel",
-     "duracaoTotalSemanas": 36
-    },
-    {
-     "slug": "python",
-     "nome": "Python (Django/FastAPI)",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 36
     }
    ]
   },
   {
    "numero": "02",
+   "slug": "dados-e-ia",
    "nome": "Dados e Inteligência Artificial",
+   "ordemDesempate": 2,
+   "descricao": "A área de dados e inteligência artificial transforma grandes volumes de informação em respostas, previsões e sistemas que aprendem a partir de exemplos.",
+   "comoETrabalhar": "Você organiza e limpa dados, faz análises, monta gráficos e relatórios ou treina modelos. Boa parte do trabalho é entender a pergunta do negócio e comunicar o resultado para quem vai decidir.",
    "trilhas": [
     {
+     "ordem": 1,
      "slug": "analise-de-dados-bi",
      "nome": "Análise de Dados/BI",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 32
     },
     {
-     "slug": "ciencia-de-dados",
-     "nome": "Ciência de Dados",
-     "duracaoTotalSemanas": 34
-    },
-    {
+     "ordem": 2,
      "slug": "engenharia-de-dados",
      "nome": "Engenharia de Dados",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 37
     },
     {
-     "slug": "ia-generativa-llms",
-     "nome": "IA Generativa/LLMs",
-     "duracaoTotalSemanas": 33
+     "ordem": 3,
+     "slug": "ciencia-de-dados",
+     "nome": "Ciência de Dados",
+     "nivelEntrada": "Iniciante",
+     "duracaoTotalSemanas": 34
     },
     {
+     "ordem": 4,
      "slug": "machine-learning",
      "nome": "Machine Learning",
+     "nivelEntrada": "Avançado",
      "duracaoTotalSemanas": 38
+    },
+    {
+     "ordem": 5,
+     "slug": "ia-generativa-llms",
+     "nome": "IA Generativa/LLMs",
+     "nivelEntrada": "Iniciante",
+     "duracaoTotalSemanas": 33
     }
    ]
   },
   {
    "numero": "03",
+   "slug": "infraestrutura-cloud-devops",
    "nome": "Infraestrutura, Cloud e DevOps",
+   "ordemDesempate": 3,
+   "descricao": "Infraestrutura, cloud e DevOps cuidam de onde e como os sistemas rodam: servidores, nuvem, automação da publicação e monitoramento para manter tudo no ar.",
+   "comoETrabalhar": "Você prepara ambientes, automatiza tarefas repetitivas, acompanha o funcionamento dos sistemas e age quando algo falha. Muito do trabalho é de bastidor: quando está bem feito, ninguém percebe.",
    "trilhas": [
     {
+     "ordem": 1,
      "slug": "cloud",
      "nome": "Cloud",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 34
     },
     {
+     "ordem": 2,
      "slug": "devops",
      "nome": "DevOps",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 40
     },
     {
-     "slug": "linux",
-     "nome": "Linux",
-     "duracaoTotalSemanas": 30
-    },
-    {
+     "ordem": 3,
      "slug": "sre",
      "nome": "SRE",
+     "nivelEntrada": "Avançado",
      "duracaoTotalSemanas": 39
+    },
+    {
+     "ordem": 4,
+     "slug": "linux",
+     "nome": "Linux",
+     "nivelEntrada": "Iniciante",
+     "duracaoTotalSemanas": 30
     }
    ]
   },
   {
    "numero": "04",
+   "slug": "seguranca-da-informacao",
    "nome": "Segurança da Informação",
+   "ordemDesempate": 4,
+   "descricao": "Segurança da informação protege sistemas, dados e pessoas contra ataques, vazamentos e falhas, e ajuda as organizações a cumprir regras e boas práticas.",
+   "comoETrabalhar": "Dependendo da trilha, você simula ataques para achar falhas, monitora alertas e investiga incidentes, revisa o código por brechas ou cuida de políticas e conformidade. Exige atenção a detalhes e ética.",
    "trilhas": [
     {
-     "slug": "appsec",
-     "nome": "AppSec",
-     "duracaoTotalSemanas": 35
-    },
-    {
-     "slug": "grc",
-     "nome": "GRC",
-     "duracaoTotalSemanas": 27
-    },
-    {
+     "ordem": 1,
      "slug": "pentest",
      "nome": "Pentest",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 37
     },
     {
+     "ordem": 2,
      "slug": "soc-blue-team",
      "nome": "SOC/Blue Team",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 36
+    },
+    {
+     "ordem": 3,
+     "slug": "appsec",
+     "nome": "AppSec",
+     "nivelEntrada": "Iniciante",
+     "duracaoTotalSemanas": 35
+    },
+    {
+     "ordem": 4,
+     "slug": "grc",
+     "nome": "GRC",
+     "nivelEntrada": "Iniciante",
+     "duracaoTotalSemanas": 27
     }
    ]
   },
   {
    "numero": "05",
+   "slug": "qualidade-e-testes",
    "nome": "Qualidade e Testes",
+   "ordemDesempate": 5,
+   "descricao": "Qualidade e testes garantem que um sistema funcione como esperado antes de chegar às pessoas, encontrando falhas cedo e evitando que elas se repitam.",
+   "comoETrabalhar": "Você planeja e executa testes, registra defeitos com clareza e conversa com quem desenvolve para corrigi-los. Com a experiência, passa a automatizar testes e a medir o desempenho dos sistemas.",
    "trilhas": [
     {
-     "slug": "automacao-de-testes",
-     "nome": "Automação de testes",
-     "duracaoTotalSemanas": 35
-    },
-    {
+     "ordem": 1,
      "slug": "teste-manual",
      "nome": "Teste manual",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 24
     },
     {
+     "ordem": 2,
+     "slug": "automacao-de-testes",
+     "nome": "Automação de testes",
+     "nivelEntrada": "Iniciante",
+     "duracaoTotalSemanas": 35
+    },
+    {
+     "ordem": 3,
      "slug": "testes-de-api",
      "nome": "Testes de API",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 36
     },
     {
+     "ordem": 4,
      "slug": "testes-de-performance",
      "nome": "Testes de performance",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 36
     }
    ]
   },
   {
    "numero": "06",
+   "slug": "suporte-tecnico-e-redes",
    "nome": "Suporte Técnico e Redes",
+   "ordemDesempate": 6,
+   "descricao": "Suporte técnico e redes mantêm computadores, sistemas e conexões funcionando, e ajudam as pessoas a resolver problemas com a tecnologia.",
+   "comoETrabalhar": "Você atende chamados, investiga a causa de problemas, configura equipamentos e usuários e cuida das redes e dos servidores da empresa. É uma porta de entrada comum na área, com muito contato com pessoas.",
    "trilhas": [
     {
-     "slug": "administracao-de-sistemas",
-     "nome": "Administração de sistemas",
-     "duracaoTotalSemanas": 36
-    },
-    {
+     "ordem": 1,
      "slug": "help-desk",
      "nome": "Help Desk",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 24
     },
     {
+     "ordem": 2,
      "slug": "redes",
      "nome": "Redes",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 30
+    },
+    {
+     "ordem": 3,
+     "slug": "administracao-de-sistemas",
+     "nome": "Administração de sistemas",
+     "nivelEntrada": "Iniciante",
+     "duracaoTotalSemanas": 36
     }
    ]
   },
   {
    "numero": "07",
+   "slug": "ux-ui-design",
    "nome": "UX/UI Design",
+   "ordemDesempate": 7,
+   "descricao": "UX/UI design cuida de como um produto digital é entendido e usado: da pesquisa com as pessoas até o visual das telas e os textos da interface.",
+   "comoETrabalhar": "Você pesquisa e conversa com usuários, desenha fluxos e telas, testa com pessoas reais e trabalha junto com quem desenvolve. O resultado é avaliado pela facilidade de uso, não só pela aparência.",
    "trilhas": [
     {
+     "ordem": 1,
+     "slug": "ux-research",
+     "nome": "UX Research",
+     "nivelEntrada": "Iniciante",
+     "duracaoTotalSemanas": 33
+    },
+    {
+     "ordem": 2,
+     "slug": "ui-design",
+     "nome": "UI Design",
+     "nivelEntrada": "Iniciante",
+     "duracaoTotalSemanas": 33
+    },
+    {
+     "ordem": 3,
      "slug": "product-design",
      "nome": "Product Design",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 34
     },
     {
-     "slug": "ui-design",
-     "nome": "UI Design",
-     "duracaoTotalSemanas": 33
-    },
-    {
-     "slug": "ux-research",
-     "nome": "UX Research",
-     "duracaoTotalSemanas": 33
-    },
-    {
+     "ordem": 4,
      "slug": "ux-writing",
      "nome": "UX Writing",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 30
     }
    ]
   },
   {
    "numero": "08",
+   "slug": "gestao-e-produtos-de-ti",
    "nome": "Gestão e Produtos de TI",
+   "ordemDesempate": 8,
+   "descricao": "Gestão e produtos de TI organizam pessoas, prioridades e prazos para que um produto ou projeto de tecnologia saia do papel e entregue valor.",
+   "comoETrabalhar": "Você alinha expectativas entre quem pede e quem constrói, define o que fazer primeiro, acompanha o andamento e facilita a comunicação do time. O trabalho é mais de conversa e decisão do que de código.",
    "trilhas": [
     {
-     "slug": "analista-de-requisitos",
-     "nome": "Analista de requisitos",
-     "duracaoTotalSemanas": 28
-    },
-    {
+     "ordem": 1,
      "slug": "gestao-de-projetos",
      "nome": "Gestão de projetos",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 31
     },
     {
-     "slug": "product-manager",
-     "nome": "Product Manager",
+     "ordem": 2,
+     "slug": "scrum-master",
+     "nome": "Scrum Master",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 28
     },
     {
+     "ordem": 3,
      "slug": "product-owner",
      "nome": "Product Owner",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 26
     },
     {
-     "slug": "scrum-master",
-     "nome": "Scrum Master",
+     "ordem": 4,
+     "slug": "product-manager",
+     "nome": "Product Manager",
+     "nivelEntrada": "Iniciante",
+     "duracaoTotalSemanas": 28
+    },
+    {
+     "ordem": 5,
+     "slug": "analista-de-requisitos",
+     "nome": "Analista de requisitos",
+     "nivelEntrada": "Iniciante",
      "duracaoTotalSemanas": 28
     }
    ]

@@ -6,6 +6,7 @@
   "nome": "Redes",
   "area": {
    "numero": "06",
+   "slug": "suporte-tecnico-e-redes",
    "nome": "Suporte Técnico e Redes"
   },
   "nivelEntrada": "Iniciante",
@@ -28,6 +29,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Gratuito com cadastro; só o certificado é pago. Cobre Wi-Fi, IP, DHCP, sub-redes e simulação no Cisco Packet Tracer."
     },
@@ -37,6 +39,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16"
     },
     {
@@ -45,6 +48,7 @@
      "tipo": "formação",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "pago",
      "verificadoEm": "2026-10-16",
      "observacao": "Pago: assinatura da Alura; a página não mostra o preço. Em português. Formação listada no catálogo da Alura."
     }
@@ -64,6 +68,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16"
     },
     {
@@ -72,6 +77,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16"
     },
     {
@@ -80,6 +86,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Gratuito com cadastro; só o certificado é pago. Cobre Wi-Fi, IP, DHCP, sub-redes e simulação no Cisco Packet Tracer."
     }
@@ -99,6 +106,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16"
     },
     {
@@ -107,6 +115,7 @@
      "tipo": "documentação",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Inclui propaganda de produtos da Cloudflare."
     }
@@ -126,6 +135,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": false,
+     "acesso": "nao_confirmado",
      "verificadoEm": "2026-10-16",
      "observacao": "Material em português. A página não informa o preço; confirmar antes de começar."
     },
@@ -135,6 +145,7 @@
      "tipo": "livro",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "PDF gratuito (licença Creative Commons). Cobre linha de comando e shell script. Em inglês."
     }
@@ -154,6 +165,7 @@
      "tipo": "documentação",
      "idioma": "EN",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Guia do analisador de pacotes mais usado (licença GPL). Em inglês."
     }
@@ -173,6 +185,7 @@
      "tipo": "curso",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Gratuito com cadastro; só o certificado é pago. Cobre Wi-Fi, IP, DHCP, sub-redes e simulação no Cisco Packet Tracer."
     }
@@ -192,6 +205,7 @@
      "tipo": "livro",
      "idioma": "PT",
      "gratuito": true,
+     "acesso": "gratuito",
      "verificadoEm": "2026-10-16",
      "observacao": "Leia os capítulos 1 (Primeiros Passos) e 2 (Fundamentos do Git)."
     }
