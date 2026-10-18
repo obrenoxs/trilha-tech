@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "ux-research",
   "nome": "UX Research",
+  "resumo": "Entender as pessoas por meio de entrevistas e testes, sem precisar desenhar.",
   "area": {
    "numero": "07",
    "slug": "ux-ui-design",

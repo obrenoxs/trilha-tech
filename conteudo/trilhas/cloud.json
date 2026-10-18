@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "cloud",
   "nome": "Cloud",
+  "resumo": "Colocar aplicações no ar em servidores na nuvem e manter tudo funcionando.",
   "area": {
    "numero": "03",
    "slug": "infraestrutura-cloud-devops",

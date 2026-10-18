@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "redes",
   "nome": "Redes",
+  "resumo": "Montar e manter as conexões que ligam computadores, empresas e a internet.",
   "area": {
    "numero": "06",
    "slug": "suporte-tecnico-e-redes",

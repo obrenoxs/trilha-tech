@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "product-manager",
   "nome": "Product Manager",
+  "resumo": "Definir o que um produto digital deve ser, unindo pessoas, negócio e tecnologia.",
   "area": {
    "numero": "08",
    "slug": "gestao-e-produtos-de-ti",

@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "java-e-spring",
   "nome": "Java e Spring",
+  "resumo": "Back-end robusto para sistemas corporativos, com Java e Spring.",
   "area": {
    "numero": "01",
    "slug": "desenvolvimento-de-software",

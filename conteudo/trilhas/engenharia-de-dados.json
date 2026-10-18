@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "engenharia-de-dados",
   "nome": "Engenharia de Dados",
+  "resumo": "Construir os caminhos que levam os dados até quem precisa analisá-los.",
   "area": {
    "numero": "02",
    "slug": "dados-e-ia",

@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "testes-de-performance",
   "nome": "Testes de performance",
+  "resumo": "Descobrir até onde um sistema aguenta e onde ele começa a sofrer.",
   "area": {
    "numero": "05",
    "slug": "qualidade-e-testes",

@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "ciencia-de-dados",
   "nome": "Ciência de Dados",
+  "resumo": "Descobrir padrões e fazer previsões usando estatística e programação.",
   "area": {
    "numero": "02",
    "slug": "dados-e-ia",

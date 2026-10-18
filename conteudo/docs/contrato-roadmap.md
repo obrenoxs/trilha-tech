@@ -35,7 +35,7 @@ O conteúdo tem três arquivos de dados e uma pasta de PDFs:
 
 - 12 perguntas, 4 alternativas cada. `areaPrincipal` (+2) e `areaSecundaria` (+1) usam o `slug` da área. A pontuação é regra do código, não dado.
 - Cada área é principal em exatamente 6 alternativas e secundária em exatamente 6, e cada pergunta cobre 4 áreas principais diferentes. A validação confere isso.
-- A ordem das alternativas deve ser embaralhada a cada exibição; `ordem` é só identificador estável.
+- A ordem das alternativas deve ser embaralhada a cada exibição pelo front. Perguntas e alternativas são identificadas por `ordem` (pergunta, alternativa), nunca por id do banco, que muda a cada carga.
 
 ## Estrutura
 
@@ -64,6 +64,7 @@ O conteúdo tem três arquivos de dados e uma pasta de PDFs:
 |---|---|---|
 | `slug` | string | Identificador único, minúsculo com hífens. Usado nas URLs e no nome do PDF. |
 | `nome` | string | Nome exibido. |
+| `resumo` | string, 30 a 110 caracteres | Uma linha para a lista de trilhas da área. Não aparece no PDF. |
 | `area.numero` | string | `"01"` a `"08"`. |
 | `area.slug` | string | Identificador estável da área (ex.: `desenvolvimento-de-software`). Nunca muda, mesmo que o nome mude. |
 | `area.nome` | string | Nome da área. |

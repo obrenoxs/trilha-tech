@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "help-desk",
   "nome": "Help Desk",
+  "resumo": "Porta de entrada rápida: atender pessoas e resolver problemas com tecnologia.",
   "area": {
    "numero": "06",
    "slug": "suporte-tecnico-e-redes",

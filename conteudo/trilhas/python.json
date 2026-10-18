@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "python",
   "nome": "Python (Django/FastAPI)",
+  "resumo": "APIs e sistemas web no back-end, com Python, Django e FastAPI.",
   "area": {
    "numero": "01",
    "slug": "desenvolvimento-de-software",

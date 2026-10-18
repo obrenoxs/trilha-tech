@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "front-end",
   "nome": "Front-end",
+  "resumo": "A parte visual e interativa de sites e aplicativos, com HTML, CSS, JavaScript e React.",
   "area": {
    "numero": "01",
    "slug": "desenvolvimento-de-software",

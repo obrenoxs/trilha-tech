@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "csharp-dotnet",
   "nome": "C#/.NET",
+  "resumo": "Sistemas e APIs para empresas, com C# e a plataforma .NET.",
   "area": {
    "numero": "01",
    "slug": "desenvolvimento-de-software",

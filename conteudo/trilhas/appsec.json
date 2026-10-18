@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "appsec",
   "nome": "AppSec",
+  "resumo": "Encontrar e corrigir falhas de segurança no código das aplicações.",
   "area": {
    "numero": "04",
    "slug": "seguranca-da-informacao",

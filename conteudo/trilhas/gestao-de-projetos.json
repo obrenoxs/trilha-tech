@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "gestao-de-projetos",
   "nome": "Gestão de projetos",
+  "resumo": "Organizar pessoas, prazos e riscos para entregar projetos de tecnologia.",
   "area": {
    "numero": "08",
    "slug": "gestao-e-produtos-de-ti",

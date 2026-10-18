@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "administracao-de-sistemas",
   "nome": "Administração de sistemas",
+  "resumo": "Cuidar de servidores, usuários e sistemas para a empresa funcionar.",
   "area": {
    "numero": "06",
    "slug": "suporte-tecnico-e-redes",

@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "teste-manual",
   "nome": "Teste manual",
+  "resumo": "Porta de entrada sem programar: achar defeitos e relatar com clareza.",
   "area": {
    "numero": "05",
    "slug": "qualidade-e-testes",

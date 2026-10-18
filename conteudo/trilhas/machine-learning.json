@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "machine-learning",
   "nome": "Machine Learning",
+  "resumo": "Treinar e publicar modelos que aprendem a partir de exemplos.",
   "area": {
    "numero": "02",
    "slug": "dados-e-ia",

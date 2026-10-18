@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "analise-de-dados-bi",
   "nome": "Análise de Dados/BI",
+  "resumo": "Transformar dados em relatórios e painéis que ajudam a tomar decisões.",
   "area": {
    "numero": "02",
    "slug": "dados-e-ia",

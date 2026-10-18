@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "mobile",
   "nome": "Mobile",
+  "resumo": "Aplicativos para Android e iOS a partir de um único código, com Flutter.",
   "area": {
    "numero": "01",
    "slug": "desenvolvimento-de-software",

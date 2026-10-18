@@ -39,6 +39,7 @@ for f in sorted((ROOT / "trilhas").glob("*.json")):
         if (t["area"]["slug"], t["area"]["numero"], t["area"]["nome"]) != (a["slug"], a["numero"], a["nome"]): erros.append(f"{s}: área diferente do catálogo")
         ct = next(x for x in a["trilhas"] if x["slug"] == s)
         if (ct["nome"], ct["nivelEntrada"], ct["duracaoTotalSemanas"]) != (t["nome"], t["nivelEntrada"], t["duracaoTotalSemanas"]): erros.append(f"{s}: catalogo.json fora de sincronia (nome, nível ou duração)")
+    if not (30 <= len(t.get("resumo", "")) <= 110): erros.append(f"{s}: resumo deve ter entre 30 e 110 caracteres")
     if t["nivelEntrada"] not in ENTRADA: erros.append(f"{s}: nivelEntrada inválido")
     if not (ROOT / "pdfs" / f"roadmap-{s}.pdf").exists(): erros.append(f"{s}: falta o PDF")
     if manifesto.get(s) != hash_trilha(d): erros.append(f"{s}: o PDF está desatualizado em relação ao JSON (refaça o PDF e rode manifesto.py)")

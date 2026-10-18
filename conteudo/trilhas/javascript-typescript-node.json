@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "javascript-typescript-node",
   "nome": "JavaScript/TypeScript + Node",
+  "resumo": "Back-end com a mesma linguagem do navegador: JavaScript, TypeScript e Node.",
   "area": {
    "numero": "01",
    "slug": "desenvolvimento-de-software",

@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "grc",
   "nome": "GRC",
+  "resumo": "Segurança sem programar: políticas, riscos, leis e conformidade.",
   "area": {
    "numero": "04",
    "slug": "seguranca-da-informacao",

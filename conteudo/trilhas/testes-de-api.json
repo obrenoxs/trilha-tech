@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "testes-de-api",
   "nome": "Testes de API",
+  "resumo": "Testar o que acontece por trás das telas, nos serviços que trocam dados.",
   "area": {
    "numero": "05",
    "slug": "qualidade-e-testes",

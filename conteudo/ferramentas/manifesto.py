@@ -5,7 +5,7 @@ Uso:
   python3 ferramentas/manifesto.py            # atualiza pdfs/manifest.json (depois de refazer PDFs)
   (a validação em validar.py compara o hash atual de cada JSON com o do manifesto)
 
-O hash ignora campos que não aparecem no PDF (pendencias, versao, area.slug, acesso),
+O hash ignora campos que não aparecem no PDF (pendencias, versao, area.slug, resumo, acesso),
 então mexer neles não obriga a refazer o PDF.
 """
 import hashlib, json, sys
@@ -17,6 +17,7 @@ def hash_trilha(d):
     d = json.loads(json.dumps(d))
     for k in IGNORAR_NA_RAIZ: d.pop(k, None)
     d["trilha"]["area"].pop("slug", None)
+    d["trilha"].pop("resumo", None)
     for e in d["etapas"]:
         for r in e["recursos"]: r.pop("acesso", None)
     canon = json.dumps(d, ensure_ascii=False, sort_keys=True, separators=(",", ":"))

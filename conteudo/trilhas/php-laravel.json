@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "php-laravel",
   "nome": "PHP/Laravel",
+  "resumo": "Sites e sistemas web no back-end, com PHP e o framework Laravel.",
   "area": {
    "numero": "01",
    "slug": "desenvolvimento-de-software",

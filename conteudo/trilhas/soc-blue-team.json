@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "soc-blue-team",
   "nome": "SOC/Blue Team",
+  "resumo": "Monitorar alertas, investigar ataques e defender os sistemas de uma empresa.",
   "area": {
    "numero": "04",
    "slug": "seguranca-da-informacao",

@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "product-owner",
   "nome": "Product Owner",
+  "resumo": "Decidir o que o time constrói primeiro, entre quem usa e quem desenvolve.",
   "area": {
    "numero": "08",
    "slug": "gestao-e-produtos-de-ti",

@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "ui-design",
   "nome": "UI Design",
+  "resumo": "Desenhar a aparência de telas, botões e cores de sites e aplicativos.",
   "area": {
    "numero": "07",
    "slug": "ux-ui-design",

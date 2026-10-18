@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "automacao-de-testes",
   "nome": "Automação de testes",
+  "resumo": "Escrever programas que testam outros programas, o tempo todo e sozinhos.",
   "area": {
    "numero": "05",
    "slug": "qualidade-e-testes",

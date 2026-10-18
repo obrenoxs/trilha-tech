@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "ux-writing",
   "nome": "UX Writing",
+  "resumo": "Escrever os textos de botões, mensagens e avisos para deixar tudo claro.",
   "area": {
    "numero": "07",
    "slug": "ux-ui-design",

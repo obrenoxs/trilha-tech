@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "scrum-master",
   "nome": "Scrum Master",
+  "resumo": "Ajudar o time a trabalhar bem junto com métodos ágeis, sem programar.",
   "area": {
    "numero": "08",
    "slug": "gestao-e-produtos-de-ti",

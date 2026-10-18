@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "linux",
   "nome": "Linux",
+  "resumo": "Dominar o sistema que roda a maior parte dos servidores do mundo.",
   "area": {
    "numero": "03",
    "slug": "infraestrutura-cloud-devops",

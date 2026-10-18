@@ -4,6 +4,7 @@
  "trilha": {
   "slug": "ia-generativa-llms",
   "nome": "IA Generativa/LLMs",
+  "resumo": "Criar produtos com modelos de linguagem, como assistentes e chats.",
   "area": {
    "numero": "02",
    "slug": "dados-e-ia",
