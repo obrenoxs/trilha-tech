@@ -9,5 +9,4 @@ public class TrilhaTechApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(TrilhaTechApiApplication.class, args);
 	}
-
 }
