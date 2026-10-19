@@ -1,6 +1,6 @@
-package io.github.obrenoxs.trilhatech.content.trilha.entity;
+package io.github.obrenoxs.trilhatech.conteudo.trilha.entity;
 
-import io.github.obrenoxs.trilhatech.content.trilha.enums.NivelEtapa;
+import io.github.obrenoxs.trilhatech.conteudo.trilha.enums.NivelEtapa;
 import jakarta.persistence.*;
 
 import java.util.UUID;

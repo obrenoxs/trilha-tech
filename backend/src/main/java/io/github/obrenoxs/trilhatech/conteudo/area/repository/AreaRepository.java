@@ -1,6 +1,6 @@
-package io.github.obrenoxs.trilhatech.content.area.repository;
+package io.github.obrenoxs.trilhatech.conteudo.area.repository;
 
-import io.github.obrenoxs.trilhatech.content.area.entity.Area;
+import io.github.obrenoxs.trilhatech.conteudo.area.entity.Area;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

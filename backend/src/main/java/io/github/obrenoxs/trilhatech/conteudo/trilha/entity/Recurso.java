@@ -1,8 +1,8 @@
-package io.github.obrenoxs.trilhatech.content.trilha.entity;
+package io.github.obrenoxs.trilhatech.conteudo.trilha.entity;
 
-import io.github.obrenoxs.trilhatech.content.trilha.enums.Acesso;
-import io.github.obrenoxs.trilhatech.content.trilha.enums.Idioma;
-import io.github.obrenoxs.trilhatech.content.trilha.enums.TipoRecurso;
+import io.github.obrenoxs.trilhatech.conteudo.trilha.enums.Acesso;
+import io.github.obrenoxs.trilhatech.conteudo.trilha.enums.Idioma;
+import io.github.obrenoxs.trilhatech.conteudo.trilha.enums.TipoRecurso;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;

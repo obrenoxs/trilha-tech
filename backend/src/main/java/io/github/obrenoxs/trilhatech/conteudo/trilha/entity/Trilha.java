@@ -1,7 +1,7 @@
-package io.github.obrenoxs.trilhatech.content.trilha.entity;
+package io.github.obrenoxs.trilhatech.conteudo.trilha.entity;
 
-import io.github.obrenoxs.trilhatech.content.area.entity.Area;
-import io.github.obrenoxs.trilhatech.content.trilha.enums.NivelEntrada;
+import io.github.obrenoxs.trilhatech.conteudo.area.entity.Area;
+import io.github.obrenoxs.trilhatech.conteudo.trilha.enums.NivelEntrada;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;

@@ -1,4 +1,4 @@
-package io.github.obrenoxs.trilhatech.content.area.entity;
+package io.github.obrenoxs.trilhatech.conteudo.area.entity;
 
 import jakarta.persistence.*;
 

@@ -1,4 +1,4 @@
-package io.github.obrenoxs.trilhatech.content.trilha.enums;
+package io.github.obrenoxs.trilhatech.conteudo.trilha.enums;
 
 public enum NivelEtapa {
     BASICO,

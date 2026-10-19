@@ -1,6 +1,6 @@
-package io.github.obrenoxs.trilhatech.content.trilha.entity;
+package io.github.obrenoxs.trilhatech.conteudo.trilha.entity;
 
-import io.github.obrenoxs.trilhatech.content.trilha.enums.NivelSalarial;
+import io.github.obrenoxs.trilhatech.conteudo.trilha.enums.NivelSalarial;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;

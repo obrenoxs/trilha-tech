@@ -1,6 +1,6 @@
-package io.github.obrenoxs.trilhatech.content.trilha.repository;
+package io.github.obrenoxs.trilhatech.conteudo.trilha.repository;
 
-import io.github.obrenoxs.trilhatech.content.trilha.entity.Trilha;
+import io.github.obrenoxs.trilhatech.conteudo.trilha.entity.Trilha;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
