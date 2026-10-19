@@ -1,6 +1,7 @@
 package io.github.obrenoxs.trilhatech.carga.leitura;
 
 import io.github.obrenoxs.trilhatech.carga.arquivo.CatalogoArquivo;
+import io.github.obrenoxs.trilhatech.carga.arquivo.TrilhaArquivo;
 import io.github.obrenoxs.trilhatech.carga.exception.FalhaLeituraException;
 import org.springframework.stereotype.Component;
 import tools.jackson.core.JacksonException;
@@ -14,15 +15,22 @@ public class LeitorConteudo {
 
     private final JsonMapper mapper = JsonMapper.builder().build();
 
-    public CatalogoArquivo lerCatalogo() {
-        String caminho = "/conteudo/catalogo.json";
+    private<T> T ler(String caminho, Class<T> tipo) {
         try (InputStream entrada = LeitorConteudo.class.getResourceAsStream(caminho)) {
-            if(entrada == null) {
+            if (entrada == null) {
                 throw new FalhaLeituraException("Arquivo não encontrado: " + caminho);
             }
-            return mapper.readValue(entrada, CatalogoArquivo.class);
+            return mapper.readValue(entrada, tipo);
         } catch (IOException | JacksonException e) {
             throw new FalhaLeituraException("Não foi possível ler " + caminho, e);
         }
+    }
+
+    public CatalogoArquivo lerCatalogo() {
+        return ler( "/conteudo/catalogo.json", CatalogoArquivo.class);
+    }
+
+    public TrilhaArquivo lerTrilha(String slug) {
+        return ler("/conteudo/trilhas/" + slug + ".json", TrilhaArquivo.class);
     }
 }
