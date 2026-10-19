@@ -65,7 +65,7 @@ public class Etapa {
     }
 
     public void setOrdem(int ordem) {
-        ordem = ordem;
+        this.ordem = ordem;
     }
 
     public String getTitulo() {
