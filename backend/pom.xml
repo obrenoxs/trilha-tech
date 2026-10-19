@@ -79,6 +79,22 @@
 	</dependencies>
 
 	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>../conteudo</directory>
+				<targetPath>conteudo</targetPath>
+				<includes>
+					<include>catalogo.json</include>
+					<include>quiz.json</include>
+					<include>trilhas/*.json</include>
+					<include>pdfs/*.pdf</include>
+				</includes>
+			</resource>
+		</resources>
+
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
