@@ -1,7 +1,7 @@
 package io.github.obrenoxs.trilhatech.content.trilha.enums;
 
-public enum EntryLevel {
-    INICIANTE,
+public enum NivelEtapa {
+    BASICO,
     INTERMEDIARIO,
     AVANCADO
 }

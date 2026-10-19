@@ -1,7 +1,7 @@
 package io.github.obrenoxs.trilhatech.content.trilha.entity;
 
 import io.github.obrenoxs.trilhatech.content.area.entity.Area;
-import io.github.obrenoxs.trilhatech.content.trilha.enums.EntryLevel;
+import io.github.obrenoxs.trilhatech.content.trilha.enums.NivelEntrada;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
@@ -25,7 +25,7 @@ public class Trilha {
     private String resumo;
 
     @Enumerated(EnumType.STRING)
-    private EntryLevel nivelEntrada;
+    private NivelEntrada nivelEntrada;
 
     private String textoTrilha;
 
@@ -45,7 +45,7 @@ public class Trilha {
                  int ordemNaArea,
                  String nome,
                  String resumo,
-                 EntryLevel nivelEntrada,
+                 NivelEntrada nivelEntrada,
                  String textoTrilha,
                  String paraQuemE,
                  int horasPorSemana,
@@ -109,11 +109,11 @@ public class Trilha {
         this.resumo = resumo;
     }
 
-    public EntryLevel getNivelEntrada() {
+    public NivelEntrada getNivelEntrada() {
         return nivelEntrada;
     }
 
-    public void setNivelEntrada(EntryLevel nivelEntrada) {
+    public void setNivelEntrada(NivelEntrada nivelEntrada) {
         this.nivelEntrada = nivelEntrada;
     }
 
