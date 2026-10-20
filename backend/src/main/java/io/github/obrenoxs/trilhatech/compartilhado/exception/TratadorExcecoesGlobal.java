@@ -1,12 +1,15 @@
 package io.github.obrenoxs.trilhatech.compartilhado.exception;
 
-import io.github.obrenoxs.trilhatech.carga.exception.ConteudoInvalidoException;
-import io.github.obrenoxs.trilhatech.carga.exception.FalhaLeituraException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
@@ -14,24 +17,36 @@ import java.util.List;
 import java.util.Map;
 
 @RestControllerAdvice
-public class TratadorExcecoesGlobal {
+public class TratadorExcecoesGlobal extends ResponseEntityExceptionHandler {
+
+    private static final Logger log = LoggerFactory.getLogger(TratadorExcecoesGlobal.class);
 
     @ExceptionHandler(NaoEncontradoException.class)
-    ResponseEntity<Map<String, Object>> tratarNaoEncontrado(NaoEncontradoException ex, WebRequest request) {
+    ResponseEntity<Object> tratarNaoEncontrado(NaoEncontradoException ex, WebRequest request) {
         return buildResponse(HttpStatus.NOT_FOUND, ex.getMessage(), null, request);
     }
 
-    @ExceptionHandler(ConteudoInvalidoException.class)
-    ResponseEntity<Map<String, Object>> tratarConteudoInvalido(ConteudoInvalidoException ex, WebRequest request) {
-        return buildResponse(HttpStatus.UNPROCESSABLE_ENTITY, ex.getMessage(), null, request);
+
+    @ExceptionHandler(Exception.class)
+    ResponseEntity<Object> tratarErroInesperado(Exception ex, WebRequest request) {
+        log.error("Erro inesperado", ex);
+        return buildResponse(HttpStatus.INTERNAL_SERVER_ERROR,
+                "Erro interno. Tente novamente mais tarde.", null, request);
     }
 
-    @ExceptionHandler(FalhaLeituraException.class)
-    ResponseEntity<Map<String, Object>> tratarFalhaLeitura(FalhaLeituraException ex, WebRequest request) {
-        return buildResponse(HttpStatus.INTERNAL_SERVER_ERROR, ex.getMessage(), null, request);
+    @Override
+    protected ResponseEntity<Object> handleExceptionInternal(
+            Exception ex, Object body, HttpHeaders headers, HttpStatusCode statusCode, WebRequest request) {
+
+        HttpStatus status = HttpStatus.valueOf(statusCode.value());
+        String mensagem = status.is4xxClientError()
+                ? "Requisição inválida"
+                : "Erro interno. Tente novamente mais tarde.";
+
+        return buildResponse(status, mensagem, null, request);
     }
 
-    private ResponseEntity<Map<String, Object>> buildResponse(
+    private ResponseEntity<Object> buildResponse(
             HttpStatus status, String message, List<Map<String, String>> errors, WebRequest request) {
 
         Map<String, Object> body = new LinkedHashMap<>();
