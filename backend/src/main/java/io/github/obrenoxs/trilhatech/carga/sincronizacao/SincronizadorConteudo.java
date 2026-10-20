@@ -12,6 +12,7 @@ import io.github.obrenoxs.trilhatech.conteudo.trilha.repository.EtapaRepository;
 import io.github.obrenoxs.trilhatech.conteudo.trilha.repository.FaixaSalarialRepository;
 import io.github.obrenoxs.trilhatech.conteudo.trilha.repository.RecursoRepository;
 import io.github.obrenoxs.trilhatech.conteudo.trilha.repository.TrilhaRepository;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -20,28 +21,34 @@ import java.util.*;
 @Component
 public class SincronizadorConteudo {
 
+    private static final long CHAVE_DO_BLOQUEIO = 7430912L;
+
     private final AreaRepository areaRepository;
     private final TrilhaRepository trilhaRepository;
     private final EtapaRepository etapaRepository;
     private final RecursoRepository recursoRepository;
     private final FaixaSalarialRepository faixaSalarialRepository;
+    private final JdbcTemplate jdbcTemplate;
 
     public SincronizadorConteudo(
             AreaRepository areaRepository,
             TrilhaRepository trilhaRepository,
             EtapaRepository etapaRepository,
             RecursoRepository recursoRepository,
-            FaixaSalarialRepository faixaSalarialRepository
+            FaixaSalarialRepository faixaSalarialRepository,
+            JdbcTemplate jdbcTemplate
     ) {
         this.areaRepository = areaRepository;
         this.trilhaRepository = trilhaRepository;
         this.etapaRepository = etapaRepository;
         this.recursoRepository = recursoRepository;
         this.faixaSalarialRepository = faixaSalarialRepository;
+        this.jdbcTemplate = jdbcTemplate;
     }
 
     @Transactional
     public void sincronizar(ConteudoCarregado conteudo) {
+        travarSincronizacao();
         trilhaRepository.deleteAllInBatch();
 
         Map<String, Area> areasPorSlug = sincronizarAreas(conteudo.catalogo());
@@ -182,5 +189,9 @@ public class SincronizadorConteudo {
 
             faixaSalarialRepository.save(faixaSalarial);
         }
+    }
+
+    private void travarSincronizacao() {
+        jdbcTemplate.execute("SELECT pg_advisory_xact_lock(" + CHAVE_DO_BLOQUEIO + ")");
     }
 }
