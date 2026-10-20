@@ -3,10 +3,13 @@ package io.github.obrenoxs.trilhatech.conteudo.area.repository;
 import io.github.obrenoxs.trilhatech.conteudo.area.entity.Area;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
 public interface AreaRepository extends JpaRepository<Area, UUID> {
 
     Optional<Area> findBySlug(String slug);
+
+    List<Area> findAllByOrderByOrdemExibicaoAsc();
 }

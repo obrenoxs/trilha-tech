@@ -9,4 +9,6 @@ import java.util.UUID;
 public interface TrilhaRepository extends JpaRepository<Trilha, UUID> {
 
     Optional<Trilha> findBySlug(String slug);
+
+    long countByAreaId(UUID areaId);
 }
