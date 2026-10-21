@@ -1,9 +1,6 @@
 package io.github.obrenoxs.trilhatech.carga.leitura;
 
-import io.github.obrenoxs.trilhatech.carga.arquivo.AreaCatalogoArquivo;
-import io.github.obrenoxs.trilhatech.carga.arquivo.CatalogoArquivo;
-import io.github.obrenoxs.trilhatech.carga.arquivo.TrilhaArquivo;
-import io.github.obrenoxs.trilhatech.carga.arquivo.TrilhaCatalogoArquivo;
+import io.github.obrenoxs.trilhatech.carga.arquivo.*;
 import io.github.obrenoxs.trilhatech.carga.exception.FalhaLeituraException;
 import org.junit.jupiter.api.Test;
 
@@ -51,5 +48,48 @@ public class LeitorConteudoTest {
         assertThatThrownBy(() -> leitor.lerTrilha("nao-existe"))
                 .isInstanceOf(FalhaLeituraException.class)
                 .hasMessageContaining("nao-existe");
+    }
+
+    @Test
+    void deveLerQuizCompleto() {
+        LeitorConteudo leitor = new LeitorConteudo();
+
+        QuizArquivo quiz = leitor.lerQuiz();
+
+        assertThat(quiz.perguntas()).hasSize(12);
+        assertThat(quiz.perguntas())
+                .extracting(PerguntaArquivo::ordem)
+                .containsExactly(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+    }
+
+    @Test
+    void deveLerQuatroAlternativasEmCadaPergunta() {
+        LeitorConteudo leitor = new LeitorConteudo();
+
+        QuizArquivo quiz = leitor.lerQuiz();
+
+        for (PerguntaArquivo pergunta : quiz.perguntas()) {
+            assertThat(pergunta.alternativas()).hasSize(4);
+            assertThat(pergunta.alternativas())
+                    .extracting(AlternativaArquivo::ordem)
+                    .containsExactly(1, 2, 3, 4);
+        }
+    }
+
+    @Test
+    void deveLerOsCamposDeCadaAlternativa() {
+        LeitorConteudo leitor = new LeitorConteudo();
+
+        QuizArquivo quiz = leitor.lerQuiz();
+
+        for (PerguntaArquivo pergunta : quiz.perguntas()) {
+            assertThat(pergunta.texto()).isNotBlank();
+
+            for (AlternativaArquivo alternativa : pergunta.alternativas()) {
+                assertThat(alternativa.texto()).isNotBlank();
+                assertThat(alternativa.areaPrincipal()).isNotBlank();
+                assertThat(alternativa.areaSecundaria()).isNotBlank();
+            }
+        }
     }
 }
