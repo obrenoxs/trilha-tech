@@ -1,11 +1,14 @@
 package io.github.obrenoxs.trilhatech.quiz.resultado.calculo;
 
+import org.springframework.stereotype.Component;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Component
 public class CalculadoraPontuacao {
 
     private static final int TAMANHO_DO_RESULTADO = 3;
