@@ -12,6 +12,10 @@ import io.github.obrenoxs.trilhatech.conteudo.trilha.repository.EtapaRepository;
 import io.github.obrenoxs.trilhatech.conteudo.trilha.repository.FaixaSalarialRepository;
 import io.github.obrenoxs.trilhatech.conteudo.trilha.repository.RecursoRepository;
 import io.github.obrenoxs.trilhatech.conteudo.trilha.repository.TrilhaRepository;
+import io.github.obrenoxs.trilhatech.quiz.pergunta.entity.Alternativa;
+import io.github.obrenoxs.trilhatech.quiz.pergunta.entity.Pergunta;
+import io.github.obrenoxs.trilhatech.quiz.pergunta.repository.AlternativaRepository;
+import io.github.obrenoxs.trilhatech.quiz.pergunta.repository.PerguntaRepository;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,6 +32,8 @@ public class SincronizadorConteudo {
     private final EtapaRepository etapaRepository;
     private final RecursoRepository recursoRepository;
     private final FaixaSalarialRepository faixaSalarialRepository;
+    private final PerguntaRepository perguntaRepository;
+    private final AlternativaRepository alternativaRepository;
     private final JdbcTemplate jdbcTemplate;
 
     public SincronizadorConteudo(
@@ -36,6 +42,8 @@ public class SincronizadorConteudo {
             EtapaRepository etapaRepository,
             RecursoRepository recursoRepository,
             FaixaSalarialRepository faixaSalarialRepository,
+            PerguntaRepository perguntaRepository,
+            AlternativaRepository alternativaRepository,
             JdbcTemplate jdbcTemplate
     ) {
         this.areaRepository = areaRepository;
@@ -43,6 +51,8 @@ public class SincronizadorConteudo {
         this.etapaRepository = etapaRepository;
         this.recursoRepository = recursoRepository;
         this.faixaSalarialRepository = faixaSalarialRepository;
+        this.perguntaRepository = perguntaRepository;
+        this.alternativaRepository = alternativaRepository;
         this.jdbcTemplate = jdbcTemplate;
     }
 
@@ -50,9 +60,11 @@ public class SincronizadorConteudo {
     public void sincronizar(ConteudoCarregado conteudo) {
         travarSincronizacao();
         trilhaRepository.deleteAllInBatch();
+        perguntaRepository.deleteAllInBatch();
 
         Map<String, Area> areasPorSlug = sincronizarAreas(conteudo.catalogo());
         sincronizarTrilhas(conteudo, areasPorSlug);
+        sincronizarQuiz(conteudo.quiz(), areasPorSlug);
     }
 
     private Map<String, Area> sincronizarAreas(CatalogoArquivo catalogo) {
@@ -188,6 +200,25 @@ public class SincronizadorConteudo {
             );
 
             faixaSalarialRepository.save(faixaSalarial);
+        }
+    }
+
+    private void sincronizarQuiz(QuizArquivo quiz, Map<String, Area> areasPorSlug) {
+        for (PerguntaArquivo perguntaArquivo : quiz.perguntas()) {
+            Pergunta pergunta = new Pergunta(perguntaArquivo.ordem(), perguntaArquivo.texto());
+            Pergunta perguntaGravada = perguntaRepository.save(pergunta);
+
+            for (AlternativaArquivo alternativaArquivo : perguntaArquivo.alternativas()) {
+                Alternativa alternativa = new Alternativa(
+                        perguntaGravada,
+                        alternativaArquivo.ordem(),
+                        alternativaArquivo.texto(),
+                        areasPorSlug.get(alternativaArquivo.areaPrincipal()),
+                        areasPorSlug.get(alternativaArquivo.areaSecundaria())
+                );
+
+                alternativaRepository.save(alternativa);
+            }
         }
     }
 
