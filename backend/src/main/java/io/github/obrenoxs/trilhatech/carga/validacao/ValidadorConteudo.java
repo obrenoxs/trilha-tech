@@ -6,7 +6,9 @@ import io.github.obrenoxs.trilhatech.carga.leitura.LeitorConteudo;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Component
 public class ValidadorConteudo {
@@ -15,12 +17,14 @@ public class ValidadorConteudo {
     private final ValidadorCatalogo validadorCatalogo;
     private final ValidadorTrilha validadorTrilha;
     private final ValidadorConsistencia validadorConsistencia;
+    private final ValidadorQuiz validadorQuiz;
 
-    public ValidadorConteudo(LeitorConteudo leitorConteudo, ValidadorCatalogo validadorCatalogo, ValidadorTrilha validadorTrilha, ValidadorConsistencia validadorConsistencia) {
+    public ValidadorConteudo(LeitorConteudo leitorConteudo, ValidadorCatalogo validadorCatalogo, ValidadorTrilha validadorTrilha, ValidadorConsistencia validadorConsistencia, ValidadorQuiz validadorQuiz) {
         this.leitorConteudo = leitorConteudo;
         this.validadorCatalogo = validadorCatalogo;
         this.validadorTrilha = validadorTrilha;
         this.validadorConsistencia = validadorConsistencia;
+        this.validadorQuiz = validadorQuiz;
     }
 
     public ConteudoCarregado carregarEValidar() {
@@ -44,10 +48,19 @@ public class ValidadorConteudo {
             }
         }
 
+        QuizArquivo quiz = leitorConteudo.lerQuiz();
+
+        Set<String> slugsDasAreas = new HashSet<>();
+        for (AreaCatalogoArquivo area : catalogo.areas()) {
+            slugsDasAreas.add(area.slug());
+        }
+
+        problemas.addAll(validadorQuiz.validar(quiz, slugsDasAreas));
+
         if (!problemas.isEmpty()) {
             throw new ConteudoInvalidoException(problemas);
         }
 
-        return new ConteudoCarregado(catalogo, trilhasLidas);
+        return new ConteudoCarregado(catalogo, trilhasLidas, quiz);
     }
 }

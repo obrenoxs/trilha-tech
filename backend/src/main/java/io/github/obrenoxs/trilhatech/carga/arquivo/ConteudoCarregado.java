@@ -4,5 +4,6 @@ import java.util.List;
 
 public record ConteudoCarregado(
         CatalogoArquivo catalogo,
-        List<TrilhaArquivo> trilhas
+        List<TrilhaArquivo> trilhas,
+        QuizArquivo quiz
 ) {}

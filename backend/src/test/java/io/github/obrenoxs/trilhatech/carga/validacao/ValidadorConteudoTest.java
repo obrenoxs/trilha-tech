@@ -14,12 +14,14 @@ public class ValidadorConteudoTest {
                 new LeitorConteudo(),
                 new ValidadorCatalogo(),
                 new ValidadorTrilha(),
-                new ValidadorConsistencia()
+                new ValidadorConsistencia(),
+                new ValidadorQuiz()
         );
 
         ConteudoCarregado conteudo = validador.carregarEValidar();
 
         assertThat(conteudo.catalogo().areas()).hasSize(8);
         assertThat(conteudo.trilhas()).hasSize(36);
+        assertThat(conteudo.quiz().perguntas()).hasSize(12);
     }
 }
