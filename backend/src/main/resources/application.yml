@@ -13,3 +13,10 @@ spring:
 trilhatech:
   cors:
     origens: ${CORS_ORIGENS:http://localhost:3000,http://localhost:5173}
+  assistente:
+    gemini:
+      chave: ${GEMINI_API_KEY:}
+      modelo: ${GEMINI_MODELO:gemini-3.5-flash-lite}
+      url-base: https://generativelanguage.googleapis.com/v1beta
+      timeout-segundos: 30
+      maximo-de-tokens: 800
