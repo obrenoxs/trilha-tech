@@ -3,6 +3,7 @@ package io.github.obrenoxs.trilhatech.carga.validacao;
 import io.github.obrenoxs.trilhatech.carga.arquivo.*;
 import io.github.obrenoxs.trilhatech.carga.exception.ConteudoInvalidoException;
 import io.github.obrenoxs.trilhatech.carga.leitura.LeitorConteudo;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
@@ -12,6 +13,8 @@ import java.util.Set;
 
 @Component
 public class ValidadorConteudo {
+
+    private static final String PASTA_DOS_PDFS = "conteudo/pdfs/";
 
     private final LeitorConteudo leitorConteudo;
     private final ValidadorCatalogo validadorCatalogo;
@@ -45,6 +48,10 @@ public class ValidadorConteudo {
 
                 problemas.addAll(validadorTrilha.validar(trilhaCatalogo.slug(), arquivo));
                 problemas.addAll(validadorConsistencia.validar(area, trilhaCatalogo, arquivo));
+                ClassPathResource pdf = new ClassPathResource(PASTA_DOS_PDFS + "roadmap-" + trilhaCatalogo.slug() + ".pdf");
+                if (!pdf.exists()) {
+                    problemas.add("Trilha '" + trilhaCatalogo.slug() + "': falta o PDF " + pdf.getPath());
+                }
             }
         }
 
