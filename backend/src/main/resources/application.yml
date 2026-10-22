@@ -20,3 +20,5 @@ trilhatech:
       url-base: https://generativelanguage.googleapis.com/v1beta
       timeout-segundos: 30
       maximo-de-tokens: 800
+    limite:
+      mensagens-por-dia: 400
