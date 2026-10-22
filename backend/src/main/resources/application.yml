@@ -22,3 +22,6 @@ trilhatech:
       maximo-de-tokens: 800
     limite:
       mensagens-por-dia: 400
+      por-minuto-global: 12
+      por-minuto-por-visitante: 5
+      por-hora-por-visitante: 30
