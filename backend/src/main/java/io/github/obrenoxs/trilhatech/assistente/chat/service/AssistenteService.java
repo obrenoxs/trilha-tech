@@ -82,7 +82,7 @@ public class AssistenteService {
         }
     }
 
-    private ContextoPrompt montarContexto(@Valid ContextoRequest contexto) {
+    private ContextoPrompt montarContexto(ContextoRequest contexto) {
         List<AreaResponse> areas = areaService.findAll();
 
         String areaSlug = contexto == null ? null : contexto.areaSlug();
@@ -126,7 +126,7 @@ public class AssistenteService {
         return nomes;
     }
 
-    private List<MensagemIa> montarConversa(@Size(max = 6) List<@NotNull @Valid MensagemHistoricoRequest> historico, String mensagem) {
+    private List<MensagemIa> montarConversa(List<MensagemHistoricoRequest> historico, String mensagem) {
         List<MensagemIa> conversa = new ArrayList<>();
 
         if (historico != null) {
