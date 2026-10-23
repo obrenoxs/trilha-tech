@@ -6,7 +6,10 @@ import java.time.LocalDate;
 import java.time.YearMonth;
 import java.time.format.DateTimeParseException;
 
-public class ConversorTexto {
+public final class ConversorTexto {
+
+    private ConversorTexto() {
+    }
 
     public static NivelEntrada traduzirNivelEntrada(String nivelEntrada) {
         if (nivelEntrada == null) {
