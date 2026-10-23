@@ -45,6 +45,21 @@ public class TratadorExcecoesGlobal extends ResponseEntityExceptionHandler {
         return buildResponse(HttpStatus.BAD_REQUEST, "Requisição inválida", erros, request);
     }
 
+    @ExceptionHandler(LimiteUsoExcedidoException.class)
+    ResponseEntity<Object> tratarLimiteDeUsoExcedido(LimiteUsoExcedidoException ex, WebRequest request) {
+        HttpHeaders cabecalhos = new HttpHeaders();
+        cabecalhos.set(HttpHeaders.RETRY_AFTER, String.valueOf(ex.getSegundosParaTentarDeNovo()));
+        return buildResponse(HttpStatus.TOO_MANY_REQUESTS,
+                "Muitas mensagens em pouco tempo. Aguarde um instante e tente de novo.", null, cabecalhos, request);
+    }
+
+    @ExceptionHandler(IaIndisponivelException.class)
+    ResponseEntity<Object> tratarIaIndisponivel(IaIndisponivelException ex, WebRequest request) {
+        log.warn("Assistente indisponível: {}", ex.getMessage());
+        return buildResponse(HttpStatus.SERVICE_UNAVAILABLE,
+                "O assistente está indisponível no momento. O restante do site continua funcionando.", null, request);
+    }
+
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
             MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatusCode status, WebRequest request) {
@@ -73,6 +88,12 @@ public class TratadorExcecoesGlobal extends ResponseEntityExceptionHandler {
 
     private ResponseEntity<Object> buildResponse(
             HttpStatus status, String message, List<Map<String, String>> errors, WebRequest request) {
+        return buildResponse(status, message, errors, new HttpHeaders(), request);
+    }
+
+    private ResponseEntity<Object> buildResponse(
+            HttpStatus status, String message, List<Map<String, String>> errors,
+            HttpHeaders cabecalhos, WebRequest request) {
 
         Map<String, Object> body = new LinkedHashMap<>();
         body.put("timestamp", LocalDateTime.now());
@@ -86,6 +107,6 @@ public class TratadorExcecoesGlobal extends ResponseEntityExceptionHandler {
 
         body.put("path", request.getDescription(false).replace("uri=", ""));
 
-        return ResponseEntity.status(status).body(body);
+        return ResponseEntity.status(status).headers(cabecalhos).body(body);
     }
 }
