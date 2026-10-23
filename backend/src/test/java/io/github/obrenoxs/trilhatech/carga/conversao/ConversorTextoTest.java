@@ -112,4 +112,54 @@ public class ConversorTextoTest {
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("Mês não informado");
     }
+
+    @Test
+    void deveRecusarNivelEtapaNuloOuDesconhecido() {
+        assertThatThrownBy(() -> ConversorTexto.traduzirNivelEtapa(null))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Nível de etapa não informado");
+        assertThatThrownBy(() -> ConversorTexto.traduzirNivelEtapa("Expert"))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Nível de etapa desconhecido: Expert");
+    }
+
+    @Test
+    void deveRecusarNivelSalarialNuloOuDesconhecido() {
+        assertThatThrownBy(() -> ConversorTexto.traduzirNivelSalarial(null))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Nível salarial não informado");
+        assertThatThrownBy(() -> ConversorTexto.traduzirNivelSalarial("Estagiário"))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Nível salarial desconhecido: Estagiário");
+    }
+
+    @Test
+    void deveRecusarIdiomaNuloOuDesconhecido() {
+        assertThatThrownBy(() -> ConversorTexto.traduzirIdioma(null))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Idioma não informado");
+        assertThatThrownBy(() -> ConversorTexto.traduzirIdioma("pt"))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Idioma desconhecido: pt");
+    }
+
+    @Test
+    void deveRecusarAcessoNuloOuDesconhecido() {
+        assertThatThrownBy(() -> ConversorTexto.traduzirAcesso(null))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Acesso não informado");
+        assertThatThrownBy(() -> ConversorTexto.traduzirAcesso("Gratuito"))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Acesso desconhecido: Gratuito");
+    }
+
+    @Test
+    void deveRecusarTipoDeRecursoNuloOuDesconhecido() {
+        assertThatThrownBy(() -> ConversorTexto.traduzirTipoRecurso(null))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Tipo do recurso não informado");
+        assertThatThrownBy(() -> ConversorTexto.traduzirTipoRecurso("podcast"))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessage("Tipo do recurso desconhecido: podcast");
+    }
 }
