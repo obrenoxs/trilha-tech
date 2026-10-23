@@ -11,7 +11,7 @@ import java.util.List;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class ClienteGeminiIT {
+public class ClienteGeminiIntegracaoTest {
 
     private static final String URL_BASE = "https://generativelanguage.googleapis.com/v1beta";
 

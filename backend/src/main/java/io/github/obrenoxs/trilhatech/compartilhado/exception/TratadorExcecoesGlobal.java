@@ -60,6 +60,12 @@ public class TratadorExcecoesGlobal extends ResponseEntityExceptionHandler {
                 "O assistente está indisponível no momento. O restante do site continua funcionando.", null, request);
     }
 
+    @ExceptionHandler(CorpoRequisicaoException.class)
+    ResponseEntity<Object> tratarCorpoRequisição(CorpoRequisicaoException ex, WebRequest request) {
+        return buildResponse(HttpStatus.valueOf(413),
+                "O corpo da requisição é grande demais.", null, request);
+    }
+
     @Override
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
             MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatusCode status, WebRequest request) {
