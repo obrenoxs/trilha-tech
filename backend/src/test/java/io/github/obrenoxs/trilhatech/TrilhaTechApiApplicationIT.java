@@ -1,15 +1,11 @@
 package io.github.obrenoxs.trilhatech;
 
+import io.github.obrenoxs.trilhatech.tests.IntegracaoBase;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ActiveProfiles;
 
-@SpringBootTest
-@ActiveProfiles("integracao")
-class TrilhaTechApiApplicationIT {
+class TrilhaTechApiApplicationIT extends IntegracaoBase {
 
 	@Test
 	void contextLoads() {
 	}
-
 }
