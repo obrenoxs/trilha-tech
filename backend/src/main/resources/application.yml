@@ -27,3 +27,11 @@ trilhatech:
       por-hora-por-visitante: 30
   limites:
     corpo-maximo-bytes: 100000
+springdoc:
+  override-with-generic-response: false
+  api-docs:
+    enabled: ${SWAGGER_HABILITADO:true}
+  swagger-ui:
+    enabled: ${SWAGGER_HABILITADO:true}
+    operations-sorter: alpha
+    tags-sorter: alpha
