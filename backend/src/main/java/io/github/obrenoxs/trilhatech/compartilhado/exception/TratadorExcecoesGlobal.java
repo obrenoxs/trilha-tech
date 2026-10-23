@@ -61,7 +61,7 @@ public class TratadorExcecoesGlobal extends ResponseEntityExceptionHandler {
     }
 
     @ExceptionHandler(CorpoRequisicaoException.class)
-    ResponseEntity<Object> tratarCorpoRequisição(CorpoRequisicaoException ex, WebRequest request) {
+    ResponseEntity<Object> tratarCorpoRequisicao(CorpoRequisicaoException ex, WebRequest request) {
         return buildResponse(HttpStatus.valueOf(413),
                 "O corpo da requisição é grande demais.", null, request);
     }

@@ -60,6 +60,8 @@ public class ClienteGemini implements ClienteIa {
 
         GeminiRequisicao requisicao = montarRequisicao(instrucaoSistema, conversa);
 
+        long inicio = System.nanoTime();
+
         GeminiResposta resposta;
         try {
             resposta = restClient.post()
@@ -77,6 +79,8 @@ public class ClienteGemini implements ClienteIa {
             log.warn("Falha de comunicação com o Gemini: {}", e.getClass().getSimpleName());
             throw new IaIndisponivelException("Não foi possível falar com o provedor de IA", e);
         }
+
+        log.info("O Gemini respondeu em {} ms", (System.nanoTime() - inicio) / 1_000_000);
 
         String texto = extrairTexto(resposta);
         if (texto.isBlank()) {
