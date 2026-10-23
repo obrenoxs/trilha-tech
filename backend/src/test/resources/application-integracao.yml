@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: ${TEST_DB_URL:jdbc:postgresql://localhost:5432/trilhatech_test}
+    username: ${TEST_DB_USER:postgres}
+    password: ${TEST_DB_PASSWORD}
+
+trilhatech:
+  carga:
+    habilitada: false

@@ -6,10 +6,12 @@ import io.github.obrenoxs.trilhatech.carga.validacao.ValidadorConteudo;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
 import org.slf4j.Logger;
 
+@ConditionalOnProperty(name = "trilhatech.carga.habilitada", havingValue = "true", matchIfMissing = true)
 @Component
 public class CarregadorConteudo implements ApplicationRunner {
 
