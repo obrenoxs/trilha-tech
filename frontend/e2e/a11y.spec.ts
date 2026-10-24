@@ -7,20 +7,20 @@ import { expect, test, type Page } from "@playwright/test";
 
 const SEEDED_RESULT = JSON.stringify(["dados-e-ia", "desenvolvimento-de-software", "ux-ui-design"]);
 
-async function violations(page: Page, options: { skipContrast?: boolean } = {}) {
+async function violations(page: Page, options: { skipRules?: string[] } = {}) {
   await page.evaluate(axe.source);
-  return page.evaluate(async (skipContrast) => {
+  return page.evaluate(async (skipRules) => {
     const result = await (
       window as unknown as { axe: typeof import("axe-core") }
     ).axe.run(
       { exclude: [["nextjs-portal"]] },
       {
         runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa", "best-practice"] },
-        rules: skipContrast ? { "color-contrast": { enabled: false } } : {},
+        rules: Object.fromEntries(skipRules.map((rule) => [rule, { enabled: false }])),
       },
     );
     return result.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(" ")).join(" | ")}`);
-  }, options.skipContrast ?? false);
+  }, options.skipRules ?? []);
 }
 
 for (const [label, viewport] of [
@@ -47,11 +47,17 @@ for (const [label, viewport] of [
 
     test("Trilha, com uma etapa aberta", async ({ page }) => {
       await page.goto("/trilhas/java-e-spring");
-      await page.getByRole("button", { name: /Expandir a etapa/ }).first().click();
-      await expect(page.getByRole("button", { name: /Recolher a etapa/ })).toBeVisible();
-      // Pendência de design: "ink-soft" sobre coral (3,06:1) e menta (4,45:1) nas faixas salariais
-      // vem do Figma (nós 123:681 e 123:687). Fica fora até o dono decidir (docs/pendencias.md).
-      expect(await violations(page, { skipContrast: true })).toEqual([]);
+      const step = page.locator("article h3 button").first();
+      await step.click();
+      await expect(step).toHaveAttribute("aria-expanded", "true");
+      // Duas exceções, ambas em docs/pendencias.md:
+      // - color-contrast: "ink-soft" sobre coral (3,06:1) e menta (4,45:1) nas faixas salariais vem do
+      //   Figma (nós 123:681 e 123:687); fica fora até o dono decidir.
+      // - label-content-name-mismatch (WCAG 2.5.3): o botão da etapa tem como nome só o título, e o
+      //   resumo e o nível visíveis nele entram como descrição (decisão do dono).
+      expect(
+        await violations(page, { skipRules: ["color-contrast", "label-content-name-mismatch"] }),
+      ).toEqual([]);
     });
 
     test("Quiz, com uma alternativa marcada", async ({ page }) => {
