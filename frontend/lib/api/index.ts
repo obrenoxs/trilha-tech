@@ -49,6 +49,25 @@ async function read<T>(path: string): Promise<T> {
   return request<T>(path);
 }
 
+/**
+ * Igual a `read`, para recursos buscados por slug. Um 404 (ou 400, slug malformado) vira `null` em vez de exceção:
+ * o erro perde a classe ao atravessar o `use cache` (chega como um Error genérico, só com
+ * `digest`), então a página não conseguiria reconhecê-lo. O 404 é uma resposta estável e
+ * pode ser cacheado; os demais erros continuam lançando e não entram no cache.
+ */
+async function readOrNull<T>(path: string): Promise<T | null> {
+  "use cache";
+  cacheLife("hours");
+  try {
+    return await request<T>(path);
+  } catch (error) {
+    // 400 também: a API recusa slug malformado (ex.: "%00") em vez de responder 404.
+    if (error instanceof ApiError && (error.kind === "not-found" || error.kind === "bad-request"))
+      return null;
+    throw error;
+  }
+}
+
 function post<T>(path: string, body: unknown): Promise<T> {
   return request<T>(path, {
     method: "POST",
@@ -61,9 +80,11 @@ function post<T>(path: string, body: unknown): Promise<T> {
 const enc = encodeURIComponent;
 
 export const getAreas = () => read<Area[]>("/api/areas");
-export const getArea = (slug: string) => read<AreaDetalhe>(`/api/areas/${enc(slug)}`);
+/** `null` quando o slug não existe (404). */
+export const getArea = (slug: string) => readOrNull<AreaDetalhe>(`/api/areas/${enc(slug)}`);
+/** `null` quando o slug não existe (404). */
 export const getTrilha = (slug: string) =>
-  read<TrilhaDetalhe>(`/api/trilhas/${enc(slug)}`);
+  readOrNull<TrilhaDetalhe>(`/api/trilhas/${enc(slug)}`);
 export const getTrilhaPdfUrl = (slug: string) =>
   `${API_URL}/api/trilhas/${enc(slug)}/pdf`;
 
