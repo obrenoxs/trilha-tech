@@ -5,7 +5,7 @@ export function SkipLink() {
   return (
     <a
       href="#conteudo"
-      className={`sr-only rounded-12 border-3 border-ink bg-white px-5 py-[11px] font-body text-nav text-ink focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-50 ${focusRing}`}
+      className={`absolute top-3 left-3 z-50 -translate-y-[200%] rounded-12 border-3 border-ink bg-white px-5 py-[11px] font-body text-nav text-ink focus:translate-y-0 ${focusRing}`}
     >
       Pular para o conteúdo
     </a>
