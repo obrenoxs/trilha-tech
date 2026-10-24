@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/*
+  Tokens do Figma (arquivo ZkXYNG3Hur7RwxupOT0rHB, Guia de estilo 2:27).
+  Letter spacing do Figma é em %, aqui convertido para em.
+*/
+@theme {
+  /* Cores */
+  --color-bg: #e6eef2;
+  --color-ink: #14213d;
+  --color-ink-soft: #4b587a;
+  --color-white: #ffffff;
+  --color-coral: #ff8a6b;
+  --color-mint: #7ee0b8;
+  --color-lemon: #f6e27a;
+  --color-periwinkle: #a9b8ff;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Fontes */
+  --font-display: var(--font-unbounded), sans-serif;
+  --font-body: var(--font-manrope), sans-serif;
+  --font-mono: var(--font-dm-mono), monospace;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Sombras duras (sem blur) */
+  --shadow-pressed: 2px 2px 0 0 #14213d;
+  --shadow-sm: 4px 4px 0 0 #14213d;
+  --shadow-md: 6px 6px 0 0 #14213d;
+  --shadow-lg: 8px 8px 0 0 #14213d;
+
+  /* Raios que aparecem no guia: amostras de cor (12) e caixas de sombra (14) */
+  --radius-12: 12px;
+  --radius-14: 14px;
+
+  /* Estilos de texto: tamanho, altura de linha, tracking e peso */
+  --text-h1: 54px;
+  --text-h1--line-height: 1.12;
+  --text-h1--letter-spacing: -0.04em;
+  --text-h1--font-weight: 700;
+
+  --text-h2: 46px;
+  --text-h2--line-height: 1.1;
+  --text-h2--letter-spacing: -0.04em;
+  --text-h2--font-weight: 700;
+
+  --text-h3: 24px;
+  --text-h3--line-height: 1.2;
+  --text-h3--letter-spacing: -0.025em;
+  --text-h3--font-weight: 600;
+
+  --text-card: 20px;
+  --text-card--line-height: 1.25;
+  --text-card--letter-spacing: -0.025em;
+  --text-card--font-weight: 600;
+
+  --text-label: 15px;
+  --text-label--line-height: 1.4;
+  --text-label--letter-spacing: 0.1em;
+  --text-label--font-weight: 500;
+
+  --text-caption: 13px;
+  --text-caption--line-height: 1.4;
+  --text-caption--letter-spacing: 0.08em;
+  --text-caption--font-weight: 500;
+
+  --text-body-lg: 20px;
+  --text-body-lg--line-height: 1.55;
+  --text-body-lg--font-weight: 500;
+
+  --text-body-md: 17px;
+  --text-body-md--line-height: 1.5;
+  --text-body-md--font-weight: 500;
+
+  --text-button: 18px;
+  --text-button--line-height: 1.3;
+  --text-button--font-weight: 800;
+
+  --text-num: 32px;
+  --text-num--line-height: 1.2;
+  --text-num--letter-spacing: -0.03em;
+  --text-num--font-weight: 700;
+
+  --text-logo: 22px;
+  --text-logo--line-height: 1.2;
+  --text-logo--letter-spacing: -0.02em;
+  --text-logo--font-weight: 700;
+
+  --text-footer: 14px;
+  --text-footer--line-height: 1.4;
+  --text-footer--font-weight: 500;
+
+  --text-body-sm: 14px;
+  --text-body-sm--line-height: 1.5;
+  --text-body-sm--font-weight: 500;
+
+  --text-nav: 17px;
+  --text-nav--line-height: 1.3;
+  --text-nav--font-weight: 700;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
 }
