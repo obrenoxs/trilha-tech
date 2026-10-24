@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Reveal } from "@/components/ui/reveal";
 import { focusRing } from "@/components/ui/states";
 import { StepCard } from "@/components/ui/step-card";
 import { PdfDownload } from "@/features/trail/pdf-download";
@@ -120,7 +121,7 @@ export default async function TrailPage({ params }: PageProps<"/trilhas/[slug]">
         </h2>
         <ol className="flex w-full flex-col gap-5 md:gap-[22px]">
           {steps.map((step, index) => (
-            <li key={step.ordem}>
+            <Reveal as="li" key={step.ordem}>
               <StepCard
                 index={index}
                 number={String(index + 1).padStart(2, "0")}
@@ -130,7 +131,7 @@ export default async function TrailPage({ params }: PageProps<"/trilhas/[slug]">
               >
                 <StepDetails step={step} />
               </StepCard>
-            </li>
+            </Reveal>
           ))}
         </ol>
 

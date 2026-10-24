@@ -37,10 +37,24 @@ export function LimitedDataBadge() {
 }
 
 // No Figma o nível da etapa é só texto mono em cinza-azulado, sem caixa.
-export function LevelBadge({ level, className = "" }: { level: string; className?: string }) {
+export function LevelBadge({
+  level,
+  className = "",
+  as: Tag = "p",
+  id,
+  hiddenFromReaders = false,
+}: {
+  level: string;
+  className?: string;
+  /** "span" quando fica dentro de um botão (um <p> não pode). */
+  as?: "p" | "span";
+  id?: string;
+  /** Texto só visual: quem o lê é o aria-describedby do botão (ver StepCard). */
+  hiddenFromReaders?: boolean;
+}) {
   return (
-    <p className={`font-mono text-caption uppercase text-ink-soft ${className}`}>
+    <Tag id={id} aria-hidden={hiddenFromReaders || undefined} className={`font-mono text-caption uppercase text-ink-soft ${className}`}>
       Nível · {level}
-    </p>
+    </Tag>
   );
 }

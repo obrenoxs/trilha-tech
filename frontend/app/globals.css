@@ -102,6 +102,20 @@
   --text-nav--font-weight: 700;
 }
 
+/*
+  Movimento (fase 12B). O Figma não tem animações: estes valores foram aprovados pelo dono.
+  Só transform e opacity (e a altura das etapas, via grid-template-rows). Tudo some com
+  prefers-reduced-motion (ver o bloco no fim deste arquivo). `static` para sempre sair como
+  variável CSS, mesmo quando usada só em CSS puro.
+*/
+@theme static {
+  --duration-fast: 150ms; /* hover e pressionado */
+  --duration-base: 250ms; /* entradas, abrir/fechar */
+  --duration-slow: 400ms; /* barras e progresso */
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --distance-enter: 12px;
+}
+
 /* Foco branco: aplica-se a qualquer elemento dentro de um ancestral com data-surface="dark". */
 @custom-variant on-dark (&:where([data-surface="dark"] *));
 
@@ -109,4 +123,100 @@ body {
   background: var(--color-bg);
   color: var(--color-ink);
   font-family: var(--font-body);
+}
+
+/* ---------- Movimento ---------- */
+
+/* Hover e pressionado: o botão/cartão desce e a sombra encolhe. A sombra (box-shadow) só repinta,
+   não mexe no layout; é a única propriedade fora de transform/opacity, e sem ela a sombra
+   "pularia" enquanto o elemento desliza. */
+@utility motion-press {
+  transition-property: transform, box-shadow;
+  transition-duration: var(--duration-fast);
+  transition-timing-function: var(--ease-soft);
+}
+
+/* Entrada ao rolar (components/ui/reveal.tsx). Sem JavaScript o atributo nunca existe e o conteúdo
+   fica visível: a animação é só acabamento. */
+[data-reveal="pending"] {
+  opacity: 0;
+  transform: translateY(var(--distance-enter));
+}
+[data-reveal="shown"] {
+  transition:
+    opacity var(--duration-base) var(--ease-soft),
+    transform var(--duration-base) var(--ease-soft);
+}
+
+/* Pergunta nova do quiz: entra deslizando de lado (--enter-x define o sentido). */
+@keyframes enter-x {
+  from {
+    opacity: 0;
+    transform: translateX(var(--enter-x, var(--distance-enter)));
+  }
+}
+@utility motion-enter-x {
+  animation: enter-x var(--duration-base) var(--ease-soft) both;
+}
+
+/* Barras de pontuação do resultado crescem da esquerda; o valor final vem do estilo inline. */
+@keyframes bar-grow {
+  from {
+    transform: scaleX(0);
+  }
+}
+@utility motion-bar-grow {
+  transform-origin: left;
+  animation: bar-grow var(--duration-slow) var(--ease-soft) both;
+}
+
+/* Transição entre páginas (View Transitions): só opacidade. O restante da página (cabeçalho,
+   rodapé, assistente) não muda, então o "root" não precisa animar.
+   Só a página nova faz fade-in, por cima da antiga, que fica opaca até a nova cobri-la. Se as duas
+   desvanecessem em tempos diferentes, no meio da transição a página ficaria translúcida (piscada). */
+::view-transition {
+  pointer-events: none;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+::view-transition-old(.page-out) {
+  animation: none;
+}
+::view-transition-new(.page-in) {
+  animation: page-fade-in var(--duration-base) var(--ease-soft) both;
+}
+
+/* Impressão: nada fica escondido esperando a entrada ao rolar. */
+@media print {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* Sem animação nenhuma para quem pediu menos movimento. Os estados finais são os do CSS normal,
+   então nada fica escondido nem fora do lugar. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+  [data-reveal="pending"] {
+    opacity: 1;
+    transform: none;
+  }
 }

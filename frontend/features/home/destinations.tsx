@@ -1,5 +1,6 @@
 import { AreaTicket } from "@/components/ui/area-ticket";
 import { colorForIndex } from "@/components/ui/area-colors";
+import { Reveal } from "@/components/ui/reveal";
 import type { Area } from "@/lib/api";
 
 export function Destinations({ areas }: { areas: Area[] }) {
@@ -24,7 +25,7 @@ export function Destinations({ areas }: { areas: Area[] }) {
       </p>
       <ul className="grid w-full grid-cols-1 gap-[18px] pt-3 lg:grid-cols-2 md:gap-6 md:pt-5">
         {areas.map((area, index) => (
-          <li key={area.slug} className="flex">
+          <Reveal as="li" key={area.slug} className="flex">
             <AreaTicket
               href={`/areas/${area.slug}`}
               color={colorForIndex(index)}
@@ -33,7 +34,7 @@ export function Destinations({ areas }: { areas: Area[] }) {
               trailCount={area.quantidadeTrilhas}
               className="w-full"
             />
-          </li>
+          </Reveal>
         ))}
       </ul>
     </section>

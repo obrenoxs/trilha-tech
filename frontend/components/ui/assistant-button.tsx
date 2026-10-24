@@ -2,7 +2,7 @@ import { Action, type ActionProps } from "./action";
 import { disabledLook, focusRing } from "./states";
 
 // Sombra coral de 5px; pressionado desce 5px e a sombra some.
-const base = `mb-1.5 mr-1.5 inline-flex whitespace-nowrap items-center justify-center gap-2.5 rounded-14 border-3 border-ink bg-ink px-6 py-4 font-body text-button text-lemon shadow-coral-md hover:translate-x-1 hover:translate-y-1 hover:shadow-coral-pressed active:translate-x-[5px] active:translate-y-[5px] active:shadow-none ${focusRing} ${disabledLook}`;
+const base = `motion-press mb-1.5 mr-1.5 inline-flex whitespace-nowrap items-center justify-center gap-2.5 rounded-14 border-3 border-ink bg-ink px-6 py-4 font-body text-button text-lemon shadow-coral-md hover:translate-x-1 hover:translate-y-1 hover:shadow-coral-pressed active:translate-x-[5px] active:translate-y-[5px] active:shadow-none ${focusRing} ${disabledLook}`;
 
 export function AssistantButton({ children, className = "", ...props }: ActionProps) {
   return (

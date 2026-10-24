@@ -176,17 +176,19 @@ export function AssistantPanel() {
     setDraft("");
   }
 
+  // Fechado, o painel fica invisible (fora do Tab e da leitura de tela) só depois do fade. Aberto, o
+  // visibility NÃO transiciona (a propriedade só entra na lista ao fechar): o painel já está visible
+  // no primeiro quadro, senão o foco não consegue entrar no campo.
   return (
     // O onKeyDown só segura o Tab dentro do painel no celular (focus trap): não é um controle clicável.
     // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
     <div
       ref={panelRef}
-      hidden={!open}
       role="dialog"
       aria-labelledby={titleId}
       tabIndex={-1}
       onKeyDown={onKeyDown}
-      className="fixed inset-0 z-50 flex flex-col overflow-hidden bg-white outline-none md:inset-auto md:right-8 md:bottom-8 md:h-[560px] md:max-h-[calc(100dvh-4rem)] md:w-[420px] md:rounded-[20px] md:border-3 md:border-ink md:shadow-lg"
+      className={`fixed inset-0 z-50 flex flex-col overflow-hidden bg-white outline-none duration-(--duration-base) ease-soft md:inset-auto md:right-8 md:bottom-8 md:h-[560px] md:max-h-[calc(100dvh-4rem)] md:w-[420px] md:rounded-[20px] md:border-3 md:border-ink md:shadow-lg ${open ? "visible translate-y-0 opacity-100 transition-[opacity,translate]" : "invisible translate-y-(--distance-enter) opacity-0 transition-[opacity,translate,visibility]"}`}
     >
       <div
         data-surface="dark"
