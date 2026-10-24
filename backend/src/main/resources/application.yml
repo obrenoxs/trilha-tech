@@ -35,3 +35,6 @@ springdoc:
     enabled: ${SWAGGER_HABILITADO:true}
     operations-sorter: alpha
     tags-sorter: alpha
+    
+server:
+  port: ${PORT:8080}
