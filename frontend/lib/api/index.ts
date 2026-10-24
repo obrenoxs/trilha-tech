@@ -1,3 +1,5 @@
+import { cacheLife } from "next/cache";
+
 import { ApiError } from "./errors";
 import type { components } from "./schema";
 
@@ -19,8 +21,6 @@ export const API_URL = (
   process.env.NEXT_PUBLIC_API_URL ?? "https://trilha-tech-production.up.railway.app"
 ).replace(/\/+$/, "");
 
-const ONE_HOUR = 60 * 60;
-
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   let response: Response;
   try {
@@ -36,9 +36,17 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
   }
 }
 
-/** Leituras para componentes de servidor: cache de 1 hora. */
-function read<T>(path: string): Promise<T> {
-  return request<T>(path, { next: { revalidate: ONE_HOUR } });
+/**
+ * Leituras para componentes de servidor, com cache de 1 hora (perfil "hours":
+ * revalidate 3600s). Só o valor resolvido é guardado: se `request` lançar um
+ * ApiError, a exceção atravessa o `use cache` sem virar entrada de cache, e a
+ * próxima chamada tenta a API de novo. O argumento (`path`) é uma string, logo
+ * serializável, e também é a chave do cache.
+ */
+async function read<T>(path: string): Promise<T> {
+  "use cache";
+  cacheLife("hours");
+  return request<T>(path);
 }
 
 function post<T>(path: string, body: unknown): Promise<T> {
