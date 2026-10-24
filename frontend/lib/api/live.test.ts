@@ -12,8 +12,8 @@ describe.skipIf(!process.env.LIVE_API)("API real", () => {
   it("GET /api/trilhas/java-e-spring devolve a trilha completa", async () => {
     const trilha = await getTrilha("java-e-spring");
     expect(trilha.slug).toBe("java-e-spring");
-    expect(trilha.etapas?.length).toBeGreaterThan(0);
-    expect(trilha.faixasSalariais?.length).toBeGreaterThan(0);
+    expect(trilha.etapas.length).toBeGreaterThan(0);
+    expect(trilha.faixasSalariais.length).toBeGreaterThan(0);
   });
 
   it("slug inexistente vira ApiError 404", async () => {

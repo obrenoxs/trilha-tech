@@ -50,6 +50,20 @@ Trilha Tech é uma plataforma web que orienta iniciantes e estudantes de TI a de
 
 Os nomes exatos dos campos vêm **dos tipos gerados** do OpenAPI. Em caso de dúvida, o Swagger é a fonte de verdade.
 
+**Valores de enum da API** (conferidos em `lib/api/schema.d.ts`; a API os envia em MAIÚSCULAS, e o front mapeia para o rótulo da tela):
+
+| Campo | Valores |
+|---|---|
+| `acesso` (recurso) | `GRATUITO`, `PAGO`, `NAO_CONFIRMADO` |
+| `tipo` (recurso) | `DOCUMENTACAO`, `CURSO`, `LIVRO`, `FORMACAO`, `CERTIFICACAO`, `TUTORIAL`, `GUIA`, `VIDEO`, `FERRAMENTA` |
+| `idioma` (recurso) | `PT`, `EN` |
+| `nivelEntrada` (trilha) | `INICIANTE`, `INTERMEDIARIO`, `AVANCADO` |
+| `nivel` (etapa) | `BASICO`, `INTERMEDIARIO`, `AVANCADO` |
+| `nivel` (faixa salarial) | `JUNIOR`, `PLENO`, `SENIOR` |
+| `papel` (histórico do chat) | `USUARIO`, `ASSISTENTE` |
+
+`tipoReferencia` (faixa salarial) **não é enum**: é texto livre vindo da API. Mostre-o como veio, sem mapear.
+
 **Nunca faça chamada real a `POST /api/assistente/mensagens`: consome cota de IA do backend e o limite por IP. Teste o chat com mocks.**
 
 **Quiz**
@@ -82,7 +96,7 @@ Os nomes exatos dos campos vêm **dos tipos gerados** do OpenAPI. Em caso de dú
 - **`avisosSalario` fica visível junto das faixas em toda trilha.** Sem exceção.
 - O selo discreto **"dados limitados"** aparece só quando `dadosLimitados` for `true`.
 - Salários são estimativas de mercado e **não distinguem CLT de PJ**: nunca escreva que são CLT.
-- Recurso de estudo: `acesso` = `gratuito` → "Grátis"; `pago` → "Pago"; `nao_confirmado` → "Confirmar preço". Mostre também tipo e idioma.
+- Recurso de estudo: `acesso` = `GRATUITO` → "Grátis"; `PAGO` → "Pago"; `NAO_CONFIRMADO` → "Confirmar preço". Mostre também tipo e idioma.
 - A trilha mostra `conteudoConferidoEm` ("Recursos e fontes verificados em MM/AAAA").
 - Identificador público é sempre o **slug**. Nunca exiba ids internos. O campo `pendencias` não existe na API e nunca deve aparecer.
 - Texto vindo da API é renderizado **como texto** (nada de `dangerouslySetInnerHTML`). Links externos usam `target="_blank"` com `rel="noopener noreferrer"` e só se começarem com `https://`.

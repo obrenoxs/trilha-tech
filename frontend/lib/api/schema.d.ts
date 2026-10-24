@@ -173,25 +173,25 @@ export interface components {
              */
             field?: string;
             /** @example não deve ser nulo */
-            message?: string;
+            message: string;
         };
         /** @description Formato padrão de todos os erros da API */
         ErroResponse: {
             /** @example 2026-10-23T19:05:44 */
-            timestamp?: string;
+            timestamp: string;
             /**
              * Format: int32
              * @example 400
              */
-            status?: number;
+            status: number;
             /** @example Bad Request */
-            error?: string;
+            error: string;
             /** @example Requisição inválida */
-            message?: string;
+            message: string;
             /** @description Só aparece nos erros de validação */
             errors?: components["schemas"]["Detalhe"][];
             /** @example /api/quiz/resultado */
-            path?: string;
+            path: string;
         };
         RecomendacaoResponse: {
             /**
@@ -199,26 +199,26 @@ export interface components {
              * @description Posição no ranking, de 1 a 3
              * @example 1
              */
-            posicao?: number;
+            posicao: number;
             /**
              * @description Slug da área, para usar em GET /api/areas/{slug}
              * @example dados-e-ia
              */
-            slug?: string;
+            slug: string;
             /**
              * @description Nome da área, para exibir
              * @example Dados e Inteligência Artificial
              */
-            nome?: string;
+            nome: string;
             /**
              * Format: int32
              * @description De 0 a 100, relativo à primeira área (a primeira é sempre 100). Não é um percentual de afinidade
              * @example 75
              */
-            barra?: number;
+            barra: number;
         };
         ResultadoResponse: {
-            recomendacoes?: components["schemas"]["RecomendacaoResponse"][];
+            recomendacoes: components["schemas"]["RecomendacaoResponse"][];
         };
         ChatRequest: {
             /**
@@ -257,113 +257,113 @@ export interface components {
         };
         ChatResponse: {
             /** @description A resposta do assistente, em texto simples */
-            resposta?: string;
+            resposta: string;
         };
         AreaTrilhaResponse: {
-            slug?: string;
-            numero?: string;
-            nome?: string;
+            slug: string;
+            numero: string;
+            nome: string;
         };
         EtapaResponse: {
             /** Format: int32 */
-            ordem?: number;
-            titulo?: string;
+            ordem: number;
+            titulo: string;
             /** @enum {string} */
-            nivel?: "BASICO" | "INTERMEDIARIO" | "AVANCADO";
+            nivel: "BASICO" | "INTERMEDIARIO" | "AVANCADO";
             /** Format: int32 */
-            duracaoSemanas?: number;
-            descricao?: string;
+            duracaoSemanas: number;
+            descricao: string;
             projetoPratico?: string;
-            recursos?: components["schemas"]["RecursoResponse"][];
+            recursos: components["schemas"]["RecursoResponse"][];
         };
         FaixaSalarialResponse: {
             /** @enum {string} */
-            nivel?: "JUNIOR" | "PLENO" | "SENIOR";
+            nivel: "JUNIOR" | "PLENO" | "SENIOR";
             /** Format: int32 */
-            minimo?: number;
+            minimo: number;
             /** Format: int32 */
-            maximo?: number;
+            maximo: number;
             /** Format: int32 */
-            valorReferencia?: number;
-            tipoReferencia?: string;
-            fonte?: string;
+            valorReferencia: number;
+            tipoReferencia: string;
+            fonte: string;
             /**
              * @description Mês de referência, no formato ano-mês
              * @example 2026-09
              */
-            dataReferencia?: string;
-            dadosLimitados?: boolean;
-            observacao?: string;
+            dataReferencia: string;
+            dadosLimitados: boolean;
+            observacao: string;
         };
         RecursoResponse: {
             /** Format: int32 */
-            ordem?: number;
-            titulo?: string;
-            url?: string;
+            ordem: number;
+            titulo: string;
+            url: string;
             /** @enum {string} */
-            tipo?: "DOCUMENTACAO" | "CURSO" | "LIVRO" | "FORMACAO" | "CERTIFICACAO" | "TUTORIAL" | "GUIA" | "VIDEO" | "FERRAMENTA";
+            tipo: "DOCUMENTACAO" | "CURSO" | "LIVRO" | "FORMACAO" | "CERTIFICACAO" | "TUTORIAL" | "GUIA" | "VIDEO" | "FERRAMENTA";
             /** @enum {string} */
-            idioma?: "PT" | "EN";
+            idioma: "PT" | "EN";
             /** @enum {string} */
-            acesso?: "GRATUITO" | "PAGO" | "NAO_CONFIRMADO";
+            acesso: "GRATUITO" | "PAGO" | "NAO_CONFIRMADO";
             observacao?: string;
             /** Format: date */
-            verificadoEm?: string;
+            verificadoEm: string;
         };
         TrilhaDetalheResponse: {
-            slug?: string;
-            nome?: string;
-            resumo?: string;
-            area?: components["schemas"]["AreaTrilhaResponse"];
+            slug: string;
+            nome: string;
+            resumo: string;
+            area: components["schemas"]["AreaTrilhaResponse"];
             /** @enum {string} */
-            nivelEntrada?: "INICIANTE" | "INTERMEDIARIO" | "AVANCADO";
-            textoTrilha?: string;
-            paraQuemE?: string;
+            nivelEntrada: "INICIANTE" | "INTERMEDIARIO" | "AVANCADO";
+            textoTrilha: string;
+            paraQuemE: string;
             /** Format: int32 */
-            horasPorSemana?: number;
+            horasPorSemana: number;
             /** Format: int64 */
-            duracaoTotalSemanas?: number;
-            avisosSalario?: string;
+            duracaoTotalSemanas: number;
+            avisosSalario: string;
             /** Format: date */
-            conteudoConferidoEm?: string;
-            etapas?: components["schemas"]["EtapaResponse"][];
-            faixasSalariais?: components["schemas"]["FaixaSalarialResponse"][];
+            conteudoConferidoEm: string;
+            etapas: components["schemas"]["EtapaResponse"][];
+            faixasSalariais: components["schemas"]["FaixaSalarialResponse"][];
         };
         AlternativaResponse: {
             /** Format: int32 */
-            ordem?: number;
-            texto?: string;
+            ordem: number;
+            texto: string;
         };
         PerguntaResponse: {
             /** Format: int32 */
-            ordem?: number;
-            texto?: string;
-            alternativas?: components["schemas"]["AlternativaResponse"][];
+            ordem: number;
+            texto: string;
+            alternativas: components["schemas"]["AlternativaResponse"][];
         };
         AreaResponse: {
-            slug?: string;
-            numero?: string;
-            nome?: string;
-            descricao?: string;
+            slug: string;
+            numero: string;
+            nome: string;
+            descricao: string;
             /** Format: int64 */
-            quantidadeTrilhas?: number;
+            quantidadeTrilhas: number;
         };
         AreaDetalheResponse: {
-            slug?: string;
-            numero?: string;
-            nome?: string;
-            descricao?: string;
+            slug: string;
+            numero: string;
+            nome: string;
+            descricao: string;
             comoETrabalhar?: string;
-            trilhas?: components["schemas"]["TrilhaResponse"][];
+            trilhas: components["schemas"]["TrilhaResponse"][];
         };
         TrilhaResponse: {
-            slug?: string;
-            nome?: string;
-            resumo?: string;
+            slug: string;
+            nome: string;
+            resumo: string;
             /** @enum {string} */
-            nivelEntrada?: "INICIANTE" | "INTERMEDIARIO" | "AVANCADO";
+            nivelEntrada: "INICIANTE" | "INTERMEDIARIO" | "AVANCADO";
             /** Format: int64 */
-            duracaoTotalSemanas?: number;
+            duracaoTotalSemanas: number;
         };
     };
     responses: never;

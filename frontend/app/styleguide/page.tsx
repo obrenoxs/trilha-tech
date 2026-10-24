@@ -176,7 +176,7 @@ export default function StyleguidePage() {
   if (process.env.NODE_ENV === "production") notFound();
 
   return (
-    <main className="flex flex-col items-start gap-10 overflow-hidden p-12">
+    <div className="flex flex-col items-start gap-10 overflow-hidden p-12">
       <h1 className="font-display text-h3 whitespace-nowrap">
         Trilha Tech · Fundamentos (Bilhete)
       </h1>
@@ -419,6 +419,6 @@ export default function StyleguidePage() {
           </li>
         </ol>
       </section>
-    </main>
+    </div>
   );
 }
