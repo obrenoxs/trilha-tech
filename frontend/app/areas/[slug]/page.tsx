@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 }
 
 // Slug que a API não conhece (getArea devolve null) vira a página "não encontrada".
-// Outros erros seguem como exceção e caem no error.tsx (fase 11).
+// Outras falhas (API fora, rede) seguem como exceção e caem no error.tsx, sem ler o erro.
 async function loadArea(slug: string) {
   const area = await getArea(slug);
   if (!area) notFound();

@@ -2,6 +2,11 @@ import { expect, test, type Page } from "@playwright/test";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "https://trilha-tech-production.up.railway.app";
 
+// Enviar o quiz navega para /quiz/resultado, e a URL só muda depois que o servidor devolve a página
+// (que espera `getAreas`). Com o cache frio do dev isso soma compilação da rota e a latência da API,
+// e pode passar dos 5s padrão do expect. Este limite vale só para essa navegação.
+const NAVIGATION = { timeout: 20_000 };
+
 type Pergunta = { ordem: number; texto: string; alternativas: { ordem: number; texto: string }[] };
 
 /** Responde as 12 perguntas escolhendo sempre a alternativa mostrada na posição `position` (0 a 3). */
@@ -62,7 +67,7 @@ test("quiz completo: responde, vê o resultado, recarrega e refaz", async ({ pag
   expect(body.respostas).toEqual(picked);
   expect(body.respostas).toHaveLength(12);
 
-  await expect(page).toHaveURL(/\/quiz\/resultado$/);
+  await expect(page).toHaveURL(/\/quiz\/resultado$/, NAVIGATION);
   await expect(page.getByRole("heading", { level: 1 })).toContainText("Estas áreas combinam");
   await expect(page.getByText(/não um teste vocacional/)).toBeVisible();
   const items = page.getByRole("listitem").filter({ has: page.getByRole("link", { name: /Ver trilhas/ }) });
@@ -115,7 +120,7 @@ test("com o localStorage bloqueado o quiz funciona e o resultado não persiste",
 
   await page.goto("/quiz");
   await answerAll(page, perguntas, 0);
-  await expect(page).toHaveURL(/\/quiz\/resultado$/);
+  await expect(page).toHaveURL(/\/quiz\/resultado$/, NAVIGATION);
   await expect(page.getByRole("link", { name: /Ver trilhas/ })).toHaveCount(3);
 
   // Sem armazenamento não há o que recuperar: recarregar leva de volta ao quiz.
@@ -157,7 +162,7 @@ test("erro 400 no envio mostra mensagem amigável e permite tentar de novo", asy
   await expect(page.getByRole("radio", { checked: true })).toHaveCount(1);
   await page.unroute("**/api/quiz/resultado");
   await page.getByRole("button", { name: "Ver resultado" }).click();
-  await expect(page).toHaveURL(/\/quiz\/resultado$/);
+  await expect(page).toHaveURL(/\/quiz\/resultado$/, NAVIGATION);
   await expect(page.getByRole("link", { name: /Ver trilhas/ })).toHaveCount(3);
 });
 

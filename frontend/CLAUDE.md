@@ -43,7 +43,7 @@ Trilha Tech é uma plataforma web que orienta iniciantes e estudantes de TI a de
 | `GET /api/areas` | Home: lista das 8 áreas |
 | `GET /api/areas/{slug}` | Página da área, com as trilhas em ordem |
 | `GET /api/trilhas/{slug}` | Página da trilha completa |
-| `GET /api/trilhas/{slug}/pdf` | Download do roadmap (link comum; o servidor envia `attachment`) |
+| `GET /api/trilhas/{slug}/pdf` | Download do roadmap: o front baixa com `fetch` e mostra aviso amigável se falhar; o link simples (o servidor envia `attachment`) continua como fallback sem JavaScript |
 | `GET /api/quiz` | As 12 perguntas, sem áreas nem pontos |
 | `POST /api/quiz/resultado` | Corpo `{ "respostas": [{ "pergunta": 1, "alternativa": 3 }, ...] }` com **exatamente 12** |
 | `POST /api/assistente/mensagens` | Corpo `{ "mensagem", "contexto", "historico" }`; devolve `{ "resposta" }` |
