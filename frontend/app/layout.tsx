@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { DM_Mono, Manrope, Unbounded } from "next/font/google";
 import "./globals.css";
+import { Footer } from "@/components/layout/footer";
+import { Header } from "@/components/layout/header";
+import { SkipLink } from "@/components/layout/skip-link";
 
 // Pesos usados no Figma: Unbounded SemiBold/Bold, Manrope Medium/Bold/ExtraBold, DM Mono Medium.
 const unbounded = Unbounded({
@@ -31,7 +34,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="pt-BR"
       className={`${unbounded.variable} ${manrope.variable} ${dmMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <SkipLink />
+        <Header />
+        <main id="conteudo" tabIndex={-1} className="flex-1 focus:outline-none">
+          {children}
+        </main>
+        <Footer />
+        {/* Espaço reservado do assistente de IA (entra na fase 10). */}
+      </body>
     </html>
   );
 }
