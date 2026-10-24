@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Button } from "@/components/ui/button";
 import { focusRing } from "@/components/ui/states";
 import { StepCard } from "@/components/ui/step-card";
+import { PdfDownload } from "@/features/trail/pdf-download";
 import { SalaryRanges } from "@/features/trail/salary-ranges";
 import { StepDetails } from "@/features/trail/step-details";
 import { getArea, getAreas, getTrilha, getTrilhaPdfUrl } from "@/lib/api";
@@ -111,7 +111,7 @@ export default async function TrailPage({ params }: PageProps<"/trilhas/[slug]">
           ))}
         </dl>
 
-        <Button href={getTrilhaPdfUrl(trilha.slug)}>Baixar roadmap em PDF</Button>
+        <PdfDownload href={getTrilhaPdfUrl(trilha.slug)} fileName={`roadmap-${trilha.slug}.pdf`} />
 
         <SalaryRanges ranges={trilha.faixasSalariais} notice={trilha.avisosSalario} />
 
