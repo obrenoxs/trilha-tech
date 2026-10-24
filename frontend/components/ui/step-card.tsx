@@ -20,7 +20,7 @@ type StepCardProps = {
 
 // Cartão da lista de etapas da trilha (Figma 9:333 e 123:553, mobile 125:640).
 // A cor do canhoto segue a posição na lista (coral, menta, limão, lavanda, e repete).
-// Fechado: canhoto + título + resumo + nível + "+". Aberto: o nível sobe para a linha do
+// Fechado: canhoto + título + resumo (cortado em 2 linhas) + nível + "+". Aberto: o nível sobe para a linha do
 // título, aparece o divisor tracejado e o conteúdo da etapa.
 // No mobile o nível some do cartão fechado e fica abaixo do título no aberto.
 export function StepCard({
@@ -94,11 +94,11 @@ export function StepCard({
         </div>
       ) : (
         <div className="flex min-w-0 flex-1 items-start md:items-center">
-          <div className="flex min-w-0 flex-1 flex-col gap-2.5 px-4 py-[18px] md:gap-1.5 md:pl-7 md:pr-0">
+          <div className="flex min-w-0 flex-1 flex-col gap-2.5 px-4 py-[18px] md:gap-1.5 md:pl-7 md:pr-6">
             <h3 className="break-words font-display text-[16px] font-semibold leading-[1.25] tracking-[-0.025em] text-ink md:text-card">
               {title}
             </h3>
-            <p className={summaryClass}>{summary}</p>
+            <p className={`${summaryClass} line-clamp-2`}>{summary}</p>
           </div>
           <LevelBadge
             level={level}

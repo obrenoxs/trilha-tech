@@ -7,13 +7,13 @@ const tones = {
   lemon: "bg-lemon",
 };
 
-type BadgeProps = { tone?: keyof typeof tones; children: ReactNode };
+type BadgeProps = { tone?: keyof typeof tones; className?: string; children: ReactNode };
 
 // Pílula do Figma: borda de 2px, raio total, texto mono em caixa alta.
-export function Badge({ tone = "outline", children }: BadgeProps) {
+export function Badge({ tone = "outline", className = "", children }: BadgeProps) {
   return (
     <span
-      className={`inline-flex items-center whitespace-nowrap rounded-full border-2 border-ink px-2.5 py-[3px] font-mono text-caption uppercase text-ink ${tones[tone]}`}
+      className={`inline-flex items-center whitespace-nowrap rounded-full border-2 border-ink px-2.5 py-[3px] font-mono text-caption uppercase text-ink ${tones[tone]} ${className}`}
     >
       {children}
     </span>
