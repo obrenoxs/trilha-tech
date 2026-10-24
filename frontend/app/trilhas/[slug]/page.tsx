@@ -9,6 +9,7 @@ import { SalaryRanges } from "@/features/trail/salary-ranges";
 import { StepDetails } from "@/features/trail/step-details";
 import { getArea, getAreas, getTrilha, getTrilhaPdfUrl } from "@/lib/api";
 import { routes } from "@/lib/routes";
+import { pageMetadata } from "@/lib/seo";
 import {
   entryLevelLabels,
   formatMonthYear,
@@ -34,10 +35,11 @@ async function loadTrilha(slug: string) {
 export async function generateMetadata({ params }: PageProps<"/trilhas/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const trilha = await loadTrilha(slug);
-  return {
-    title: `${trilha.nome} | Trilha Tech`,
+  return pageMetadata({
+    title: `${trilha.nome}: roadmap de estudo`,
     description: trilha.resumo,
-  };
+    path: `/trilhas/${trilha.slug}`,
+  });
 }
 
 const label = "font-mono text-caption uppercase text-ink-soft md:text-label";

@@ -3,7 +3,7 @@ import { getAreas } from "@/lib/api";
 import { QuizResult } from "@/features/quiz/quiz-result";
 
 export const metadata: Metadata = {
-  title: "Seu resultado do quiz | Trilha Tech",
+  title: "Seu resultado do quiz",
   description: "Três áreas de TI sugeridas para você começar a explorar.",
   robots: { index: false },
 };
