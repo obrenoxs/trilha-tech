@@ -60,6 +60,9 @@ function QuizSession({ perguntas }: { perguntas: Pergunta[] }) {
   const [shuffled] = useState(() => perguntas.map((pergunta) => shuffleAlternatives(pergunta)));
   const [state, dispatch] = useReducer(quizReducer, perguntas.length, initialQuizState);
 
+  // Sentido da última troca de pergunta, só para a animação de entrada (nada no carregamento).
+  const [enter, setEnter] = useState<"forward" | "back" | null>(null);
+
   const pergunta = shuffled[state.index];
   const isLast = state.index === state.total - 1;
 
@@ -98,8 +101,16 @@ function QuizSession({ perguntas }: { perguntas: Pergunta[] }) {
       onSelect={(alternativa) =>
         dispatch({ type: "select", pergunta: pergunta.ordem, alternativa })
       }
-      onBack={() => dispatch({ type: "back" })}
-      onNext={() => (isLast ? void submit() : dispatch({ type: "next" }))}
+      enter={enter}
+      onBack={() => {
+        setEnter("back");
+        dispatch({ type: "back" });
+      }}
+      onNext={() => {
+        if (isLast) return void submit();
+        setEnter("forward");
+        dispatch({ type: "next" });
+      }}
     />
   );
 }

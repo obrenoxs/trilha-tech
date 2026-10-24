@@ -28,7 +28,7 @@ export function AreaTicket({
   return (
     <Link
       href={href}
-      className={`relative mb-1.5 mr-1.5 flex overflow-clip rounded-16 border-3 border-ink bg-white shadow-md hover:translate-x-1 hover:translate-y-1 hover:shadow-pressed active:translate-x-1.5 active:translate-y-1.5 active:shadow-none ${focusRing} ${className}`}
+      className={`motion-press relative mb-1.5 mr-1.5 flex overflow-clip rounded-16 border-3 border-ink bg-white shadow-md hover:translate-x-1 hover:translate-y-1 hover:shadow-pressed active:translate-x-1.5 active:translate-y-1.5 active:shadow-none ${focusRing} ${className}`}
     >
       <div
         className={`flex w-[100px] shrink-0 flex-col items-center justify-center gap-1.5 border-r-3 border-dashed border-ink py-4 ${colors[color]}`}

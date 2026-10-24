@@ -113,9 +113,10 @@ export function QuizResult({ areas }: { areas: Area[] }) {
                       aria-hidden="true"
                       className="h-3.5 overflow-clip rounded-[7px] border-2 border-ink bg-bg md:h-4 md:rounded-8"
                     >
+                      {/* Preenchimento em largura total, reduzido por scaleX (transform): cresce da esquerda ao entrar. */}
                       <div
-                        className={`h-full ${areaColors[color]}`}
-                        style={{ width: `${Math.min(100, Math.max(0, item.barra))}%` }}
+                        className={`motion-bar-grow h-full w-full ${areaColors[color]}`}
+                        style={{ transform: `scaleX(${Math.min(100, Math.max(0, item.barra)) / 100})` }}
                       />
                     </div>
                   )}

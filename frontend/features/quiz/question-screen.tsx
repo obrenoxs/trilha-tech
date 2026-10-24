@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import { areaColors, areaTextColors, colorForIndex } from "@/components/ui/area-colors";
 import { Button } from "@/components/ui/button";
 import type { Alternativa } from "@/lib/api/types";
@@ -16,6 +17,8 @@ type QuestionScreenProps = {
   submitting: boolean;
   /** Mensagem amigável de erro do envio, se houver. */
   error: string | null;
+  /** Sentido da última troca de pergunta; `null` no carregamento (sem animação, para não atrasar o LCP). */
+  enter?: "forward" | "back" | null;
   onSelect: (alternativaOrdem: number) => void;
   onBack: () => void;
   onNext: () => void;
@@ -26,7 +29,7 @@ const pad = (n: number) => String(n).padStart(2, "0");
 // Alternativa (Figma 137:760 e 137:820): cartão branco com a aba colorida pela posição. Ao escolher,
 // o cartão ganha a cor da aba e a aba vira ink com a letra na cor do cartão. Borda e sombra não mudam.
 const optionClass =
-  "relative mb-1.5 flex min-h-[88px] cursor-pointer items-stretch gap-5 overflow-clip rounded-16 border-3 border-ink pr-5 font-body text-body-md text-ink shadow-md hover:translate-x-1 hover:translate-y-1 hover:shadow-pressed has-focus-visible:outline-3 has-focus-visible:outline-offset-3 has-focus-visible:outline-ink md:min-h-[92px] md:gap-8 md:pr-8 md:text-body-lg";
+  "motion-press relative mb-1.5 flex min-h-[88px] cursor-pointer items-stretch gap-5 overflow-clip rounded-16 border-3 border-ink pr-5 font-body text-body-md text-ink shadow-md hover:translate-x-1 hover:translate-y-1 hover:shadow-pressed has-focus-visible:outline-3 has-focus-visible:outline-offset-3 has-focus-visible:outline-ink md:min-h-[92px] md:gap-8 md:pr-8 md:text-body-lg";
 
 export function QuestionScreen({
   index,
@@ -37,6 +40,7 @@ export function QuestionScreen({
   selected,
   submitting,
   error,
+  enter = null,
   onSelect,
   onBack,
   onNext,
@@ -61,11 +65,25 @@ export function QuestionScreen({
         {Array.from({ length: total }, (_, step) => (
           <span
             key={step}
-            className={`h-3 flex-1 rounded-[4px] border-2 border-ink md:h-3.5 ${step <= index ? "bg-coral" : "bg-white"}`}
-          />
+            className="h-3 flex-1 overflow-clip rounded-[4px] border-2 border-ink bg-white md:h-3.5"
+          >
+            {/* O preenchimento cresce da esquerda (transform), em vez de trocar a cor de uma vez. */}
+            <span
+              className={`block size-full origin-left bg-coral transition-transform duration-(--duration-slow) ease-soft ${step <= index ? "scale-x-100" : "scale-x-0"}`}
+            />
+          </span>
         ))}
       </div>
-      <fieldset aria-busy={alternativas.length === 0} className="flex w-full min-w-0 flex-col">
+      <fieldset
+        key={perguntaOrdem}
+        aria-busy={alternativas.length === 0}
+        className={`flex w-full min-w-0 flex-col ${enter ? "motion-enter-x" : ""}`}
+        style={
+          enter
+            ? ({ "--enter-x": `calc(var(--distance-enter) * ${enter === "back" ? -1 : 1})` } as CSSProperties)
+            : undefined
+        }
+      >
         <legend className="mb-[22px] font-display text-[20px] leading-[1.2] font-semibold tracking-[-0.025em] md:mb-7 md:text-h3">
           {texto}
         </legend>
