@@ -2,13 +2,15 @@ import { Button } from "@/components/ui/button";
 import { routes } from "@/lib/routes";
 import { BoardingPass } from "./boarding-pass";
 
+// Duas colunas (texto de 500px + cartão) só cabem a partir de 1280px, a largura do Figma. Abaixo disso
+// o cartão desce para baixo do texto, centralizado e com a largura da coluna do Figma (548px).
 export function Hero() {
   return (
     <section
       aria-labelledby="titulo-hero"
-      className="flex flex-col gap-[22px] pt-4 pb-10 md:flex-row md:items-center md:gap-10 md:pt-12 md:pb-[88px]"
+      className="flex flex-col gap-[22px] pt-4 pb-10 md:pt-12 md:pb-[88px] xl:flex-row xl:items-center xl:gap-10"
     >
-      <div className="flex flex-col items-start gap-[22px] md:w-[500px] md:shrink-0 md:gap-7">
+      <div className="flex flex-col items-start gap-[22px] md:gap-7 xl:w-[500px] xl:shrink-0">
         <p className="font-mono text-caption uppercase text-ink-soft md:text-label">
           Orientação de carreira em TI
         </p>
@@ -29,7 +31,7 @@ export function Hero() {
           </Button>
         </div>
       </div>
-      <div className="md:min-w-0 md:flex-1">
+      <div className="md:mx-auto md:w-full md:max-w-[548px] xl:mx-0 xl:min-w-0 xl:max-w-none xl:flex-1">
         <BoardingPass />
       </div>
     </section>

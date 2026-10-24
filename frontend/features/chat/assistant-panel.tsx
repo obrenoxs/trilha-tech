@@ -116,6 +116,15 @@ export function AssistantPanel() {
     if (open && log) log.scrollTop = log.scrollHeight;
   }, [open, messages]);
 
+  // Ao abrir, o foco vai para o campo de texto, para já poder digitar. O painel segue sendo um
+  // role="dialog" com rótulo, então o leitor de tela anuncia o título ao entrar. Se o campo estiver
+  // desabilitado (espera do 429), o foco fica no painel.
+  useEffect(() => {
+    if (!open) return;
+    const input = inputRef.current;
+    (input && !input.disabled ? input : panelRef.current)?.focus();
+  }, [open, panelRef]);
+
   // Desabilitar o campo (espera do 429) tira o foco dele: leva o foco para o painel e, quando a
   // espera acaba, devolve ao campo. Assim o teclado nunca fica "solto" na página.
   useEffect(() => {
@@ -168,6 +177,8 @@ export function AssistantPanel() {
   }
 
   return (
+    // O onKeyDown só segura o Tab dentro do painel no celular (focus trap): não é um controle clicável.
+    // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
     <div
       ref={panelRef}
       hidden={!open}

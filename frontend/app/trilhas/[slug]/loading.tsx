@@ -7,7 +7,7 @@ const infoCard =
 // botão do PDF, bloco de salário e a lista de etapas.
 export default function Loading() {
   return (
-    <div className="mx-auto w-full max-w-[1280px] px-5 md:px-24">
+    <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10 lg:px-24">
       <LoadingRegion>
         <div className="flex flex-col items-start gap-5 pt-3 pb-12 md:gap-6 md:pt-8 md:pb-[72px]">
           <SkeletonBar className="h-4 w-56" />
@@ -37,9 +37,9 @@ export default function Loading() {
             className="flex w-full flex-col gap-3 rounded-[18px] border-3 border-ink bg-white p-[18px] shadow-lg md:gap-[18px] md:rounded-[20px] md:px-8 md:py-6"
           >
             <SkeletonBar className="h-4 w-60" />
-            <div className="flex flex-col gap-3 md:flex-row md:gap-6">
+            <div className="flex flex-col gap-3 md:gap-6 lg:flex-row">
               {[0, 1, 2].map((item) => (
-                <SkeletonBar key={item} className="h-[100px] rounded-14 md:flex-1" />
+                <SkeletonBar key={item} className="h-[100px] rounded-14 lg:flex-1" />
               ))}
             </div>
           </div>

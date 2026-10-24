@@ -1,4 +1,4 @@
-import { areaColors, colorForIndex } from "@/components/ui/area-colors";
+import { areaColors, areaTextColors, colorForIndex } from "@/components/ui/area-colors";
 import { Button } from "@/components/ui/button";
 import type { Alternativa } from "@/lib/api/types";
 
@@ -23,9 +23,10 @@ type QuestionScreenProps = {
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
-// Alternativa selecionada: usa a linguagem do botão escuro do Figma (fundo ink, texto lemon,
-// sombra coral). O Figma não traz o estado selecionado; ver o relatório da fase.
-const optionClass = `relative mb-1.5 flex min-h-[88px] cursor-pointer items-stretch gap-5 overflow-clip rounded-16 border-3 border-ink bg-white pr-5 font-body text-body-md text-ink shadow-md hover:translate-x-1 hover:translate-y-1 hover:shadow-pressed has-checked:bg-ink has-checked:text-lemon has-checked:shadow-coral-md has-checked:hover:shadow-coral-pressed has-focus-visible:outline-3 has-focus-visible:outline-offset-3 has-focus-visible:outline-ink md:min-h-[92px] md:gap-8 md:pr-8 md:text-body-lg`;
+// Alternativa (Figma 137:760 e 137:820): cartão branco com a aba colorida pela posição. Ao escolher,
+// o cartão ganha a cor da aba e a aba vira ink com a letra na cor do cartão. Borda e sombra não mudam.
+const optionClass =
+  "relative mb-1.5 flex min-h-[88px] cursor-pointer items-stretch gap-5 overflow-clip rounded-16 border-3 border-ink pr-5 font-body text-body-md text-ink shadow-md hover:translate-x-1 hover:translate-y-1 hover:shadow-pressed has-focus-visible:outline-3 has-focus-visible:outline-offset-3 has-focus-visible:outline-ink md:min-h-[92px] md:gap-8 md:pr-8 md:text-body-lg";
 
 export function QuestionScreen({
   index,
@@ -70,26 +71,15 @@ export function QuestionScreen({
         </legend>
         <div className="flex flex-col gap-3 md:gap-[18px]">
           {alternativas.map((alternativa, position) => (
-            <label key={alternativa.ordem} className={optionClass}>
-              <input
-                type="radio"
-                name={`pergunta-${perguntaOrdem}`}
-                value={alternativa.ordem}
-                checked={selected === alternativa.ordem}
-                onChange={() => onSelect(alternativa.ordem)}
-                disabled={submitting}
-                className="sr-only"
-              />
-              <span
-                aria-hidden="true"
-                className={`flex w-[60px] shrink-0 items-center justify-center border-r-3 border-ink font-display text-[24px] leading-[1.2] font-bold tracking-[-0.03em] text-ink md:w-[72px] md:text-num ${areaColors[colorForIndex(position)]}`}
-              >
-                {String.fromCharCode(65 + position)}
-              </span>
-              <span className="min-w-0 flex-1 self-center py-2 [overflow-wrap:anywhere]">
-                {alternativa.texto}
-              </span>
-            </label>
+            <Option
+              key={alternativa.ordem}
+              name={`pergunta-${perguntaOrdem}`}
+              alternativa={alternativa}
+              position={position}
+              checked={selected === alternativa.ordem}
+              disabled={submitting}
+              onSelect={onSelect}
+            />
           ))}
         </div>
       </fieldset>
@@ -107,5 +97,42 @@ export function QuestionScreen({
         </Button>
       </div>
     </div>
+  );
+}
+
+type OptionProps = {
+  name: string;
+  alternativa: Alternativa;
+  /** Posição na tela: define a letra (A, B, C, D) e a cor da aba. */
+  position: number;
+  checked: boolean;
+  disabled: boolean;
+  onSelect: (alternativaOrdem: number) => void;
+};
+
+// O rádio nativo (escondido só visualmente) cuida de foco, setas do teclado e aria-checked.
+function Option({ name, alternativa, position, checked, disabled, onSelect }: OptionProps) {
+  const color = colorForIndex(position);
+  return (
+    <label className={`${optionClass} ${checked ? areaColors[color] : "bg-white"}`}>
+      <input
+        type="radio"
+        name={name}
+        value={alternativa.ordem}
+        checked={checked}
+        onChange={() => onSelect(alternativa.ordem)}
+        disabled={disabled}
+        className="sr-only"
+      />
+      <span
+        aria-hidden="true"
+        className={`flex w-[60px] shrink-0 items-center justify-center border-r-3 border-ink font-display text-[24px] leading-[1.2] font-bold tracking-[-0.03em] md:w-[72px] md:text-num ${checked ? `bg-ink ${areaTextColors[color]}` : `text-ink ${areaColors[color]}`}`}
+      >
+        {String.fromCharCode(65 + position)}
+      </span>
+      <span className="min-w-0 flex-1 self-center py-2 [overflow-wrap:anywhere]">
+        {alternativa.texto}
+      </span>
+    </label>
   );
 }

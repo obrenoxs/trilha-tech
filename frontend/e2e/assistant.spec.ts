@@ -63,8 +63,8 @@ test("429: mostra a contagem do Retry-After e bloqueia o envio até acabar", asy
   );
   await page.goto("/trilhas/java-e-spring");
   const panel = await openPanel(page);
-  // O foco vai para o painel ao abrir.
-  await expect(panel).toBeFocused();
+  // O foco vai para o campo de texto ao abrir.
+  await expect(panel.getByLabel("Sua mensagem")).toBeFocused();
 
   await ask(page, "E qual o salário de quem trabalha com Spring?");
 
@@ -201,7 +201,7 @@ test("o botão do resultado do quiz abre o assistente com o contexto do quiz", a
   await page.getByRole("button", { name: "Conversar com a IA" }).click();
   const panel = page.getByRole("dialog", { name: "Assistente Trilha Tech" });
   await expect(panel).toBeVisible();
-  await expect(panel).toBeFocused();
+  await expect(panel.getByLabel("Sua mensagem")).toBeFocused();
   await expect(panel.getByText(/Contexto: Resultado do quiz/i)).toBeVisible();
 
   await ask(page, "Qual dessas áreas é melhor para começar?");
