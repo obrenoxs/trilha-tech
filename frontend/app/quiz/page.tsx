@@ -12,7 +12,7 @@ export default async function QuizPage() {
   const perguntas = [...(await getQuiz())].sort((a, b) => a.ordem - b.ordem);
 
   return (
-    <div className="mx-auto w-full max-w-[1280px] px-5 md:px-24">
+    <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10 lg:px-24">
       <h1 className="sr-only">Quiz de 12 perguntas</h1>
       <QuizFlow perguntas={perguntas} />
     </div>

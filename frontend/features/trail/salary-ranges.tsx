@@ -38,11 +38,11 @@ export function SalaryRanges({ ranges, notice }: SalaryRangesProps) {
         Faixa salarial estimada (mensal)
       </h2>
 
-      <ul className="flex flex-col gap-3 md:flex-row md:gap-6">
+      <ul className="flex flex-col gap-3 md:gap-6 lg:flex-row">
         {sortSalaryRanges(ranges).map((range) => (
           <li
             key={range.nivel}
-            className={`flex min-w-0 flex-col gap-1 rounded-12 border-3 border-ink px-4 py-3 shadow-sm md:flex-1 md:gap-1.5 md:rounded-14 md:px-5 md:py-[18px] ${areaColors[levelColors[range.nivel]]}`}
+            className={`flex min-w-0 flex-col gap-1 rounded-12 border-3 border-ink px-4 py-3 shadow-sm lg:flex-1 md:gap-1.5 md:rounded-14 md:px-5 md:py-[18px] ${areaColors[levelColors[range.nivel]]}`}
           >
             <div className="flex items-center gap-2">
               <h3 className={`min-w-0 flex-1 ${caption} text-ink`}>

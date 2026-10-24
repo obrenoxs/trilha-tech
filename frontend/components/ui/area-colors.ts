@@ -7,6 +7,14 @@ export const areaColors = {
   periwinkle: "bg-periwinkle",
 };
 
+// Mesma paleta como cor de texto: a letra da alternativa escolhida no quiz usa a cor do cartão.
+export const areaTextColors = {
+  coral: "text-coral",
+  mint: "text-mint",
+  lemon: "text-lemon",
+  periwinkle: "text-periwinkle",
+};
+
 export type AreaColor = keyof typeof areaColors;
 
 export const areaColorOrder: AreaColor[] = ["coral", "mint", "lemon", "periwinkle"];

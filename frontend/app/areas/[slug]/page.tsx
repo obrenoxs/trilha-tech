@@ -37,7 +37,7 @@ export default async function AreaPage({ params }: PageProps<"/areas/[slug]">) {
   const trailCount = area.trilhas.length;
 
   return (
-    <div className="mx-auto w-full max-w-[1280px] px-5 md:px-24">
+    <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10 lg:px-24">
       <div className="flex flex-col items-start gap-5 pt-3 pb-12 md:gap-[26px] md:pt-8 md:pb-[72px]">
         <nav aria-label="Trilha de navegação" className={label}>
           <Link href={routes.destinos} className={`rounded-8 hover:underline ${focusRing}`}>

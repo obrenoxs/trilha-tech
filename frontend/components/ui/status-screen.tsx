@@ -11,12 +11,12 @@ type StatusScreenProps = {
 };
 
 // Tela de status em duas colunas (texto + bilhete). Serve ao 404 e às telas de erro.
-// Desktop: texto de 520px à esquerda e bilhete à direita. Mobile: tudo em coluna, bilhete por último.
+// Desktop (1024+): texto de 520px à esquerda e bilhete à direita. Abaixo disso: tudo em coluna, bilhete por último.
 export function StatusScreen({ eyebrow, title, description, actions, ticket }: StatusScreenProps) {
   return (
-    <div className="mx-auto w-full max-w-[1280px] px-5 md:px-24">
-      <div className="flex flex-col gap-5 pt-9 pb-8 md:flex-row md:items-center md:gap-10 md:pt-14 md:pb-24">
-        <div className="flex flex-col items-start gap-5 md:w-[520px] md:shrink-0 md:gap-6">
+    <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10 lg:px-24">
+      <div className="flex flex-col gap-5 pt-9 pb-8 md:pt-14 md:pb-24 lg:flex-row lg:items-center lg:gap-10">
+        <div className="flex flex-col items-start gap-5 md:gap-6 lg:w-[520px] lg:shrink-0">
           <p className="font-mono text-caption uppercase text-ink-soft md:text-label">{eyebrow}</p>
           <h1 className="break-words font-display text-[34px] leading-[1.12] font-bold tracking-[-0.04em] md:text-h1">
             {title}
@@ -26,7 +26,7 @@ export function StatusScreen({ eyebrow, title, description, actions, ticket }: S
             {actions}
           </div>
         </div>
-        <div className="md:min-w-0 md:flex-1">
+        <div className="lg:min-w-0 lg:flex-1">
           <NoticeTicket {...ticket} />
         </div>
       </div>

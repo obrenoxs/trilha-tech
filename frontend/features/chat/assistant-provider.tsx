@@ -101,11 +101,10 @@ export function AssistantProvider({
     return () => window.removeEventListener(OPEN_ASSISTANT_EVENT, openPanel);
   }, [openPanel]);
 
-  // Foco: vai para o painel ao abrir e volta a quem abriu (ou ao botão flutuante) ao fechar.
+  // Foco: ao abrir, o próprio painel o leva ao campo de texto (assistant-panel.tsx). Ao fechar,
+  // volta a quem abriu (ou ao botão flutuante).
   useEffect(() => {
-    if (state.open) {
-      panelRef.current?.focus();
-    } else if (wasOpen.current) {
+    if (!state.open && wasOpen.current) {
       const opener = openerRef.current;
       const target = opener?.isConnected
         ? opener

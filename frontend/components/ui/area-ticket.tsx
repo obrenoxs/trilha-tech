@@ -12,8 +12,9 @@ type AreaTicketProps = {
   className?: string;
 };
 
-// O bilhete inteiro é um link, com nome acessível único: "Área 01, <nome>, <N> trilhas".
-// O aria-label substitui o conteúdo na leitura; canhoto e código de barras são decorativos.
+// O bilhete inteiro é um link. O nome acessível vem do próprio texto visível ("Área 01 <nome> <N> trilhas"):
+// com um aria-label diferente do texto na tela, quem usa comando de voz não consegue chamar o link
+// (WCAG 2.5.3). Só o código de barras e os recortes são decorativos.
 export function AreaTicket({
   href,
   color,
@@ -27,11 +28,9 @@ export function AreaTicket({
   return (
     <Link
       href={href}
-      aria-label={`Área ${number}, ${name}, ${trailsLabel}`}
       className={`relative mb-1.5 mr-1.5 flex overflow-clip rounded-16 border-3 border-ink bg-white shadow-md hover:translate-x-1 hover:translate-y-1 hover:shadow-pressed active:translate-x-1.5 active:translate-y-1.5 active:shadow-none ${focusRing} ${className}`}
     >
       <div
-        aria-hidden="true"
         className={`flex w-[100px] shrink-0 flex-col items-center justify-center gap-1.5 border-r-3 border-dashed border-ink py-4 ${colors[color]}`}
       >
         <span className="font-mono text-caption uppercase">Área</span>

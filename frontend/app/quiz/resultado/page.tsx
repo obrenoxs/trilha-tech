@@ -13,7 +13,7 @@ export default async function QuizResultPage() {
   const areas = await getAreas();
 
   return (
-    <div className="mx-auto w-full max-w-[1280px] px-5 md:px-24">
+    <div className="mx-auto w-full max-w-[1280px] px-5 md:px-10 lg:px-24">
       <QuizResult areas={areas} />
     </div>
   );

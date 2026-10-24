@@ -39,7 +39,7 @@ export function HowItWorks() {
         salariais.
       </p>
       <div className="flex w-full flex-col gap-5 pt-2 md:gap-6 md:pt-7">
-        <ol className="grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-6">
+        <ol className="grid grid-cols-1 gap-5 lg:grid-cols-3 md:gap-6">
           {steps.map((step, index) => (
             <li
               key={step.number}
