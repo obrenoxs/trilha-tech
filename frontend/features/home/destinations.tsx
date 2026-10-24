@@ -1,12 +1,7 @@
 import { AreaTicket } from "@/components/ui/area-ticket";
 import { colorForIndex } from "@/components/ui/area-colors";
+import { SavedQuizResultShortcut } from "@/features/quiz/saved-result-shortcut";
 import type { Area } from "@/lib/api";
-
-// Espaço do atalho para o resultado salvo do quiz. A lógica entra na fase 9;
-// por enquanto não renderiza nada.
-function SavedQuizResultSlot() {
-  return null;
-}
 
 export function Destinations({ areas }: { areas: Area[] }) {
   return (
@@ -28,7 +23,7 @@ export function Destinations({ areas }: { areas: Area[] }) {
         Cada destino reúne trilhas por tecnologia, com roadmap, faixa salarial estimada e PDF
         para baixar.
       </p>
-      <SavedQuizResultSlot />
+      <SavedQuizResultShortcut areas={areas} />
       <ul className="grid w-full grid-cols-1 gap-[18px] pt-3 md:grid-cols-2 md:gap-6 md:pt-5">
         {areas.map((area, index) => (
           <li key={area.slug} className="flex">
