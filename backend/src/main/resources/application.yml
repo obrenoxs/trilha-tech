@@ -35,6 +35,20 @@ springdoc:
     enabled: ${SWAGGER_HABILITADO:true}
     operations-sorter: alpha
     tags-sorter: alpha
-    
+
 server:
   port: ${PORT:8080}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include: readinessState,db
