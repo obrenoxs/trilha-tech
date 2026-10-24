@@ -38,7 +38,7 @@ export function AreaTicket({
         <span className="font-display text-num">{number}</span>
       </div>
       <div className="flex min-h-[128px] min-w-0 flex-1 flex-col justify-between gap-4 px-6 py-5">
-        <span className="font-display text-card">{name}</span>
+        <span className="font-display text-card [word-break:break-word]">{name}</span>
         <span className="flex items-end justify-between gap-4">
           <span className="font-mono text-caption uppercase">{trailsLabel}</span>
           <Image src="/icons/barcode.svg" alt="" aria-hidden="true" width={72} height={22} />
