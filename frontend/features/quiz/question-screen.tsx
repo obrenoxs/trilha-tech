@@ -41,6 +41,7 @@ export function QuestionScreen({
   onNext,
 }: QuestionScreenProps) {
   const current = index + 1;
+  const isLast = current === total;
 
   return (
     <div className="flex flex-col items-start gap-[22px] pt-3 pb-12 md:gap-7 md:pt-8 md:pb-[72px]">
@@ -102,7 +103,7 @@ export function QuestionScreen({
           Voltar
         </Button>
         <Button onClick={onNext} disabled={selected === undefined || submitting}>
-          Próxima
+          {submitting ? "Enviando…" : isLast ? "Ver resultado" : "Próxima"}
         </Button>
       </div>
     </div>

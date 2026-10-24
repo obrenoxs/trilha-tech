@@ -11,7 +11,9 @@ async function answerAll(page: Page, perguntas: Pergunta[], position = 0) {
     await expect(page.getByText(`Pergunta ${String(index + 1).padStart(2, "0")} de 12`)).toBeVisible();
     // Sem resposta marcada, "Próxima" fica desabilitada (a pergunta 1 pode já estar respondida).
     if ((await page.getByRole("radio", { checked: true }).count()) === 0) {
-      await expect(page.getByRole("button", { name: "Próxima" })).toBeDisabled();
+      await expect(
+        page.getByRole("button", { name: index === 11 ? "Ver resultado" : "Próxima" }),
+      ).toBeDisabled();
     }
 
     const radio = page.getByRole("radio").nth(position);
@@ -23,8 +25,10 @@ async function answerAll(page: Page, perguntas: Pergunta[], position = 0) {
     picked.push({ pergunta: pergunta.ordem, alternativa: alternativa!.ordem });
 
     await page.locator("label").filter({ hasText: texto }).click();
-    await expect(page.getByRole("button", { name: "Próxima" })).toBeEnabled();
-    await page.getByRole("button", { name: "Próxima" }).click();
+    // Na última pergunta o botão que envia se chama "Ver resultado".
+    const next = page.getByRole("button", { name: index === 11 ? "Ver resultado" : "Próxima" });
+    await expect(next).toBeEnabled();
+    await next.click();
   }
   return picked;
 }
@@ -148,5 +152,26 @@ test("erro 400 no envio mostra mensagem amigável e permite tentar de novo", asy
   await expect(page.locator("body")).not.toContainText("MENSAGEM TECNICA");
   await expect(page.locator("body")).not.toContainText("/api/quiz/resultado");
   await expect(page).toHaveURL(/\/quiz$/);
-  await expect(page.getByRole("button", { name: "Próxima" })).toBeEnabled();
+
+  // As respostas não se perdem: sem refazer o quiz, é só tentar de novo (agora com a API normal).
+  await expect(page.getByRole("radio", { checked: true })).toHaveCount(1);
+  await page.unroute("**/api/quiz/resultado");
+  await page.getByRole("button", { name: "Ver resultado" }).click();
+  await expect(page).toHaveURL(/\/quiz\/resultado$/);
+  await expect(page.getByRole("link", { name: /Ver trilhas/ })).toHaveCount(3);
+});
+
+test("alternativas são rádios reais: setas do teclado trocam a escolha", async ({ page }) => {
+  await page.goto("/quiz");
+  const radios = page.getByRole("radio");
+  await expect(radios).toHaveCount(4);
+
+  // Foco no grupo e teclado nativo de rádios: espaço marca, setas trocam.
+  await radios.first().focus();
+  await page.keyboard.press("Space");
+  await expect(radios.first()).toBeChecked();
+  await page.keyboard.press("ArrowDown");
+  await expect(radios.nth(1)).toBeChecked();
+  await page.keyboard.press("ArrowUp");
+  await expect(radios.first()).toBeChecked();
 });
