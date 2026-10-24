@@ -85,7 +85,7 @@ Use depois de cada fase com tela, no desktop (1280) e no mobile (390). Marque ca
 **Área** (`9:238`, `24:653`)
 - [ ] Trilha de navegação, título, descrição e "N trilhas nesta área".
 - [ ] Cada trilha com número colorido, nome, resumo e botão "Ver roadmap".
-- [ ] O `comoETrabalhar` aparece onde foi decidido.
+- [ ] O bloco "Como é trabalhar nesta área" (`comoETrabalhar`) fica entre a descrição e a contagem de trilhas, como nos frames `134:649` e `134:747`, e só aparece se o campo vier.
 
 **Trilha** (`9:333`, `24:738`; com etapa expandida e salário completo `123:553`, `125:640`)
 - [ ] Título, resumo, botão do PDF e bloco de salário iguais ao frame.

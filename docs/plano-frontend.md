@@ -77,7 +77,7 @@ Quando cada frame existir, o dono passa o ID para entrar no `CLAUDE.md`. Até l�
 
 - **Objetivo:** listar as trilhas de uma área.
 - **Frames:** Área `9:238` / `24:653`.
-- **Entregas:** rota `/areas/[slug]` com título, `descricao`, a contagem de trilhas e a lista de trilhas em ordem (nome, `resumo`, botão "Ver roadmap"). **O `comoETrabalhar` não está no frame: o Claude Code deve perguntar onde ele fica antes de implementar.** Metadados de SEO por página. `404` para slug inexistente.
+- **Entregas:** rota `/areas/[slug]` com título, `descricao`, a contagem de trilhas e a lista de trilhas em ordem (nome, `resumo`, botão "Ver roadmap"). O `comoETrabalhar` vai no bloco "Como é trabalhar nesta área" dos frames novos `134:649` (desktop) e `134:747` (mobile), entre a descrição e a contagem de trilhas; só aparece se o campo vier (opcional no schema). Metadados de SEO por página. `404` para slug inexistente.
 - **Pronto quando:** a página bate com o Figma, trata texto longo sem quebrar e mostra o 404 com um slug inválido.
 - **Como conferir:** a página da área de Desenvolvimento de Software contra o frame, e uma área com textos mais longos.
 - **Commit sugerido:** `feat: add area page with trail list`
