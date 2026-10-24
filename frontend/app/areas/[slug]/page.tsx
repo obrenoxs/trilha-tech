@@ -5,6 +5,7 @@ import { focusRing } from "@/components/ui/states";
 import { TrailCard } from "@/components/ui/trail-card";
 import { getArea, getAreas } from "@/lib/api";
 import { routes } from "@/lib/routes";
+import { pageMetadata } from "@/lib/seo";
 
 // As 8 áreas são geradas no build. Com Cache Components a lista não pode ser vazia.
 export async function generateStaticParams() {
@@ -23,10 +24,7 @@ async function loadArea(slug: string) {
 export async function generateMetadata({ params }: PageProps<"/areas/[slug]">): Promise<Metadata> {
   const { slug } = await params;
   const area = await loadArea(slug);
-  return {
-    title: `${area.nome} | Trilha Tech`,
-    description: area.descricao,
-  };
+  return pageMetadata({ title: area.nome, description: area.descricao, path: `/areas/${area.slug}` });
 }
 
 const label = "font-mono text-caption uppercase text-ink-soft md:text-label";

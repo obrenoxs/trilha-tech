@@ -4,7 +4,7 @@ import { StatusScreen } from "@/components/ui/status-screen";
 import { routes } from "@/lib/routes";
 
 export const metadata: Metadata = {
-  title: "Página não encontrada | Trilha Tech",
+  title: "Página não encontrada",
 };
 
 // Slug inexistente (área ou trilha) e qualquer rota desconhecida caem aqui. Figma 124:623 e 124:756.
