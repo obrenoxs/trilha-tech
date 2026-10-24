@@ -141,6 +141,8 @@ Se algo não estiver em nenhum frame (outros erros do chat como 400, 413 e 500, 
 
 Conteúdo do mockup (textos, etapas, salários) é **exemplo**. O front sempre usa o que a API devolve. O que a Área mostra de `comoETrabalhar` não está no frame atual: **pergunte onde fica**.
 
+Na Área, o comoETrabalhar vai no bloco "Como é trabalhar nesta área", entre a descrição e "N TRILHAS NESTA ÁREA": frames 134:649 (desktop) e 134:747 (mobile). Mostre o bloco só se o campo vier (é opcional no schema).
+
 ## Estrutura de pastas (proposta; ajuste só explicando o motivo)
 
 ```
