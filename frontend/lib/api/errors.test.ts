@@ -25,9 +25,11 @@ describe("ApiError", () => {
   it("nunca usa message/path/timestamp do backend no texto para a pessoa", () => {
     const error = new ApiError(500, {
       detail: {
+        timestamp: "2026-10-23T19:05:44",
+        status: 500,
+        error: "Internal Server Error",
         message: "NullPointerException em AreaService",
         path: "/api/areas",
-        timestamp: "2026-10-23T19:05:44",
       },
     });
     expect(error.userMessage).not.toMatch(/NullPointer|\/api\/areas|2026/);
@@ -41,7 +43,13 @@ describe("ApiError", () => {
   });
 
   it("fromResponse lê status, corpo e Retry-After", async () => {
-    const response = new Response(JSON.stringify({ status: 429, message: "x" }), {
+    const response = new Response(JSON.stringify({
+        timestamp: "2026-10-23T19:05:44",
+        status: 429,
+        error: "Too Many Requests",
+        message: "x",
+        path: "/api/assistente/mensagens",
+      }), {
       status: 429,
       headers: { "Retry-After": "30" },
     });
