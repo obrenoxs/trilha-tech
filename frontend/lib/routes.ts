@@ -3,6 +3,6 @@ export const routes = {
   home: "/",
   destinos: "/#destinos",
   comoFunciona: "/#como-funciona",
-  // Provisório: a rota /quiz entra na fase 9. Até lá o botão leva à Home.
-  quiz: "/",
+  quiz: "/quiz",
+  quizResultado: "/quiz/resultado",
 } as const;

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { DM_Mono, Manrope, Unbounded } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { SkipLink } from "@/components/layout/skip-link";
+import { Assistant } from "@/features/chat/assistant";
 
 // Pesos usados no Figma: Unbounded SemiBold/Bold, Manrope Medium/Bold/ExtraBold, DM Mono Medium.
 const unbounded = Unbounded({
@@ -41,7 +43,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <Footer />
-        {/* Espaço reservado do assistente de IA (entra na fase 10). */}
+        {/* Assistente de IA em todas as páginas. A conversa vive aqui, em memória, e não zera ao navegar. */}
+        <Suspense fallback={null}>
+          <Assistant />
+        </Suspense>
       </body>
     </html>
   );
