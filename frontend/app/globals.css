@@ -26,9 +26,15 @@
   --shadow-md: 6px 6px 0 0 #14213d;
   --shadow-lg: 8px 8px 0 0 #14213d;
 
-  /* Raios que aparecem no guia: amostras de cor (12) e caixas de sombra (14) */
+  /* Sombra coral do botão escuro e do botão IA (padrão 5px, hover 2px), lida dos componentes */
+  --shadow-coral-md: 5px 5px 0 0 #ff8a6b;
+  --shadow-coral-pressed: 2px 2px 0 0 #ff8a6b;
+
+  /* Raios: guia (12 e 14) e componentes (8: alternar; 16: bilhete e cartão de etapa) */
+  --radius-8: 8px;
   --radius-12: 12px;
   --radius-14: 14px;
+  --radius-16: 16px;
 
   /* Estilos de texto: tamanho, altura de linha, tracking e peso */
   --text-h1: 54px;
@@ -95,6 +101,9 @@
   --text-nav--line-height: 1.3;
   --text-nav--font-weight: 700;
 }
+
+/* Foco branco: aplica-se a qualquer elemento dentro de um ancestral com data-surface="dark". */
+@custom-variant on-dark (&:where([data-surface="dark"] *));
 
 body {
   background: var(--color-bg);
