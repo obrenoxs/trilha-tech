@@ -172,9 +172,12 @@ npm run lint
 npm run typecheck
 npm run test      # Vitest
 npm run build
+npm run e2e       # Playwright (inclui o axe e os testes de movimento)
 ```
 
 Os scripts (`dev`, `build`, `lint`, `typecheck`, `test`, `e2e`, `gen:api`) são criados na fase 1.
+
+**E2E contra a versão de produção (`E2E_BASE_URL`).** Por padrão o `npm run e2e` sobe o `npm run dev`. Para testar o site como ele vai para o ar, rode `npm run build`, depois `npm run start -- -p 5173` e, em outro terminal, `E2E_BASE_URL=http://localhost:5173 npm run e2e` (no PowerShell: `$env:E2E_BASE_URL="http://localhost:5173"; npm run e2e`). Com a variável definida, o Playwright não sobe servidor nenhum. Use a porta **3000 ou 5173**: a API só aceita essas origens (CORS), e em qualquer outra o quiz e o chat falham com 403. O servidor de dev que fica aberto por horas pode servir CSS do Tailwind desatualizado: se um teste de estilo falhar de forma estranha, reinicie o `npm run dev` ou teste contra a produção. O e2e roda com `prefers-reduced-motion: reduce` por padrão; `e2e/motion.spec.ts` liga o movimento onde precisa.
 
 ### Verificação visual contra o Figma (obrigatória em toda fase com tela)
 
