@@ -50,6 +50,8 @@ Trilha Tech é uma plataforma web que orienta iniciantes e estudantes de TI a de
 
 Os nomes exatos dos campos vêm **dos tipos gerados** do OpenAPI. Em caso de dúvida, o Swagger é a fonte de verdade.
 
+**Nunca faça chamada real a `POST /api/assistente/mensagens`: consome cota de IA do backend e o limite por IP. Teste o chat com mocks.**
+
 **Quiz**
 - `pergunta` e `alternativa` no POST são as **`ordem` originais** vindas do `GET /api/quiz`, e não ids, nem a posição na tela. O front **embaralha as alternativas ao exibir**, então guarde a `ordem` original de cada uma. As letras A, B, C, D são só a posição na tela.
 - O botão de avançar fica **desabilitado** até haver uma resposta.
